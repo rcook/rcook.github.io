@@ -1,20 +1,36 @@
 <?php
 
-final class Article {
-  private $id;
-  private $title;
+final class MetadataReader {
+  public static function readMetadata($id) {
+    $metadata = array();
+    $handle = fopen(realpath(__DIR__ . '/../content/' . sprintf('kb%03d', $id) . '/metadata.txt'), 'rt');
+    $title = fgets($handle);
+    $metadata['id'] = $id;
+    $metadata['title'] = $title;
+    fclose($handle);
+    return $metadata;
+  }
 
-  public final function __construct($id, $title) {
-    $this->id = $id;
-    $this->title = $title;
+  private final function __construct() {}
+}
+
+final class Article {
+  private $metadata;
+
+  public final function __construct($metadata) {
+    $this->metadata = $metadata;
   }
 
   public final function getId() {
-    return $this->id;
+    return $this->metadata['id'];
   }
 
   public final function getTitle() {
-    return $this->title;
+    return $this->metadata['title'];
+  }
+
+  public final function getMetadata() {
+    return $this->metadata;
   }
 }
 
@@ -36,21 +52,12 @@ final class Collection {
       while (($entry = readdir($handle)) !== false) {
         if (preg_match('/^kb(?P<id>\d+)$/', $entry, $matches) === 1) {
           $id = (int)$matches[1];
-          $metadata = self::getMetadata($id);
-          $this->articles[$id] = new Article($id, $metadata['title']);
+          $metadata = MetadataReader::readMetadata($id);
+          $this->articles[$id] = new Article($metadata);
         }
       }
       closedir($handle);
     }
-  }
-
-  private static function getMetadata($id) {
-    $metadata = array();
-    $handle = fopen(realpath(__DIR__ . '/../content/' . sprintf('kb%03d', $id) . '/metadata.txt'), 'rt');
-    $title = fgets($handle);
-    $metadata['title'] = $title;
-    fclose($handle);
-    return $metadata;
   }
 }
 

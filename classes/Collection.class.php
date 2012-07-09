@@ -57,6 +57,7 @@ final class Collection {
         }
       }
       closedir($handle);
+      ksort($this->articles);
     }
   }
 }

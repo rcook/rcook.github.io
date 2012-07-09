@@ -16,6 +16,7 @@ $metadata = MetadataReader::readMetadata($id);
 <head>
   <meta charset="utf-8">
   <title><?= sprintf('KB%03d', $metadata['id']) ?></title>
+  <link rel="stylesheet" href="/static/style/default.css">
 </head>
 <body>
 <div class="banner">

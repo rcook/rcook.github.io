@@ -85,52 +85,6 @@
     buildContents();
   });
   </script>
-  <style>
-  body {
-    font-family: Segoe UI, Trebuchet, Arial, Sans-Serif;
-    width: 75%;
-    margin: auto;
-  }
-  h1, h2, h3 {
-    font-family: Segoe UI Light, Trebuchet, Arial, Sans-Serif;
-  }
-  .banner {
-    font-size: 2.5em;
-    font-family: Segoe UI Light, Trebuchet, Arial, Sans-Serif;
-    font-weight: bold;
-  }
-  #parameters {
-    float: right;
-    background-color: Silver;
-    font-size: 0.75em;
-  }
-  #parameters input {
-    font-size: 0.9em;
-    min-width: 20em;
-  }
-  .section-index {
-    font-size: smaller;
-    font-style: italic;
-  }
-  .contents-link {
-    font-size: small;
-  }
-  .file-path {
-    font-family: Monospace;
-    font-weight: bold;
-    color: Purple;
-  }
-  .user-input {
-    font-family: Monospace;
-    font-weight: bold;
-    color: Green;
-  }
-  .command {
-    font-family: Monospace;
-    font-weight: bold;
-    color: Blue;
-  }
-  </style>
 </head>
 <body>
 <table id="parameters">

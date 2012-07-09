@@ -18,9 +18,11 @@ $metadata = MetadataReader::readMetadata($id);
   <title><?= sprintf('KB%03d', $metadata['id']) ?></title>
 </head>
 <body>
-<h1><?= sprintf('KB%03d', $metadata['id']) ?>&mdash;<?= htmlspecialchars($metadata['title']) ?></h1>
+<div class="banner">
+<?= sprintf('KB%03d', $metadata['id']) ?>&mdash;<?= htmlspecialchars($metadata['title']) ?></h1>
+</div>
 <ul>
-  <li><a href="/">Index</a></li>
+  <li><a href="/">Return to KnowledgeBase index</a></li>
 </ul>
 <?
   require $contentPath;

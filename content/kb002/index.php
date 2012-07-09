@@ -94,7 +94,7 @@
   h1, h2, h3 {
     font-family: Segoe UI Light, Trebuchet, Arial, Sans-Serif;
   }
-  #banner {
+  .banner {
     font-size: 2.5em;
     font-family: Segoe UI Light, Trebuchet, Arial, Sans-Serif;
     font-weight: bold;
@@ -133,9 +133,6 @@
   </style>
 </head>
 <body>
-<div id="banner">
-Setting up passwordless PuTTY access to server
-</div>
 <table id="parameters">
   <tr>
     <td><label for="user-name">User name</label></td>

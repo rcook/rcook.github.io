@@ -18,7 +18,7 @@ $articles = $collection->getArticles();
 if (count($articles) > 0) {
   echo '<ul>';
   foreach ($articles as $article) {
-    echo '<li><a href="/' . sprintf('kb%03d', $article->getId()) . '">' . sprintf('KB%03d', $article->getId()) . '&mdash;' . htmlspecialchars($article->getTitle()) . '</a></li>';
+    echo '<li><a href="/' . sprintf('kb%03d', $article->getId()) . '/">' . sprintf('KB%03d', $article->getId()) . '&mdash;' . htmlspecialchars($article->getTitle()) . '</a></li>';
   }
   echo '</ul>';
 }

@@ -11,4 +11,11 @@ if (preg_match('/^\/kb(?P<id>\d+)\/$/', $_SERVER['REQUEST_URI'], $matches) === 1
   die;
 }
 
+if (preg_match('/^\/kb(?P<id>\d+)\/(?P<resourceName>.+)$/', $_SERVER['REQUEST_URI'], $matches) === 1) {
+  $id = (int)$matches['id'];
+  $resourceName = $matches['resourceName'];
+  require realpath(__DIR__ . '/../templates/resource.template.php');
+  die;
+}
+
 header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');

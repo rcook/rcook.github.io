@@ -1,5 +1,9 @@
 {
   "title": "Setting up remote access",
-  "resources": ["enter-passphrase.png", "security-alert.png", "shell.png"]
+  "resources": {
+    "enter-passphrase.png": "image/png",
+    "security-alert.png": "image/png",
+    "shell.png": "image/png"
+  }
 }
 

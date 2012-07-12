@@ -3,11 +3,13 @@
 require_once realpath(__DIR__ . '/../classes/Collection.class.php');
 
 $metadata = MetadataReader::readMetadata($id);
-if (!in_array($resourceName, $metadata['resources'])) {
+if (!array_key_exists($resourceName, $metadata['resources'])) {
   header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
   die;
 }
 
-header('Content-Type: image/png');
-echo file_get_contents(realpath(__DIR__ . '/../content/' . sprintf('kb%03d', $id) . '/' . $resourceName));
+$mimeType = $metadata['resources'][$resourceName];
+
+header('Content-Type: ' . $mimeType);
+readfile(realpath(__DIR__ . '/../content/' . sprintf('kb%03d', $id) . '/' . $resourceName));
 

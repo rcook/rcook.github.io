@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Setting up passwordless PuTTY access to server</title>
+  <!-- begin:head -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>
   $(function () {
@@ -85,8 +86,10 @@
     buildContents();
   });
   </script>
+  <!-- end:head -->
 </head>
 <body>
+<!-- begin:body -->
 <table id="parameters">
   <tr>
     <td><label for="user-name">User name</label></td>
@@ -322,5 +325,6 @@
   I created for you. Anyway, the file name does not matter to Pageant or PuTTY (or my server for
   that matter) as long as you are consistent.
 </p>
+<!-- end:body -->
 </body>
 </html>

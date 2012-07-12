@@ -2,12 +2,9 @@
 
 final class MetadataReader {
   public static function readMetadata($id) {
-    $metadata = array();
-    $handle = fopen(realpath(__DIR__ . '/../content/' . sprintf('kb%03d', $id) . '/metadata.txt'), 'rt');
-    $title = fgets($handle);
+    $manifestPath = realpath(__DIR__ . '/../content/' . sprintf('kb%03d', $id) . '/manifest.json');
+    $metadata = json_decode(file_get_contents($manifestPath), true);
     $metadata['id'] = $id;
-    $metadata['title'] = $title;
-    fclose($handle);
     return $metadata;
   }
 

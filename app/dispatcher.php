@@ -26,3 +26,4 @@ if (preg_match('/^\/kb(?P<id>\d+)\/(?P<resourceName>.+)$/', $_SERVER['REQUEST_UR
 }
 
 header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
+

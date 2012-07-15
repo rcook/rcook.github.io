@@ -1,7 +1,5 @@
 <?php
 
-require_once realpath(__DIR__ . '/../classes/Collection.class.php');
-
 function getSection($content, $sectionName) {
   $beginMarker = '<!-- begin:' . $sectionName . ' -->';
   $endMarker = '<!-- end:' . $sectionName . ' -->';

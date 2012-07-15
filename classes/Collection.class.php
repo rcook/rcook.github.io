@@ -1,36 +1,5 @@
 <?php
 
-final class MetadataReader {
-  public static function readMetadata($id) {
-    $manifestPath = realpath(__DIR__ . '/../content/' . sprintf('kb%03d', $id) . '/manifest.json');
-    $metadata = json_decode(file_get_contents($manifestPath), true);
-    $metadata['id'] = $id;
-    return $metadata;
-  }
-
-  private final function __construct() {}
-}
-
-final class Article {
-  private $metadata;
-
-  public final function __construct($metadata) {
-    $this->metadata = $metadata;
-  }
-
-  public final function getId() {
-    return $this->metadata['id'];
-  }
-
-  public final function getTitle() {
-    return $this->metadata['title'];
-  }
-
-  public final function getMetadata() {
-    return $this->metadata;
-  }
-}
-
 final class Collection {
   private $articles = null;
 

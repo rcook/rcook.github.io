@@ -1,5 +1,12 @@
 <?php
 
+set_error_handler(function($severity, $message, $fileName, $lineNumber) {
+  throw new ErrorException($message, 0, $severity, $fileName, $lineNumber);
+});
+
+require_once realpath(__DIR__ . '/../classes/ClassAutoloader.class.php');
+new ClassAutoloader(array('classes'));
+
 if ($_SERVER['REQUEST_URI'] === '/') {
   require realpath(__DIR__ . '/../templates/index.template.php');
   die;

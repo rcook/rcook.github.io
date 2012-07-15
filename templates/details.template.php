@@ -23,7 +23,7 @@ if ($contentPath === false) {
   die;
 }
 
-$metadata = MetadataReader::readMetadata($id);
+$metadata = KBHelper::readArticleMetadata($id);
 
 $content = file_get_contents($contentPath);
 $headContent = getSection($content, 'head');

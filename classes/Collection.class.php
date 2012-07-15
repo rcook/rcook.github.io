@@ -18,7 +18,7 @@ final class Collection {
       while (($entry = readdir($handle)) !== false) {
         if (preg_match('/^kb(?P<id>\d+)$/', $entry, $matches) === 1) {
           $id = (int)$matches[1];
-          $metadata = MetadataReader::readMetadata($id);
+          $metadata = KBHelper::readArticleMetadata($id);
           if ($metadata !== false) {
             $this->articles[$id] = new Article($metadata);
           }

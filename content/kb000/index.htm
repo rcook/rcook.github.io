@@ -7,26 +7,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>
   $(function () {
-    var updateUserName = function () {
-      var userName = $("#user-name").val();
-      $(".user-name").text(userName);
-    };
-    var updateHostFqdn = function () {
-      var hostFqdn = $("#host-fqdn").val();
-      $(".host-fqdn").text(hostFqdn);
-    };
-    var updateHostName = function () {
-      var hostName = $("#host-name").val();
-      $(".host-name").text(hostName);
-    };
-    var updatePuttyInstallationDirectory = function () {
-      var puttyInstallationDirectory = $("#putty-installation-directory").val();
-      $(".putty-installation-directory").text(puttyInstallationDirectory);
-    };
-    var updateFileZillaInstallationDirectory = function () {
-      var fileZillaInstallationDirectory = $("#filezilla-installation-directory").val();
-      $(".filezilla-installation-directory").text(fileZillaInstallationDirectory);
-    };
     var buildContents = function () {
       var currentSection = undefined;
       var sections = [];
@@ -73,16 +53,21 @@
       }
     };
 
-    $("#user-name").keyup(updateUserName);
-    $("#host-fqdn").keyup(updateHostFqdn);
-    $("#host-name").keyup(updateHostName);
-    $("#putty-installation-directory").keyup(updatePuttyInstallationDirectory);
-    $("#filezilla-installation-directory").keyup(updateFileZillaInstallationDirectory);
+    var doValueUpdate = function ($input) {
+      var id = $input.attr("id");
+      var value = $input.val();
+      $("." + id).text(value);
+    };
 
-    updateUserName();
-    updateHostFqdn();
-    updatePuttyInstallationDirectory();
-    updateFileZillaInstallationDirectory();
+    $("input[data-kb-role=value]").each(function () {
+      var $input = $(this);
+      $input.data("original-value", $input.val());
+      doValueUpdate($input);
+    }).keyup(function () {
+      var $input = $(this);
+      doValueUpdate($input);
+    });
+
     buildContents();
   });
   </script>
@@ -93,23 +78,23 @@
 <table id="parameters">
   <tr>
     <td><label for="user-name">User name</label></td>
-    <td><input id="user-name" name="user-name" type="text" value="jcook"></td>
+    <td><input data-kb-role="value" id="user-name" name="user-name" type="text" value="jcook"></td>
   </tr>
   <tr>
     <td><label for="host-fqdn">Fully-qualified domain name of host</label></td>
-    <td><input id="host-fqdn" name="host-fqdn" type="text" value="monocuit.co.uk"></td>
+    <td><input data-kb-role="value" id="host-fqdn" name="host-fqdn" type="text" value="monocuit.co.uk"></td>
   </tr>
   <tr>
     <td><label for="host-name">Host name</label></td>
-    <td><input id="host-name" name="host-name" type="text" value="aleph"></td>
+    <td><input data-kb-role="value" id="host-name" name="host-name" type="text" value="aleph"></td>
   </tr>
   <tr>
     <td><label for="putty-installation-directory">PuTTY installation directory</label></td>
-    <td><input id="putty-installation-directory" name="putty-installation-directory" type="text" value="%USERPROFILE%\PuTTY"></td>
+    <td><input data-kb-role="value" id="putty-installation-directory" name="putty-installation-directory" type="text" value="%USERPROFILE%\PuTTY"></td>
   </tr>
   <tr>
     <td><label for="filezilla-installation-directory">FileZilla installation directory</label></td>
-    <td><input id="filezilla-installation-directory" name="filezilla-installation-directory" type="text" value="%USERPROFILE%\FileZilla-3.5.3"></td>
+    <td><input data-kb-role="value" id="filezilla-installation-directory" name="filezilla-installation-directory" type="text" value="%USERPROFILE%\FileZilla-3.5.3"></td>
   </tr>
 </table>
 <a name="contents"></a>

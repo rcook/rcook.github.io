@@ -68,6 +68,13 @@
       doValueUpdate($input);
     });
 
+    $("#reset").click(function () {
+      $("input[data-kb-role=value]").each(function () {
+        var $input = $(this);
+        $input.val($input.data("original-value"));
+      });
+    });
+
     buildContents();
   });
   </script>
@@ -95,6 +102,9 @@
   <tr>
     <td><label for="filezilla-installation-directory">FileZilla installation directory</label></td>
     <td><input data-kb-role="value" id="filezilla-installation-directory" name="filezilla-installation-directory" type="text" value="%USERPROFILE%\FileZilla-3.5.3"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><button id="reset">Reset</button></td>
   </tr>
 </table>
 <a name="contents"></a>

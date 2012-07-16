@@ -36,6 +36,8 @@ $bodyContent = getSection($content, 'body');
   <meta charset="utf-8">
   <title><?= sprintf('KB%03d', $metadata['id']) ?>&mdash;<?= htmlspecialchars($metadata['title']) ?></title>
   <link rel="stylesheet" href="/static/style/default.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/static/script/kblib.contents.js"></script>
   <?= $headContent ?>
 </head>
 <body>

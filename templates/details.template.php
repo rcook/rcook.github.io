@@ -34,7 +34,7 @@ $bodyContent = getSection($content, 'body');
 <html>
 <head>
   <meta charset="utf-8">
-  <title><?= sprintf('KB%03d', $metadata['id']) ?></title>
+  <title><?= sprintf('KB%03d', $metadata['id']) ?>&mdash;<?= htmlspecialchars($metadata['title']) ?></title>
   <link rel="stylesheet" href="/static/style/default.css">
   <?= $headContent ?>
 </head>

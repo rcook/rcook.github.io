@@ -1,9 +1,3 @@
 {
-  "title": "Configuring Ubuntu VM in Windows Hyper-V with wi-fi",
-  "resources": {
-    "enter-passphrase.png": "image/png",
-    "security-alert.png": "image/png",
-    "shell.png": "image/png"
-  }
+  "title": "Configuring Ubuntu VM in Windows Hyper-V with wi-fi"
 }
-

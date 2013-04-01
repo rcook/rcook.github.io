@@ -11,12 +11,21 @@
 </head>
 <body>
 <!-- begin:body -->
+<table id="parameters">
+  <tr>
+    <td><label for="image-file-name">Image file name</label></td>
+    <td><input data-kb-role="value" id="image-file-name" name="image-file-name" type="text" value="ubuntu-12.10-server-amd64.iso"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><button id="reset">Reset</button></td>
+  </tr>
+</table>
 <a name="contents"></a>
 <h1 data-contents-role="skip">Contents</h1>
 <div id="contents"></div>
 <h1>Recommendations</h1>
 <ul>
-  <li>Image: <span class="file-path">ubuntu-12.10-server-amd64.iso</span></li>
+  <li>Image: <span class="file-path"><span class="image-file-name">image-file-name</span></span></li>
   <li>Ubuntu machine configuration:
     <ul>
       <li>OpenSSH server</li>
@@ -56,7 +65,7 @@
   <li>Click <em>Next &gt;</em>.</li>
   <li>In <em>Size</em>, enter <span class="user-input">30</span> and click <em>Next &gt;</em>.</li>
   <li>Select <em>Install an operating system from a boot CD/DVD-ROM</em>.</li>
-  <li>Select <em>Image file (.iso)</em> and click <em>Browse...</em> to select .iso file.</li>
+  <li>Select <em>Image file (.iso)</em> and click <em>Browse...</em> to select the image file <span class="file-path"><span class="image-file-name">image-file-name</span></span>.</li>
   <li>Click <em>Next &gt;</em>.</li>
   <li>Click <em>Finish</em>.</li>
 </ul>

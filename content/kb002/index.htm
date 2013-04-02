@@ -99,7 +99,7 @@ cd <span class="app-name">app-name</span>/
 #UNTESTED# echo "gem 'therubyracer'" &gt;&gt; Gemfile
 #UNTESTED# bundle install
 </div>
-<h2>Fix up database configuration in <span class="code-inline">database.yml</span></h2>
+<h2>Fix up database configuration in <span class="file-path">database.yml</span></h2>
 Add log-in info created for database into configuration file.
 <h1>Setting up Passenger</h1>
 <h2>Install prerequisites</h2>
@@ -119,16 +119,16 @@ cd ..
 rm -rf passenger/
 rvmsudo passenger-install-apache2-module
 </div>
-<h2>Create file <span class="path">/etc/apache2/mods-available/passenger.load</span> with following content:</h2>
+<h2>Create file <span class="file-path">/etc/apache2/mods-available/passenger.load</span> with following content:</h2>
 <div class="content">
 LoadModule passenger_module /usr/local/rvm/gems/ruby-<span class="ruby-version">ruby-version</span>-p0/gems/passenger-4.0.0.rc5/libout/apache2/mod_passenger.so
 </div>
-<h2>Create file <span class="path">/etc/apache2/mods-available/passenger.conf</span> with following content:</h2>
+<h2>Create file <span class="file-path">/etc/apache2/mods-available/passenger.conf</span> with following content:</h2>
 <div class="content">
 PassengerRoot /usr/local/rvm/gems/ruby-<span class="ruby-version">ruby-version</span>-p0/gems/passenger-4.0.0.rc5
 PassengerRuby /usr/local/rvm/wrappers/ruby-<span class="ruby-version">ruby-version</span>-p0/ruby
 </div>
-<h2>Modify <span class="path">/etc/apache2/apache2.conf</span> by adding following to end</h2>
+<h2>Modify <span class="file-path">/etc/apache2/apache2.conf</span> by adding following to end</h2>
 <div class="content">
 ServerName localhost
 </div>
@@ -137,7 +137,7 @@ ServerName localhost
 sudo a2enmod passenger
 sudo service apache2 restart
 </div>
-<h2>Move the default page and update <span class="path">/etc/apache2/sites-available/default</span> using <a href="http://www.web-l.nl/posts/5-setting-up-a-rails-production-server-part-1">these</a> instructions</h2>
+<h2>Move the default page and update <span class="file-path">/etc/apache2/sites-available/default</span> using <a href="http://www.web-l.nl/posts/5-setting-up-a-rails-production-server-part-1">these</a> instructions</h2>
 <div class="code-block">
 mkdir /var/www/default
 mv /var/www/index.html /var/www/default/index.html
@@ -156,7 +156,7 @@ bundle exec rake db:migrate RAILS_ENV=production
 bundle exec rake assets:precompile
 touch /var/www/<span class="app-name">app-name</span>/tmp/restart.txt
 </div>
-<h2>Log back in as regular user and configure virtual host <span class="path">/etc/apache2/sites-available/<span class="app-name">app-name</span></span></h2>
+<h2>Log back in as regular user and configure virtual host <span class="file-path">/etc/apache2/sites-available/<span class="app-name">app-name</span></span></h2>
 <div class="content">
 &lt;VirtualHost _default_:80&gt;
   # ServerName www.example.com # Commented out for default

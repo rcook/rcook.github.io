@@ -19,7 +19,11 @@
 </tr>
 <tr>
   <td><label for="user-name">User name</label></td>
-  <td><input data-kb-role="value" id="user-name" name="user-name" type="text" value="user-name"></td>
+  <td><input data-kb-role="value" id="user-name" name="user-name" type="text" value="username"></td>
+</tr>
+<tr>
+  <td><label for="deployment-user-name">Deployment user name</label></td>
+  <td><input data-kb-role="value" id="deployment-user-name" name="deployment-user-name" type="text" value="deploy"></td>
 </tr>
 <tr>
   <td><label for="ruby-version">Ruby version</label></td>
@@ -70,11 +74,11 @@ sudo bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/ma
 </div>
 <h2>Set up users and groups</h2>
 <div class="code-block">
-sudo adduser deploy
-sudo adduser deploy rvm
-sudo adduser <span class="user-name">user-name</span> deploy
+sudo adduser <span class="deployment-user-name">deployment-user-name</span>
+sudo adduser <span class="deployment-user-name">deployment-user-name</span> rvm
+sudo adduser <span class="user-name">user-name</span> <span class="deployment-user-name">deployment-user-name</span>
 sudo adduser <span class="user-name">user-name</span> rvm
-sudo chown -R deploy:deploy /var/www
+sudo chown -R <span class="deployment-user-name">deployment-user-name</span>:<span class="deployment-user-name">deployment-user-name</span> /var/www
 sudo chmod g+w /var/www
 </div>
 <h2>Log out and in again and then install Ruby and other bits</h2>
@@ -138,12 +142,12 @@ sudo service apache2 restart
 mkdir /var/www/default
 mv /var/www/index.html /var/www/default/index.html
 </div>
-<h1>Fix <span class="code-inline">deploy</span>'s access to web</h1>
+<h1>Fix <span class="code-inline"><span class="deployment-user-name">deployment-user-name</span></span>'s access to web</h1>
 <div class="code-block">
-sudo chown -R deploy:deploy /var/www
+sudo chown -R <span class="deployment-user-name">deployment-user-name</span>:<span class="deployment-user-name">deployment-user-name</span> /var/www
 </div>
 <h1>Deployment of app</h1>
-<h2>Log in as deploy and simulate deployment/migration</h2>
+<h2>Log in as <span class="code-inline"><span class="deployment-user-name">deployment-user-name</span></span> and simulate deployment/migration</h2>
 <div class="code-block">
 cd /var/www/<span class="app-name">app-name</span>/
 rvm use <span class="ruby-version">ruby-version</span>-p0 --default

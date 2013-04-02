@@ -13,8 +13,8 @@
 <!-- begin:body -->
 <table id="parameters">
   <tr>
-    <td><label for="image-file-name">Image file name</label></td>
-    <td><input data-kb-role="value" id="image-file-name" name="image-file-name" type="text" value="ubuntu-12.10-server-amd64.iso"></td>
+    <td><label for="app-name">Application name</label></td>
+    <td><input data-kb-role="value" id="app-name" name="app-name" type="text" value="myrailsapp"></td>
   </tr>
   <tr>
     <td><label for="root-password">Root password</label></td>
@@ -81,18 +81,18 @@ mysql -u root -p
 </div>
 And enter the following into the MySQL shell:
 <div class="code-block">
-CREATE DATABASE ahanalytics_development;
-GRANT ALL PRIVILEGES ON ahanalytics_development.* TO ahanalytics@localhost IDENTIFIED BY 'ahanalytics';
+CREATE DATABASE <span class="app-name">app-name</span>_development;
+GRANT ALL PRIVILEGES ON <span class="app-name">app-name</span>_development.* TO <span class="app-name">app-name</span>@localhost IDENTIFIED BY '<span class="app-name">app-name</span>';
 FLUSH PRIVILEGES;
 </div>
 <h3>Deploy a new Rails app</h3>
 <div class="code-block">
-rvm use 2.0.0-p0@ahanalytics --create
-rvm --default use 2.0.0-p0@ahanalytics
+rvm use 2.0.0-p0@<span class="app-name">app-name</span> --create
+rvm --default use 2.0.0-p0@<span class="app-name">app-name</span>
 gem install rails --version 3.2.13
 cd /var/www/
-rails new ahanalytics -d mysql
-cd ahanalytics/
+rails new <span class="app-name">app-name</span> -d mysql
+cd <span class="app-name">app-name</span>/
 #UNTESTED# rails generate scaffold todo name:string finished:boolean
 #UNTESTED# echo "gem 'therubyracer'" &gt;&gt; Gemfile
 #UNTESTED# bundle install
@@ -147,19 +147,19 @@ sudo chown -R deploy:deploy /var/www
 <h2>Deployment of app</h2>
 <h3>Log in as deploy and simulate deployment/migration</h3>
 <div class="code-block">
-cd /var/www/ahanalytics/
+cd /var/www/<span class="app-name">app-name</span>/
 rvm use 2.0.0-p0 --default
 bundle install --deployment --without development test
 bundle exec rake db:migrate RAILS_ENV=production
 bundle exec rake assets:precompile
-touch /var/www/ahanalytics/tmp/restart.txt
+touch /var/www/<span class="app-name">app-name</span>/tmp/restart.txt
 </div>
-<h3>Log back in as regular user and configure virtual host <span class="path">/etc/apache2/sites-available/ahanalytics</span></h3>
+<h3>Log back in as regular user and configure virtual host <span class="path">/etc/apache2/sites-available/<span class="app-name">app-name</span></span></h3>
 <div class="content">
 &lt;VirtualHost _default_:80&gt;
   # ServerName www.example.com # Commented out for default
-  DocumentRoot /var/www/ahanalytics/public/
-  &lt;Directory /var/www/ahanalytics/public/&gt;
+  DocumentRoot /var/www/<span class="app-name">app-name</span>/public/
+  &lt;Directory /var/www/<span class="app-name">app-name</span>/public/&gt;
     AllowOverride all
     Options -MultiViews
   &lt;/Directory&gt;
@@ -167,7 +167,7 @@ touch /var/www/ahanalytics/tmp/restart.txt
 </div>
 <h3>Enable Rails app</h3>
 <div class="code-block">
-sudo a2ensite ahanalytics
+sudo a2ensite <span class="app-name">app-name</span>
 sudo service apache2 reload
 sudo a2dissite default
 </div>

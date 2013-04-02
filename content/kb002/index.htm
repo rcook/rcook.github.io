@@ -26,6 +26,10 @@
   <td><input data-kb-role="value" id="ruby-version" name="ruby-version" type="text" value="2.0.0"></td>
 </tr>
 <tr>
+  <td><label for="rails-version">Rails version</label></td>
+  <td><input data-kb-role="value" id="rails-version" name="rails-version" type="text" value="3.2.13"></td>
+</tr>
+<tr>
   <td colspan="2"><button id="reset">Reset</button></td>
 </tr>
 </table>
@@ -83,7 +87,7 @@ gem install bundler
 <div class="code-block">
 rvm use <span class="ruby-version">ruby-version</span>-p0@<span class="app-name">app-name</span> --create
 rvm --default use <span class="ruby-version">ruby-version</span>-p0@<span class="app-name">app-name</span>
-gem install rails --version 3.2.13
+gem install rails --version <span class="rails-version">rails-version</span>
 cd /var/www/
 rails new <span class="app-name">app-name</span> -d mysql
 cd <span class="app-name">app-name</span>/

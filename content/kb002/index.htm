@@ -13,13 +13,17 @@
 <body>
 <!-- begin:body -->
 <table id="parameters">
-  <tr>
-    <td><label for="app-name">Application name</label></td>
-    <td><input data-kb-role="value" id="app-name" name="app-name" type="text" value="myrailsapp"></td>
-  </tr>
-  <tr>
-    <td colspan="2"><button id="reset">Reset</button></td>
-  </tr>
+<tr>
+  <td><label for="app-name">Application name</label></td>
+  <td><input data-kb-role="value" id="app-name" name="app-name" type="text" value="myrailsapp"></td>
+</tr>
+<tr>
+  <td><label for="user-name">User name</label></td>
+  <td><input data-kb-role="value" id="user-name" name="user-name" type="text" value="user-name"></td>
+</tr>
+<tr>
+  <td colspan="2"><button id="reset">Reset</button></td>
+</tr>
 </table>
 <a name="contents"></a>
 <h1 data-contents-role="skip">Contents</h1>
@@ -60,8 +64,8 @@ sudo bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/ma
 <div class="code-block">
 sudo adduser deploy
 sudo adduser deploy rvm
-sudo adduser <em>&lt;your-user-name&gt;</em> deploy
-sudo adduser <em>&lt;your-user-name&gt;</em> rvm
+sudo adduser <span class="user-name">user-name</span> deploy
+sudo adduser <span class="user-name">user-name</span> rvm
 sudo chown -R deploy:deploy /var/www
 sudo chmod g+w /var/www
 </div>

@@ -71,16 +71,6 @@ rvm install 2.0.0
 rvm --default use 2.0.0
 gem install bundler
 </div>
-<h2>Create a development database for the Rails app</h2>
-<div class="code-block">
-mysql -u root -p
-</div>
-And enter the following into the MySQL shell:
-<div class="code-block">
-CREATE DATABASE <span class="app-name">app-name</span>_development;
-GRANT ALL PRIVILEGES ON <span class="app-name">app-name</span>_development.* TO <span class="app-name">app-name</span>@localhost IDENTIFIED BY '<span class="app-name">app-name</span>';
-FLUSH PRIVILEGES;
-</div>
 <h2>Deploy a new Rails app</h2>
 <div class="code-block">
 rvm use 2.0.0-p0@<span class="app-name">app-name</span> --create

@@ -22,6 +22,10 @@
   <td><input data-kb-role="value" id="user-name" name="user-name" type="text" value="user-name"></td>
 </tr>
 <tr>
+  <td><label for="ruby-version">Ruby version</label></td>
+  <td><input data-kb-role="value" id="ruby-version" name="ruby-version" type="text" value="2.0.0"></td>
+</tr>
+<tr>
   <td colspan="2"><button id="reset">Reset</button></td>
 </tr>
 </table>
@@ -71,14 +75,14 @@ sudo chmod g+w /var/www
 </div>
 <h2>Log out and in again and then install Ruby and other bits</h2>
 <div class="code-block">
-rvm install 2.0.0
-rvm --default use 2.0.0
+rvm install <span class="ruby-version">ruby-version</span>
+rvm --default use <span class="ruby-version">ruby-version</span>
 gem install bundler
 </div>
-<h2>Deploy a new Rails app</h2>
+<h2>Create a new Rails app</h2>
 <div class="code-block">
-rvm use 2.0.0-p0@<span class="app-name">app-name</span> --create
-rvm --default use 2.0.0-p0@<span class="app-name">app-name</span>
+rvm use <span class="ruby-version">ruby-version</span>-p0@<span class="app-name">app-name</span> --create
+rvm --default use <span class="ruby-version">ruby-version</span>-p0@<span class="app-name">app-name</span>
 gem install rails --version 3.2.13
 cd /var/www/
 rails new <span class="app-name">app-name</span> -d mysql
@@ -109,12 +113,12 @@ rvmsudo passenger-install-apache2-module
 </div>
 <h2>Create file <span class="path">/etc/apache2/mods-available/passenger.load</span> with following content:</h2>
 <div class="content">
-LoadModule passenger_module /usr/local/rvm/gems/ruby-2.0.0-p0/gems/passenger-4.0.0.rc5/libout/apache2/mod_passenger.so
+LoadModule passenger_module /usr/local/rvm/gems/ruby-<span class="ruby-version">ruby-version</span>-p0/gems/passenger-4.0.0.rc5/libout/apache2/mod_passenger.so
 </div>
 <h2>Create file <span class="path">/etc/apache2/mods-available/passenger.conf</span> with following content:</h2>
 <div class="content">
-PassengerRoot /usr/local/rvm/gems/ruby-2.0.0-p0/gems/passenger-4.0.0.rc5
-PassengerRuby /usr/local/rvm/wrappers/ruby-2.0.0-p0/ruby
+PassengerRoot /usr/local/rvm/gems/ruby-<span class="ruby-version">ruby-version</span>-p0/gems/passenger-4.0.0.rc5
+PassengerRuby /usr/local/rvm/wrappers/ruby-<span class="ruby-version">ruby-version</span>-p0/ruby
 </div>
 <h2>Modify <span class="path">/etc/apache2/apache2.conf</span> by adding following to end</h2>
 <div class="content">
@@ -138,7 +142,7 @@ sudo chown -R deploy:deploy /var/www
 <h2>Log in as deploy and simulate deployment/migration</h2>
 <div class="code-block">
 cd /var/www/<span class="app-name">app-name</span>/
-rvm use 2.0.0-p0 --default
+rvm use <span class="ruby-version">ruby-version</span>-p0 --default
 bundle install --deployment --without development test
 bundle exec rake db:migrate RAILS_ENV=production
 bundle exec rake assets:precompile

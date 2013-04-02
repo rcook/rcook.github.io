@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Configuring Ubuntu VM in Windows Hyper-V with wi-fi</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/static/script/kblib.code.js"></script>
   <script src="/static/script/kblib.contents.js"></script>
   <script src="/static/script/kblib.parameters.js"></script>
   <!-- begin:head -->
@@ -17,10 +18,6 @@
     <td><input data-kb-role="value" id="app-name" name="app-name" type="text" value="myrailsapp"></td>
   </tr>
   <tr>
-    <td><label for="root-password">Root password</label></td>
-    <td><input data-kb-role="value" id="root-password" name="root-password" type="text" value="something-really-complicated"></td>
-  </tr>
-  <tr>
     <td colspan="2"><button id="reset">Reset</button></td>
   </tr>
 </table>
@@ -32,10 +29,6 @@
   <li><a href="http://www.web-l.nl/posts/5-setting-up-a-rails-production-server-part-1">http://www.web-l.nl/posts/5-setting-up-a-rails-production-server-part-1</a></li>
 </ul>
 <h1>Initial setup</h1>
-<h2>Obtain IP address of virtual machine and use this to create Windows host entry</h2>
-<div class="code-block">
-ifconfig
-</div>
 <h2>Ensure local package repository and packages are up to date</h2>
 <div class="code-block">
 sudo apt-get update
@@ -55,7 +48,8 @@ sudo apt-get install mysql-server mysql-client
 sudo apt-get install bash patch bzip2 git-core
 sudo apt-get install openssl
 sudo apt-get install libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev
-sudo apt-get install autoconf libc6-dev libgdbm-dev ncurses-dev automake libtool bison subversion
+sudo apt-get install autoconf libc6-dev libgdbm-dev
+sudo apt-get install ncurses-dev automake libtool bison subversion
 sudo apt-get install pkg-config libffi-dev nodejs
 </div>
 <h2>Install RVM</h2>

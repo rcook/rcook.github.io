@@ -1,4 +1,24 @@
   $(function () {
+    var createCustomizedLink = function () {
+      var queryString = "";
+      $("input[data-kb-role=value]").each(function () {
+        var $input = $(this);
+        var id = $input.attr("id");
+        var value = $input.val();
+        if (queryString.length > 0) {
+          queryString += "&";
+        }
+        queryString += encodeURIComponent(id) + "=" + encodeURIComponent(value);
+      });
+      if (queryString.length > 0) {
+        queryString = "?" + queryString;
+      }
+
+      var baseUri = window.location.href.split("?")[0];
+      var result = baseUri + queryString;
+      return result;
+    };
+
     var populateParametersFromQueryString = function () {
       var queryStringParameters = KBLib.Utils.parseQueryString(location.search);
       $("input[data-kb-role=value]").each(function () {
@@ -33,9 +53,11 @@
     var updateControls = function () {
       if (isDirty()) {
         $("#reset").removeAttr("disabled");
+        $("#link").removeAttr("disabled");
       }
       else {
         $("#reset").attr("disabled", "disabled");
+        $("#link").attr("disabled", "disabled");
       }
     };
 
@@ -58,6 +80,11 @@
         doValueUpdate($input);
         updateControls();
       });
+    });
+
+    $("#link").click(function () {
+      var link = createCustomizedLink();
+      $("<a href=\"" + link + "\">" + link + "</a>").dialog();
     });
 
     updateControls();

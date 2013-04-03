@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_URI'] === '/') {
   die;
 }
 
-if (preg_match('/^\/kb(?P<id>\d+)\/$/', $_SERVER['REQUEST_URI'], $matches) === 1) {
+if (preg_match('/^\/kb(?P<id>\d+)\/(\?.*)?$/', $_SERVER['REQUEST_URI'], $matches) === 1) {
   $id = (int)$matches['id'];
   require realpath(__DIR__ . '/../templates/details.template.php');
   die;

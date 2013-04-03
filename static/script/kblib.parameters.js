@@ -1,4 +1,16 @@
   $(function () {
+    var populateParametersFromQueryString = function () {
+      var queryStringParameters = KBLib.Utils.parseQueryString(location.search);
+      $("input[data-kb-role=value]").each(function () {
+        var $input = $(this);
+        var id = $input.attr("id");
+        var queryStringValue = queryStringParameters[id];
+        if (queryStringValue !== undefined) {
+          $input.val(queryStringValue);
+        }
+      });
+    };
+
     var doValueUpdate = function ($input) {
       var id = $input.attr("id");
       var value = $input.val();
@@ -26,6 +38,8 @@
         $("#reset").attr("disabled", "disabled");
       }
     };
+
+    populateParametersFromQueryString();
 
     $("input[data-kb-role=value]").each(function () {
       var $input = $(this);

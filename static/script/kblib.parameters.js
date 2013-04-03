@@ -84,7 +84,10 @@
 
     $("#link").click(function () {
       var link = createCustomizedLink();
-      $("<a href=\"" + link + "\">" + link + "</a>").dialog();
+      $("<div class=\"kb-dialog\"><p>Copy and paste the following link and e-mail it to your friends:</p><p><a href=\"" + link + "\">" + link + "</a></p></div>").dialog({
+        title: "Customized link",
+        width: 500
+      });
     });
 
     updateControls();

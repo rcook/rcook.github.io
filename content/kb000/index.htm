@@ -7,39 +7,20 @@
   <script src="/static/script/kblib.contents.js"></script>
   <script src="/static/script/kblib.parameters.js"></script>
   <!-- begin:head -->
+  <script>
+  var Parameters = [
+    {name: "user-name", fullName: "User name", defaultValue: "username"},
+    {name: "host-fqdn", fullName: "Fully-qualified domain name of host", defaultValue: "myhost.com"},
+    {name: "host-name", fullName: "Host name", defaultValue: "myhostname"},
+    {name: "putty-installation-directory", fullName: "PuTTY installation directory", defaultValue: "%USERPROFILE%\\PuTTY"},
+    {name: "filezilla-installation-directory", fullName: "FileZilla installation directory", defaultValue: "%USERPROFILE%\\FileZilla-3.5.3"}
+  ];
+  </script>
   <!-- end:head -->
 </head>
 <body>
 <!-- begin:body -->
-<!-- TODO: Generate this dynamically -->
-<table id="parameters">
-<tr>
-  <td><label for="user-name">User name</label></td>
-  <td><input data-kb-role="value" id="user-name" name="user-name" type="text" value="username"></td>
-</tr>
-<tr>
-  <td><label for="host-fqdn">Fully-qualified domain name of host</label></td>
-  <td><input data-kb-role="value" id="host-fqdn" name="host-fqdn" type="text" value="myhost.com"></td>
-</tr>
-<tr>
-  <td><label for="host-name">Host name</label></td>
-  <td><input data-kb-role="value" id="host-name" name="host-name" type="text" value="myhostname"></td>
-</tr>
-<tr>
-  <td><label for="putty-installation-directory">PuTTY installation directory</label></td>
-  <td><input data-kb-role="value" id="putty-installation-directory" name="putty-installation-directory" type="text" value="%USERPROFILE%\PuTTY"></td>
-</tr>
-<tr>
-  <td><label for="filezilla-installation-directory">FileZilla installation directory</label></td>
-  <td><input data-kb-role="value" id="filezilla-installation-directory" name="filezilla-installation-directory" type="text" value="%USERPROFILE%\FileZilla-3.5.3"></td>
-</tr>
-<tr>
-  <td colspan="2">
-    <button id="reset">Reset</button>
-    <button id="link">Link</button>
-  </td>
-</tr>
-</table>
+<div id="parameters-container"></div>
 <a name="contents"></a>
 <h1 data-contents-role="skip">Contents</h1>
 <div id="contents"></div>

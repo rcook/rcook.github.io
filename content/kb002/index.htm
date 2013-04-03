@@ -8,35 +8,20 @@
   <script src="/static/script/kblib.contents.js"></script>
   <script src="/static/script/kblib.parameters.js"></script>
   <!-- begin:head -->
+  <script>
+  var Parameters = [
+    {name: "app-name", fullName: "Application name", defaultValue: "myrailsapp"},
+    {name: "user-name", fullName: "User name", defaultValue: "username"},
+    {name: "deployment-user-name", fullName: "Deployment user name", defaultValue: "deployment"},
+    {name: "ruby-version", fullName: "Ruby version", defaultValue: "2.0.0"},
+    {name: "rails-version", fullName: "Rails version", defaultValue: "3.2.13"}
+  ];
+  </script>
   <!-- end:head -->
 </head>
 <body>
 <!-- begin:body -->
-<table id="parameters">
-<tr>
-  <td><label for="app-name">Application name</label></td>
-  <td><input data-kb-role="value" id="app-name" name="app-name" type="text" value="myrailsapp"></td>
-</tr>
-<tr>
-  <td><label for="user-name">User name</label></td>
-  <td><input data-kb-role="value" id="user-name" name="user-name" type="text" value="username"></td>
-</tr>
-<tr>
-  <td><label for="deployment-user-name">Deployment user name</label></td>
-  <td><input data-kb-role="value" id="deployment-user-name" name="deployment-user-name" type="text" value="deployment"></td>
-</tr>
-<tr>
-  <td><label for="ruby-version">Ruby version</label></td>
-  <td><input data-kb-role="value" id="ruby-version" name="ruby-version" type="text" value="2.0.0"></td>
-</tr>
-<tr>
-  <td><label for="rails-version">Rails version</label></td>
-  <td><input data-kb-role="value" id="rails-version" name="rails-version" type="text" value="3.2.13"></td>
-</tr>
-<tr>
-  <td colspan="2"><button id="reset">Reset</button></td>
-</tr>
-</table>
+<div id="parameters-container"></div>
 <a name="contents"></a>
 <h1 data-contents-role="skip">Contents</h1>
 <div id="contents"></div>

@@ -53,11 +53,11 @@
     var updateControls = function () {
       if (isDirty()) {
         $("#reset").removeAttr("disabled");
-        $("#link").removeAttr("disabled");
+        //$("#link").removeAttr("disabled");
       }
       else {
         $("#reset").attr("disabled", "disabled");
-        $("#link").attr("disabled", "disabled");
+        //$("#link").attr("disabled", "disabled");
       }
     };
 

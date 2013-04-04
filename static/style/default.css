@@ -11,6 +11,12 @@ h1, h2, h3 {
   font-family: Segoe UI Light, Trebuchet, Arial, Sans-Serif;
   font-weight: bold;
 }
+#footer {
+  margin-top: 50px;
+  padding: 5px;
+  border-top: 1px solid Silver;
+  font-size: 95%;
+}
 #parameters {
   float: right;
   background-color: Silver;

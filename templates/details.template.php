@@ -53,6 +53,9 @@ $bodyContent = getSection($content, 'body');
   <li><a href="/">Return to KnowledgeBase index</a></li>
 </ul>
 <?= $bodyContent ?>
+<ul id="footer">
+  <li><a href="/">Return to KnowledgeBase index</a></li>
+</ul>
 </body>
 </html>
 

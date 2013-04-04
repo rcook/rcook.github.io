@@ -196,44 +196,38 @@
 </ol>
 <h1>Appendix</h1>
 <p>
-  A few words of explanation about why I asked you to create two shortcuts is in order:
+  A few words of explanation about why I asked you to create two shortcuts are in order:
 </p>
 <ul>
-  <li>Pageant is the SSH authentication agent: it takes your .ppk file (which is an encrypted
-  version of your private key) and decrypts it into memory after you supply the correct passphrase
-  (this is when the "Startup" shortcut runs). This program continues to run in memory, so that
-  you don't have to keep typing in your passphrase repeatedly for the lifetime of your Windows
-  session. Whenever you log out (by logging out or by restarting or shutting down Windows), the
-  decrypted private key is unloaded from memory and you must re-enter the passphrase the next
-  time you log in. This provides a measure of local security for your private key while
-  minimizing the number of times you are forced to enter your passphrase: if you regularly log
-  out of your laptop and somebody steals your machine, then your private key is not compromised
-  and the thief cannot log into your web server and start doing bad things to it. Since the
-  passphrase is for local decryption of your encrypted private key file, you never need to
-  share it with anybody (not even me), since I only need the public key (this is the "ssh-rsa"
-  value I asked you to copy and paste from the key generator program) in order to securely
-  identify you on my server. Passwordless authentication using public key cryptography is far
-  more secure than password-based authentication which is why I have disabled the latter on my
-  server. I am a bit of a security fanatic as you may have noticed (and it sounds like you might
-  be too!). The Pageant command line I provided for you means "run Pageant and decrypt the
-  specified private key file (james.<span class="host-fqdn">host-fqdn</span>.ppk) into memory based on the user
-  (that's you!) supplying the correct passphrase".</li>
+  <li>Pageant is the SSH authentication agent: it takes your <span class="file-path">.ppk</span>
+  file (which is an encrypted version of your private key) and decrypts it into memory after you
+  supply the correct passphrase (this is when the "Startup" shortcut runs). This program continues
+  to run in memory, so that you don't have to keep typing in your passphrase repeatedly for the
+  lifetime of your Windows session. Whenever you log out (by logging out or by restarting or
+  shutting down Windows), the decrypted private key is unloaded from memory and you must re-enter
+  the passphrase the next time you log in. This provides a measure of local security for your
+  private key while minimizing the number of times you are forced to enter your passphrase: if you
+  regularly log out of your laptop and somebody steals your machine, then your private key is not
+  compromised and the thief cannot log into your web server and start doing bad things to it. Since
+  the passphrase is for local decryption of your encrypted private key file, you never need to
+  share it with anybody (not even me), since I only need the public key (this is the
+  <span class="user-input">ssh-rsa</span> value I asked you to copy and paste from the key
+  generator program) in order to securely identify you on my server. Passwordless authentication
+  using public key cryptography is far more secure than password-based authentication which is why
+  it is disabled on the server. I am a bit of a security fanatic as you may have noticed (and it
+  sounds like you might be too!). The Pageant command line I provided for you means "run Pageant
+  and decrypt the specified private key file (<span class="file-path"><span class="user-name">user-name</span>.<span class="host-fqdn">host-fqdn</span>.ppk</span>)
+  into memory based on the user (that's you!) supplying the correct passphrase".</li>
   <li>PuTTY is the SSH shell program itself: this establishes a secure connection from your client
   machine to the server and runs the default shell on the server. The command line I provided for
-  you means "establish an SSH connection for the user <span class="user-name">user-name</span> on the host <span class="host-fqdn">host-fqdn</span> using the
-  identity information in the private key file james.<span class="host-fqdn">host-fqdn</span>.ppk". If PuTTY detects that
-  the Pageant agent is running with a decrypted version of james.<span class="host-fqdn">host-fqdn</span> in memory it will
-  use that private key information to authenticate with the server and not require you to re-enter
-  the passphrase. If Pageant is not running at this point, PuTTY will prompt you for the passphrase
-  and decrypt the private key file itself.</li>
+  you means "establish an SSH connection for the user <em><span class="user-name">user-name</span></em>
+  on the host <em><span class="host-fqdn">host-fqdn</span></em> using the identity information in
+  the private key file <span class="file-path"><span class="user-name">user-name</span>.<span class="host-fqdn">host-fqdn</span>.ppk</span>". If PuTTY detects that
+  the Pageant agent is running with a decrypted version of <span class="file-path"><span class="user-name">user-name</span>.<span class="host-fqdn">host-fqdn</span>.ppk</span> in memory it will use that private key
+  information to authenticate with the server and not require you to re-enter the passphrase. If
+  Pageant is not running at this point, PuTTY will prompt you for the passphrase and decrypt the
+  private key file itself.</li>
 </ul>
-<p>
-  Given this explanation, you might now understand why the name of the private key file given in my
-  instructions was <span class="user-name">user-name</span>.<span class="host-fqdn">host-fqdn</span>.ppk and not james.<span class="host-fqdn">host-fqdn</span>.ppk - this is the identity
-  information for user <span class="user-name">user-name</span> on the host <span class="host-fqdn">host-fqdn</span> and is unrelated to the Google Apps account
-  I created for you. Anyway, the file name does not matter to Pageant or PuTTY (or my server for
-  that matter) as long as you are consistent.
-</p>
 <!-- end:body -->
 </body>
 </html>

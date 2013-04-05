@@ -43,6 +43,7 @@ $bodyContent = getSection($content, 'body');
   <script src="/static/script/kblib.contents.js"></script>
   <script src="/static/script/kblib.parameters.js"></script>
   <script src="/static/script/kblib.utils.js"></script>
+  <script src="/static/script/kblib.setup.js"></script>
   <?= $headContent ?>
 </head>
 <body>

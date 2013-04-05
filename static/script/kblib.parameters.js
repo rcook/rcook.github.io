@@ -1,4 +1,8 @@
-  $(function () {
+var KBLib = KBLib || {};
+
+KBLib.Parameters = {}
+
+KBLib.Parameters.setUp = function () {
     var createCustomizedLink = function () {
       var queryString = "";
       $("input[data-kb-role=value]").each(function () {
@@ -107,5 +111,5 @@
 
       updateControls();
     }
-  });
+};
 

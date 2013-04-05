@@ -1,4 +1,8 @@
-$(function () {
+var KBLib = KBLib || {};
+
+KBLib.Code = {}
+
+KBLib.Code.setUp = function () {
   var trimWhitespace = function (str) {
     return str.replace(/^\s\s*/, "").replace(/\s\s*$/, "");
   };
@@ -17,5 +21,5 @@ $(function () {
     var $item = $(item);
     $item.html(trimWhitespace($item.html()));
   });
-});
+};
 

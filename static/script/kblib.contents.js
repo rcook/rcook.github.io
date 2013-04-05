@@ -1,4 +1,8 @@
-  $(function () {
+var KBLib = KBLib || {};
+
+KBLib.Contents = {}
+
+KBLib.Contents.setUp = function () {
     var buildContents = function () {
       var currentSection = undefined;
       var sections = [];
@@ -46,5 +50,5 @@
     };
 
     buildContents();
-  });
+};
 

@@ -12,7 +12,7 @@ KBLib.Contents.setUp = function () {
 
         if ($element.attr("data-contents-role") != "skip") {
           if (nodeName == "h1") {
-            currentSection = {text: $element.text(), subsections: []};
+            currentSection = {html: $element.html(), subsections: []};
             sections.push(currentSection);
             $element
               .prepend("<a name=\"section" + sections.length + "\"></a><span class=\"section-index\">" + sections.length + ".</span> ")
@@ -20,7 +20,7 @@ KBLib.Contents.setUp = function () {
           }
           else if (nodeName == "h2") {
             if (typeof currentSection != "undefined") {
-              var subsection = {text: $element.text()};
+              var subsection = {html: $element.html()};
               currentSection.subsections.push(subsection);
               $element
                 .prepend("<a name=\"section" + sections.length + "-" + currentSection.subsections.length + "\"></a><span class=\"section-index\">" + sections.length + "." + currentSection.subsections.length + "</span> ")
@@ -34,12 +34,12 @@ KBLib.Contents.setUp = function () {
         var html = "<ol>";
         for (var i = 0; i < sections.length; ++i) {
           var section = sections[i];
-          html += "<li><a href=\"#section" + (i + 1) + "\">" + section.text + "</a></li>";
+          html += "<li><a href=\"#section" + (i + 1) + "\">" + section.html + "</a></li>";
           if (section.subsections.length > 0) {
             html += "<ol>";
             for (var j = 0; j < section.subsections.length; ++j) {
               var subsection = section.subsections[j];
-              html += "<li><a href=\"#section" + (i + 1) + "-" + (j + 1) + "\">" + subsection.text + "</a></li>";
+              html += "<li><a href=\"#section" + (i + 1) + "-" + (j + 1) + "\">" + subsection.html + "</a></li>";
             }
             html += "</ol>";
           }

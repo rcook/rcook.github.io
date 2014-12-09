@@ -1,4 +1,4 @@
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <div class="post-short">
   <h4>
     <a href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
@@ -11,4 +11,41 @@
   {% endcomment %}
 </div>
 {% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous">&laquo;</a>
+  {% else %}
+  <span class="previous">&laquo;</span>
+  {% endif %}
+
+  {% capture start %}{{ paginator.page | minus: 3 }}{% endcapture %}
+  {% if paginator.page == 1 %}
+  <em>first</em>
+  {% else %}
+  <a href="/">first</a>
+  {% endif %}
+  &hellip;
+  {% for page_number in (1..paginator.total_pages) limit: 5 offset: start %}
+    {% if page_number == paginator.page %}
+    <em>{{ page_number }}</em>
+    {% elsif page_number == 1 %}
+    <a href="/">{{ page_number }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | replace: ':num', page_number }}">{{ page_number }}</a>
+    {% endif %}
+  {% endfor %}
+  &hellip;
+  {% if paginator.page == paginator.total_pages %}
+  <em>last</em>
+  {% else %}
+  <a href="{{ site.paginate_path | replace: ':num', paginator.total_pages }}">last</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next">&raquo;</a>
+  {% else %}
+  <span class="next">&raquo;</span>
+  {% endif %}
+</div>
 

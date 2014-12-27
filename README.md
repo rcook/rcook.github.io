@@ -1,26 +1,16 @@
-[Noita][demo]
-==================
+# Richard's coding blog
 
-[![Build Status][ci-badge]][ci]
+## Acknowledgements
 
-[Jekyll][jekyll] theme built with [Foundation][foundation]. Check out the [demo site][demo] with description and tests.
+* [Noita][1]
+* [Michael Lanyon's blog][2]
 
-## Installation Instructions
+## Licence
 
-Foundation is a submodule of this project so if you want to install `jekyll-noita` on your local machine follow these steps.
+All content under `_posts` and `assets` is copyright Richard Cook and cannot be
+reused without explicit permission. All other content is released under the MIT
+licence and is copyright of its respective owners.
 
-```bash
-git clone git@github.com:penibelst/jekyll-noita.git
-cd jekyll-noita
-git submodule init
-git submodule update
-jekyll serve
-```
+[1]: https://github.com/penibelst/jekyll-noita
+[2]: http://blog.lanyonm.org/
 
-You will find your blog at `http://0.0.0.0:4000/`
-
-[ci]: https://travis-ci.org/penibelst/jekyll-noita
-[ci-badge]: https://travis-ci.org/penibelst/jekyll-noita.svg?branch=gh-pages
-[demo]: http://noita.penibelst.de/
-[foundation]: http://foundation.zurb.com/
-[jekyll]: http://jekyllrb.com/

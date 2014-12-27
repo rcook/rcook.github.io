@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require 'jekyll-import'
+require 'dotenv'
+
+Dotenv.load
+APP_DIR = File.expand_path('../..', __FILE__)
+Dir.chdir(APP_DIR)
+
+JekyllImport::Importers::Drupal6.run({
+  'dbname' => ENV['DB_NAME'],
+  'user' => ENV['DB_USER'],
+  'password' => ENV['DB_PASSWORD'],
+  'host' => ENV['DB_HOST'],
+  'prefix' => ENV['DB_PREFIX']
+})
+

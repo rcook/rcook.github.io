@@ -9,7 +9,7 @@ tags:
 ---
 This implements the [Mercurial standard branching strategy](http://mercurial.selenic.com/wiki/StandardBranching):
 
-[gist:6064683]
+{% gist 6064683 %}
 
 Eventually, I intend to have this script run automatically as part of a hook.
 

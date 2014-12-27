@@ -5,5 +5,5 @@ created: 2010-12-10 10:09:13 -0800
 tags:
 - JavaScript
 ---
-[gist:8486316]
+{% gist 8486316 %}
 

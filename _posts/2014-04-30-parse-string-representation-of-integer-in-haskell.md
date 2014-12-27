@@ -8,5 +8,5 @@ tags:
 ---
 Here it is...
 
-[gist:620576d9d290aab8c215]
+{% gist 620576d9d290aab8c215 %}
 

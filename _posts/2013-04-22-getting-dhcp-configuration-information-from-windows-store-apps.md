@@ -13,10 +13,10 @@ Fortunately, `DhcpRequestParams` and related Win32 APIs are part of the Windows 
 
 Here are Gists of the relevant p/invoke and interop declarations you'll need in order to call these functions from your C# programs:
 
-* Native methods: [gist:8603834:NativeMethods.cs]
-* `DHCPCAPI_IP_ADDRESS`: [gist:8603834:DHCPCAPI_IP_ADDRESS.cs]
-* `DHCPCAPI_PARAMS`: [gist:8603834:DHCPCAPI_PARAMS.cs]
-* `DHCPCAPI_PARAMS_ARRAY`: [gist:8603834:DHCPCAPI_PARAMS_ARRAY.cs]
-* `DHCPCAPI_REQUEST`: [gist:8603834:DHCPCAPI_REQUEST.cs]
-* `OPTION`: [gist:8603834:OPTION.cs]
+* Native methods: {% gist 8603834 NativeMethods.cs %}
+* `DHCPCAPI_IP_ADDRESS`: {% gist 8603834 DHCPCAPI_IP_ADDRESS.cs %}
+* `DHCPCAPI_PARAMS`: {% gist 8603834 DHCPCAPI_PARAMS.cs %}
+* `DHCPCAPI_PARAMS_ARRAY`: {% gist 8603834 DHCPCAPI_PARAMS_ARRAY.cs %}
+* `DHCPCAPI_REQUEST`: {% gist 8603834 DHCPCAPI_REQUEST.cs %}
+* `OPTION`: {% gist 8603834 OPTION.cs %}
 

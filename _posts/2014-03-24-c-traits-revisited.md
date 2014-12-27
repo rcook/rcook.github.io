@@ -8,7 +8,7 @@ tags:
 ---
 My [previous entry](http://www.clopenset.com/content/traits-c) on traits in C++ was a reasonable start but it missed one important corner case - namely classic C++ enums - and adopted the nonstandard approach of parameterizing the algorithm class on the traits type as opposed to the operand class. Here is a revised sample that addresses these two points:
 
-[gist:9746054]
+{% gist 9746054 %}
 
 # Traits with enums
 

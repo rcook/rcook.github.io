@@ -9,5 +9,5 @@ tags:
 ---
 What the?
 
-[gist:3f4e02543c09e24e4b0e]
+{% gist 3f4e02543c09e24e4b0e %}
 

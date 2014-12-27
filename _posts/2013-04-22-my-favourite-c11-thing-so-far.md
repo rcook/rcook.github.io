@@ -8,7 +8,7 @@ tags:
 ---
 See http://akrzemi1.wordpress.com/2012/03/19/meta-functions-in-c11/ for more details:
 
-[gist:8486183]
+{% gist 8486183 %}
 
 This kind of thing gets me excited!
 

@@ -1,0 +1,11 @@
+---
+# Default stylesheet
+---
+
+// Gist line number height fix
+// See http://www.enigmaticape.com/blog/embedded-gist-line-height-mismatch-fix
+.gist-file .line, .gist-file .line-number {
+  font-size: 14px !important;
+  line-height: 25px !important;
+}
+

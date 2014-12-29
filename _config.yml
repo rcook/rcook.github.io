@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: /blog/:year/:title/
-relative_permalinks: true
+relative_permalinks: false
 exclude:
   - CNAME
   - Gemfile

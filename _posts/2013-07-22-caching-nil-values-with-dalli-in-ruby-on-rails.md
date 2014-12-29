@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Caching nil values with Dalli in Ruby on Rails
-created: 1374558878
+created: 2013-07-22 22:54:38 -0700
 categories:
 - !binary |-
   cnVieQ==

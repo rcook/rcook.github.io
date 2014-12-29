@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ductile# and .NET Compiler Platform
-created: 1414299120
+created: 2014-10-25 21:52:00 -0700
 categories:
 - !binary |-
   ZHVjdGlsZQ==

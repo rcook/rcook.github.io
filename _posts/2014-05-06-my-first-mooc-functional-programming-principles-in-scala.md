@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ! 'My first MOOC: "Functional Programming Principles in Scala"'
-created: 1399390777
+created: 2014-05-06 08:39:37 -0700
 categories:
 - !binary |-
   Y291cnNlcmE=

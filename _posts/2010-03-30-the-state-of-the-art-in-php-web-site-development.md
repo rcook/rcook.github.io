@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The state of the art in PHP web site development...
-created: 1270003678
+created: 2010-03-30 19:47:58 -0700
 categories:
 - !binary |-
   d2Vi

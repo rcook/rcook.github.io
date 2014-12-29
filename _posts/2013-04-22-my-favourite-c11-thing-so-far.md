@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My favourite C++11 thing so far!
-created: 1366678727
+created: 2013-04-22 17:58:47 -0700
 categories:
 - !binary |-
   YysrMTE=

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: user_impersonate2 tutorial
-created: 1390015546
+created: 2014-01-17 19:25:46 -0800
 categories:
 - !binary |-
   cnVieQ==

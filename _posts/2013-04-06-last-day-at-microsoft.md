@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Last day at Microsoft
-created: 1365276124
+created: 2013-04-06 12:22:04 -0700
 categories:
 - !binary |-
   bWljcm9zb2Z0

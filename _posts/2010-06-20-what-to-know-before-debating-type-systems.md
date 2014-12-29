@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ! '"What to Know Before Debating Type Systems"'
-created: 1277092904
+created: 2010-06-20 21:01:44 -0700
 categories:
 - !binary |-
   cHJvZ3JhbW1pbmcgbGFuZ3VhZ2Vz

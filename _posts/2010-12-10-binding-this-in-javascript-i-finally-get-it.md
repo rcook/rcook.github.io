@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ! 'Binding "this" in JavaScript: I finally get it!'
-created: 1292004553
+created: 2010-12-10 10:09:13 -0800
 categories:
 - !binary |-
   amF2YXNjcmlwdA==

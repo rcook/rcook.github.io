@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting DHCP configuration information from Windows Store apps
-created: 1366637198
+created: 2013-04-22 06:26:38 -0700
 categories:
 - !binary |-
   d2luZG93cyBzdG9yZQ==

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: You can call me "master"
-created: 1393833600
+created: 2014-03-03 00:00:00 -0800
 categories:
 - !binary |-
   c2NydW0=

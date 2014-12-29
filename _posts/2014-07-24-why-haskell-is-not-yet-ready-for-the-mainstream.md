@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Haskell is not yet ready for the mainstream...
-created: 1406259388
+created: 2014-07-24 20:36:28 -0700
 categories:
 - !binary |-
   aGFza2VsbA==

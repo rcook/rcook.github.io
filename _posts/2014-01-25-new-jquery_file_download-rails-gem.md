@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New jquery_file_download-rails gem
-created: 1390713485
+created: 2014-01-25 21:18:05 -0800
 categories:
 - !binary |-
   cnVieQ==

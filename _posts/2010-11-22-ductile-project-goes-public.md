@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ductile# project goes public
-created: 1290451702
+created: 2010-11-22 10:48:22 -0800
 categories:
 - !binary |-
   bW9ubw==

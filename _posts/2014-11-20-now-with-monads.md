@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Now with monads!
-created: 1416503100
+created: 2014-11-20 09:05:00 -0800
 categories:
 - !binary |-
   aGFza2VsbA==

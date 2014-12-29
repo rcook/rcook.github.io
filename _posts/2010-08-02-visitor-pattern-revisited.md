@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visitor pattern (re)visited
-created: 1280782873
+created: 2010-08-02 14:01:13 -0700
 categories:
 - !binary |-
   ZGV2ZWxvcG1lbnQ=

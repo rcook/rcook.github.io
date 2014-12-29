@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting up e-mail forwarding for your entire domain in Dreamhost
-created: 1281451970
+created: 2010-08-10 07:52:50 -0700
 categories:
 - !binary |-
   ZS1tYWls

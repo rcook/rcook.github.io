@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simulating packet loss with iptables/ipfw
-created: 1290449583
+created: 2010-11-22 10:13:03 -0800
 categories:
 - !binary |-
   bWFjIG9zIHg=

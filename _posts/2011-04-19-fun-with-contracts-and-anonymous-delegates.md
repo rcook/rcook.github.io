@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fun with contracts and anonymous delegates
-created: 1303281600
+created: 2011-04-19 23:40:00 -0700
 categories:
 - !binary |-
   ZnVuY3Rpb25hbCBwcm9ncmFtbWluZw==

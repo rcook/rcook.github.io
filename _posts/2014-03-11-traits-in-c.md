@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Traits in C++
-created: 1394599403
+created: 2014-03-11 21:43:23 -0700
 categories:
 - !binary |-
   ZGVzaWduIHBhdHRlcm5z

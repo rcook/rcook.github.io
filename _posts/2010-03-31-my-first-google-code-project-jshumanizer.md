@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ! 'My first Google Code project: JSHumanizer'
-created: 1270054577
+created: 2010-03-31 09:56:17 -0700
 categories:
 - !binary |-
   bG9jYWxpemF0aW9u

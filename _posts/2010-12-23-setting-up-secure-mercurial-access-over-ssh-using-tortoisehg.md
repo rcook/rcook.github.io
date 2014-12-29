@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting up secure Mercurial access over ssh using TortoiseHg
-created: 1293150160
+created: 2010-12-23 16:22:40 -0800
 categories:
 - !binary |-
   d2luZG93cyB0b29scw==

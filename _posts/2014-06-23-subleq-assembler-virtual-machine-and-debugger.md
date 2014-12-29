@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Subleq assembler, virtual machine and debugger
-created: 1403583413
+created: 2014-06-23 21:16:53 -0700
 categories:
 - !binary |-
   Yysr

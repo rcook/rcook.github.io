@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lanscan is now open source
-created: 1390923329
+created: 2014-01-28 07:35:29 -0800
 categories:
 - !binary |-
   YyM=

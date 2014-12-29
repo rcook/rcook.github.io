@@ -22,3 +22,4 @@ Here are Gists of the relevant p/invoke and interop declarations you'll need in 
 * `DHCPCAPI_PARAMS_ARRAY`: [gist:8603834:DHCPCAPI_PARAMS_ARRAY.cs]
 * `DHCPCAPI_REQUEST`: [gist:8603834:DHCPCAPI_REQUEST.cs]
 * `OPTION`: [gist:8603834:OPTION.cs]
+

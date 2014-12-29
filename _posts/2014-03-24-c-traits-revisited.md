@@ -21,3 +21,4 @@ Note that this problem is solved by "enum classes" in C++11 where the members ar
 # Parameterizing on operand type
 
 Most real-world examples of traits usage in C++ parameterize the algorithm class on the operand type as opposed to the traits type itself. Hence, this updated sample declares `template<typename Tree> class Algorithm` as opposed to `template<typename Traits> class Algorithm` in my original posting.
+

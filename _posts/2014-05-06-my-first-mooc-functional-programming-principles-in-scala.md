@@ -13,3 +13,4 @@ categories:
   aGFza2VsbA==
 ---
 I'm two weeks into [my first MOOC](https://class.coursera.org/progfun-004) at Coursera. So far, I'm enjoying it. Martin Odersky (designer of Scala) is an engaging instructor. The programming assignments have been interesting so far. For an extra challenge, I've been completing the assignments in Haskell in parallel with Scala.
+

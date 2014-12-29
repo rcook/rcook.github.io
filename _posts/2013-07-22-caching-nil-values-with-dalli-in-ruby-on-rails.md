@@ -11,3 +11,4 @@ categories:
 Here's a monkeypatch for `ActiveSupport::Cache::DalliStore` to allow caching of nil using null object pattern:
 
 [gist:6057142]
+

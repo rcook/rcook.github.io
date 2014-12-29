@@ -18,3 +18,4 @@ sudo ./simulate-packet-loss 0.5
 </code>
 
 This script is presented as-is. No guarantees implicit or explicit etc. If you have customized firewall settings I would heartily advise you to save them to a backup file beforehand in case my script trashes your settings permanently.
+

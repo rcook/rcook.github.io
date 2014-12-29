@@ -16,3 +16,4 @@ In a mission to make my app's file download more responsive, I had fun integrati
 The GitHub project also contains basic instructions for setting up the gem and the script within a Rails app.
 
 I hope it's useful to someone.
+

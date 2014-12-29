@@ -17,3 +17,4 @@ Here's a partial list of various Ruby-related projects I maintain on GitHub:
 * https://github.com/rcook/attr_similar
 * https://github.com/rcook/rgpg
 * https://github.com/rcook/rclopts
+

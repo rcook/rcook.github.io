@@ -15,3 +15,4 @@ I officially blew my own mind today. I discovered `System.Diagnostics.Contracts`
 [gist:8486222]
 
 The call to `Contract.Ensures` is simply breathtaking!
+

@@ -9,3 +9,4 @@ categories:
 <p>
 <a href="http://wedding.katyandrichard.com/">Gettin' hitched...</a>
 </p>
+

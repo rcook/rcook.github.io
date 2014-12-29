@@ -22,3 +22,4 @@ categories:
 <li>It's fully localizable and uses UTF-8 throughout</li>
 <li>As a proof of concept it's (poorly) translated into <a href="http://katyandrichard.com/fr/">French</a> and <a href="http://katyandrichard.com/de/">German</a> as well as <a href="http://katyandrichard.com/en/">English</a></li>
 </ul>
+

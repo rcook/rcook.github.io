@@ -28,3 +28,4 @@ Oh, and it still doesn't work. I'm thwarted by the following:
 yaml-0.8.8.2.o)`
 
 Turns out that GHC 7.8.2 is busted (see [here](https://ghc.haskell.org/trac/ghc/ticket/9080), [here](https://ghc.haskell.org/trac/ghc/ticket/9116) and [here](https://ghc.haskell.org/trac/ghc/ticket/9141)). I'll let you know if I figure anything out.
+

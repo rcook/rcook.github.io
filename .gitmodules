@@ -43,3 +43,6 @@
 [submodule "_posts/gist-e2536672f7afdf6a4660"]
 	path = _posts/gist-e2536672f7afdf6a4660
 	url = https://gist.github.com/e2536672f7afdf6a4660.git
+[submodule "_posts/gist-5c151c7c0098244191fb"]
+	path = _posts/gist-5c151c7c0098244191fb
+	url = https://gist.github.com/5c151c7c0098244191fb.git

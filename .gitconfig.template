@@ -1,0 +1,3 @@
+[url "git@gist.github.com:/"]
+  pushInsteadOf = https://gist.github.com/
+

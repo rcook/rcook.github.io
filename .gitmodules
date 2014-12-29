@@ -1,3 +1,42 @@
 [submodule "noita/foundation"]
 	path = noita/foundation
 	url = https://github.com/components/foundation
+[submodule "_posts/gist-174e1a408654794ce745"]
+	path = _posts/gist-174e1a408654794ce745
+	url = https://gist.github.com/174e1a408654794ce745.git
+[submodule "_posts/gist-3f4e02543c09e24e4b0e"]
+	path = _posts/gist-3f4e02543c09e24e4b0e
+	url = https://gist.github.com/3f4e02543c09e24e4b0e.git
+[submodule "_posts/gist-6057142"]
+	path = _posts/gist-6057142
+	url = https://gist.github.com/6057142.git
+[submodule "_posts/gist-6064683"]
+	path = _posts/gist-6064683
+	url = https://gist.github.com/6064683.git
+[submodule "_posts/gist-620576d9d290aab8c215"]
+	path = _posts/gist-620576d9d290aab8c215
+	url = https://gist.github.com/620576d9d290aab8c215.git
+[submodule "_posts/gist-8486183"]
+	path = _posts/gist-8486183
+	url = https://gist.github.com/8486183.git
+[submodule "_posts/gist-8486222"]
+	path = _posts/gist-8486222
+	url = https://gist.github.com/8486222.git
+[submodule "_posts/gist-8486316"]
+	path = _posts/gist-8486316
+	url = https://gist.github.com/8486316.git
+[submodule "_posts/gist-8603834"]
+	path = _posts/gist-8603834
+	url = https://gist.github.com/8603834.git
+[submodule "_posts/gist-8748388"]
+	path = _posts/gist-8748388
+	url = https://gist.github.com/8748388.git
+[submodule "_posts/gist-9149401"]
+	path = _posts/gist-9149401
+	url = https://gist.github.com/9149401.git
+[submodule "_posts/gist-9500975"]
+	path = _posts/gist-9500975
+	url = https://gist.github.com/9500975.git
+[submodule "_posts/gist-9746054"]
+	path = _posts/gist-9746054
+	url = https://gist.github.com/9746054.git

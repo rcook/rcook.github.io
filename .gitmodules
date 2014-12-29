@@ -40,3 +40,6 @@
 [submodule "_posts/gist-9746054"]
 	path = _posts/gist-9746054
 	url = https://gist.github.com/9746054.git
+[submodule "_posts/gist-e2536672f7afdf6a4660"]
+	path = _posts/gist-e2536672f7afdf6a4660
+	url = https://gist.github.com/e2536672f7afdf6a4660.git

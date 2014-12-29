@@ -7,11 +7,16 @@ tags:
 - Interop
 - C#
 ---
-I was recently asked via an e-mail from a user of my [Lanscan](http://lanscan.rcook.org/) app how to obtain DHCP information from a Windows Store app.
+I was recently asked via an e-mail from a user of my
+[Lanscan](http://lanscan.rcook.org/) app how to obtain DHCP information from a
+Windows Store app.
 
-Fortunately, `DhcpRequestParams` and related Win32 APIs are part of the Windows Store partition of the Win32 API and so are callable from C#-based Windows Store apps (and probably other places too).
+Fortunately, `DhcpRequestParams` and related Win32 APIs are part of the Windows
+Store partition of the Win32 API and so are callable from C#-based Windows Store
+apps (and probably other places too).
 
-Here are Gists of the relevant p/invoke and interop declarations you'll need in order to call these functions from your C# programs:
+Here are Gists of the relevant p/invoke and interop declarations you'll need in
+order to call these functions from your C# programs:
 
 * Native methods: {% gist 8603834 NativeMethods.cs %}
 * `DHCPCAPI_IP_ADDRESS`: {% gist 8603834 DHCPCAPI_IP_ADDRESS.cs %}

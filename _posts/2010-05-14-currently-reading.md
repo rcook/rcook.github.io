@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Currently reading…
+title: Currently reading...
 created: 2010-05-14 17:23:38 -0700
 tags:
 - Books
 ---
-<ul>
-<li><em>On Liberty</em> by John Stuart Mill</li>
-<li><em>Types and Programming Languages</em> by Benjamin Pierce</li>
-</ul>
+* _On Liberty_ by John Stuart Mill
+* _Types and Programming Languages_ by Benjamin Pierce
 

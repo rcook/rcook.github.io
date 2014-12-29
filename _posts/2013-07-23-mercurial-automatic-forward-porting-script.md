@@ -7,7 +7,8 @@ tags:
 - Ruby on Rails
 - Mercurial
 ---
-This implements the [Mercurial standard branching strategy](http://mercurial.selenic.com/wiki/StandardBranching):
+This implements the [Mercurial standard branching
+strategy](http://mercurial.selenic.com/wiki/StandardBranching):
 
 {% gist 6064683 %}
 

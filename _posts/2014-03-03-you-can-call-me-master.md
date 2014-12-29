@@ -6,5 +6,7 @@ tags:
 - Scrum
 - Projects
 ---
-I got my [Certified ScrumMaster](http://www.scrumalliance.org/certifications/practitioners/certified-scrummaster-(csm)) certification today. Woot!
+I got my [Certified
+ScrumMaster](http://www.scrumalliance.org/certifications/practitioners/certified-scrummaster-(csm))
+certification today. Woot!
 

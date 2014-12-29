@@ -6,7 +6,8 @@ tags:
 - C++11
 - C++
 ---
-See http://akrzemi1.wordpress.com/2012/03/19/meta-functions-in-c11/ for more details:
+See [this](http://akrzemi1.wordpress.com/2012/03/19/meta-functions-in-c11/) for
+more details:
 
 {% gist 8486183 %}
 

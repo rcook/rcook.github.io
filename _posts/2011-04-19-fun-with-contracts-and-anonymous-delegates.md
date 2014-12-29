@@ -7,7 +7,9 @@ tags:
 - Design by contract
 - C#
 ---
-I officially blew my own mind today. I discovered `System.Diagnostics.Contracts` and inline declaration and invocation of anonymous delegates all in the same day...
+I officially blew my own mind today. I discovered `System.Diagnostics.Contracts`
+and inline declaration and invocation of anonymous delegates all in the same
+day...
 
 {% gist 8486222 %}
 

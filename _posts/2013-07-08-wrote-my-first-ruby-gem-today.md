@@ -7,6 +7,6 @@ tags:
 ---
 About time!
 
-* https://rubygems.org/gems/rgpg
-* https://github.com/rcook/rgpg/
+* [https://rubygems.org/gems/rgpg](https://rubygems.org/gems/rgpg)
+* [https://github.com/rcook/rgpg/](https://github.com/rcook/rgpg/)
 

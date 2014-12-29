@@ -65,8 +65,11 @@ layout: compress
   </div>
 
   <div class="row">
-    <div class="column">
+    <div class="large-10 small-12 columns">
       <h1>{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+    </div>
+    <div class="large-2 small-12 columns">
+      <h1><small>{{ page.date | date: '%F' }}</small></h1>
     </div>
   </div>
 

@@ -7,7 +7,7 @@ layout: compress
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title | markdownify | remove: '<p>' | remove: '</p>' | strip_html }}</title>
   {% include noita/robots.html %}
   {% include noita/meta-description.html %}
 
@@ -66,7 +66,7 @@ layout: compress
 
   <div class="row">
     <div class="column">
-      <h1>{{ page.title }}</h1>
+      <h1>{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
     </div>
   </div>
 
@@ -96,3 +96,4 @@ layout: compress
   {% endfor %}
 </body>
 </html>
+

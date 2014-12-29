@@ -1,9 +1,14 @@
 {% for post in site.posts %}
 <div class="post-short">
   <h4>
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
     <small>{{ post.date | date: '%F' }}</small>
   </h4>
-  <p>{{ post.description }}</p>
+  {% comment %}
+  {% if post.description %}
+  <p>{{ post.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  {% endif %}
+  {% endcomment %}
 </div>
 {% endfor %}
+

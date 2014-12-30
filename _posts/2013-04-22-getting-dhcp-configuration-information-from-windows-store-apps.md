@@ -2,13 +2,10 @@
 layout: post
 title: Getting DHCP configuration information from Windows Store apps
 created: 2013-04-22 06:26:38 -0700
-categories:
-- !binary |-
-  d2luZG93cyBzdG9yZQ==
-- !binary |-
-  aW50ZXJvcA==
-- !binary |-
-  YyM=
+tags:
+- Windows Store
+- Interop
+- C#
 ---
 I was recently asked via an e-mail from a user of my [Lanscan](http://lanscan.rcook.org/) app how to obtain DHCP information from a Windows Store app.
 

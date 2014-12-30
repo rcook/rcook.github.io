@@ -2,11 +2,9 @@
 layout: post
 title: ! '"What to Know Before Debating Type Systems"'
 created: 2010-06-20 21:01:44 -0700
-categories:
-- !binary |-
-  cHJvZ3JhbW1pbmcgbGFuZ3VhZ2Vz
-- !binary |-
-  dHlwZXM=
+tags:
+- Programming languages
+- Types
 ---
 On my travels around the programming language community on-line I found many references to Chris Smith's review of types entitled "What to Know Before Debating Type Systems". Unfortunately, it was almost as if it had disappeared from the face of the planet. Of course, nothing ever really disappears from the Internet and I was able to summon it forth from the recesses of the Internet using Way Back Machine:
 

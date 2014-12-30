@@ -2,9 +2,8 @@
 layout: post
 title: Why Haskell is not yet ready for the mainstream...
 created: 2014-07-24 20:36:28 -0700
-categories:
-- !binary |-
-  aGFza2VsbA==
+tags:
+- Haskell
 ---
 <pre><code>
 <p>PS C:\Users\rcook&gt; ghci

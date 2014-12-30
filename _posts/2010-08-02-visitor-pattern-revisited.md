@@ -2,13 +2,10 @@
 layout: post
 title: Visitor pattern (re)visited
 created: 2010-08-02 14:01:13 -0700
-categories:
-- !binary |-
-  ZGV2ZWxvcG1lbnQ=
-- !binary |-
-  ZGVzaWduIHBhdHRlcm5z
-- !binary |-
-  amF2YQ==
+tags:
+- Development
+- Design patterns
+- Java
 ---
 I am aware that the visitor design pattern has been around in some form for years and so what I'm about to write in this post is not particularly innovative or special in any way. I just thought I'd discuss something I've been pondering for a while in my attempts to come up with interesting refactorings for the <a href="http://code.google.com/p/ductilej/">DuctileJ</a> project.
 

@@ -2,13 +2,10 @@
 layout: post
 title: The state of the art in PHP web site development...
 created: 2010-03-30 19:47:58 -0700
-categories:
-- !binary |-
-  d2Vi
-- !binary |-
-  cGhw
-- !binary |-
-  ZGV2ZWxvcG1lbnQ=
+tags:
+- Web
+- PHP
+- Development
 ---
 <p>Quite a grandiose title, to be sure, and I'm sure it won't quite live up to all the hype, but I'm pretty pleased with it anyway: <a href="http://katyandrichard.com/">katyandrichard.com</a>. Here's a list of its salient features:</p>
 <ul>

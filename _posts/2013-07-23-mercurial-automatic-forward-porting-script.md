@@ -2,13 +2,10 @@
 layout: post
 title: Mercurial automatic forward porting script
 created: 2013-07-23 11:11:34 -0700
-categories:
-- !binary |-
-  cnVieQ==
-- !binary |-
-  cnVieSBvbiByYWlscw==
-- !binary |-
-  bWVyY3VyaWFs
+tags:
+- Ruby
+- Ruby on Rails
+- Mercurial
 ---
 This implements the [Mercurial standard branching strategy](http://mercurial.selenic.com/wiki/StandardBranching):
 

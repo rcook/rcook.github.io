@@ -2,11 +2,9 @@
 layout: post
 title: New jquery_file_download-rails gem
 created: 2014-01-25 21:18:05 -0800
-categories:
-- !binary |-
-  cnVieQ==
-- !binary |-
-  cnVieSBvbiByYWlscw==
+tags:
+- Ruby
+- Ruby on Rails
 ---
 In a mission to make my app's file download more responsive, I had fun integrating John Culviner's [`jquery.fileDownload.js`](https://github.com/johnculviner/jquery.fileDownload) script. John's samples and setup instructions all target ASP .NET MVC while my app is a Rails 4 app. I thought it'd be a fun exercise to package this script up into a gem much like [`jquery-ui-rails`](https://github.com/joliss/jquery-ui-rails) packages up jQuery UI for Rails. I've named it [`jquery_file_download-rails`](https://github.com/rcook/jquery_file_download-rails) and here are the relevant links:
 

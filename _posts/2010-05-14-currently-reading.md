@@ -2,9 +2,8 @@
 layout: post
 title: Currently reading…
 created: 2010-05-14 17:23:38 -0700
-categories:
-- !binary |-
-  Ym9va3M=
+tags:
+- Books
 ---
 <ul>
 <li><em>On Liberty</em> by John Stuart Mill</li>

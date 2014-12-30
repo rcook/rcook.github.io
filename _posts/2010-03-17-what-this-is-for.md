@@ -2,19 +2,13 @@
 layout: post
 title: What this is for...
 created: 2010-03-17 11:54:28 -0700
-categories:
-- !binary |-
-  cnVieQ==
-- !binary |-
-  cnVieSBvbiByYWlscw==
-- !binary |-
-  cHl0aG9u
-- !binary |-
-  YyM=
-- !binary |-
-  Lm5ldA==
-- !binary |-
-  cGhw
+tags:
+- Ruby
+- Ruby on Rails
+- Python
+- C#
+- .NET
+- PHP
 ---
 <p>
 I'm going to write about software engineering, computer science and web development. The following are the technologies of particular interest to me at the moment:

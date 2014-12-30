@@ -2,11 +2,9 @@
 layout: post
 title: C++ traits revisited
 created: 2014-03-24 11:41:10 -0700
-categories:
-- !binary |-
-  ZGVzaWduIHBhdHRlcm5z
-- !binary |-
-  Yysr
+tags:
+- Design patterns
+- C++
 ---
 My [previous entry](http://www.clopenset.com/content/traits-c) on traits in C++ was a reasonable start but it missed one important corner case - namely classic C++ enums - and adopted the nonstandard approach of parameterizing the algorithm class on the traits type as opposed to the operand class. Here is a revised sample that addresses these two points:
 

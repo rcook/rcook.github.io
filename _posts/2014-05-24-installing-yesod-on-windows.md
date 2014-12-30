@@ -2,11 +2,9 @@
 layout: post
 title: Installing Yesod on Windows
 created: 2014-05-24 19:38:37 -0700
-categories:
-- !binary |-
-  eWVzb2Q=
-- !binary |-
-  aGFza2VsbA==
+tags:
+- Yesod
+- Haskell
 ---
 Here we go:
 

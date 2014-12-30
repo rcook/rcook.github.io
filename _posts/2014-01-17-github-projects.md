@@ -2,13 +2,10 @@
 layout: post
 title: GitHub projects
 created: 2014-01-17 19:23:40 -0800
-categories:
-- !binary |-
-  cnVieQ==
-- !binary |-
-  cnVieSBvbiByYWlscw==
-- !binary |-
-  Z2l0aHVi
+tags:
+- Ruby
+- Ruby on Rails
+- GitHub
 ---
 Here's a partial list of various Ruby-related projects I maintain on GitHub:
 

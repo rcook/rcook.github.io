@@ -25,10 +25,11 @@ noita:
   topbar:
     toggle: Menu
     right:
-      - name: About
-        url: /about/
       - name: Blog
         url: /blog/
+      - name: About
+        url: /about/
+        class: small button
 
 compress_html:
   clippings: [html, head, title, base, link, meta, style, body, article, section, nav, aside, h1, h2, h3, h4, h5, h6, hgroup, header, footer, address, p, hr, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, main, div, table, caption, colgroup, col, tbody, thead, tfoot, tr, td, th]

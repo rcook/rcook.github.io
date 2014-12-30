@@ -1,0 +1,36 @@
+---
+layout: page
+title: Tags
+description: An archive of posts grouped by tag
+---
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | strip_newlines }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_names = site_tags | split: '|' | sort %}
+
+<div class="row">
+  <div class="columns">
+    <ul class="tag-bullet inline">
+      {% for name in tag_names %}
+      <li><a href="#{{ name | downcase | cgi_escape }}">{{ name }} <span class="count">{{ site.tags[name].size }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="columns">
+    {% for name in tag_names %}
+    <h2 id="{{ name | downcase | cgi_escape }}">{{ name }}</h2>
+    <ul>
+      {% for post in site.tags[name] %}{% if post.title %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>
+        &raquo;
+        <a href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+      </li>
+      {% endif %}{% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>
+

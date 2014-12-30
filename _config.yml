@@ -27,6 +27,8 @@ noita:
     right:
       - name: Blog
         url: /blog/
+      - name: Tags
+        url: /tags/
       - name: About
         url: /about/
         class: small button

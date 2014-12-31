@@ -24,6 +24,17 @@ noita:
     - /assets/favicon-256.png
   topbar:
     toggle: Menu
+    middle:
+      - name: LinkedIn
+        url: http://www.linkedin.com/in/richardthepeace
+      - name: Twitter
+        url: https://twitter.com/richardthepeace
+      - name: Stack Overflow
+        url: http://stackoverflow.com/users/394167/richard-cook
+      - name: Atom
+        url: /atom.xml
+      - name: RSS
+        url: /rss.xml
     right:
       - name: Blog
         url: /blog/

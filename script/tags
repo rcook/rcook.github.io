@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require 'jekyll'
+
+# This assumes that this script is in a "scripts" subdirectory of the Jekyll site repo
+APP_DIR = File.expand_path('../..', __FILE__)
+Dir.chdir(APP_DIR)
+
+site = Jekyll::Site.new(Jekyll::Configuration::DEFAULTS)
+site.read
+puts site.tags.collect(&:first).sort_by { |tag| tag.downcase }
+

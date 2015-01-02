@@ -3,6 +3,7 @@ layout: post
 title: ! 'My first MOOC: "Functional Programming Principles in Scala"'
 created: 2014-05-06 08:39:37 -0700
 tags:
+- MOOC
 - Coursera
 - Scala
 - Functional programming

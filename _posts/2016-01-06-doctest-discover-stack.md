@@ -7,6 +7,9 @@ tags:
 - Stack
 - GitHub
 ---
+*Update: Modified link to point to specific tag of [`github-api-haskell`][3]
+project*
+
 I recently got into using [doctest][1] to run tests embedded in my Haskell code
 as comments. Having enjoyed using [Python doctest][2] in the past, this made me
 very happy.
@@ -61,7 +64,7 @@ reminiscent of RubyGems and another thing that makes me happy!
 
 [1]: https://hackage.haskell.org/package/doctest
 [2]: https://docs.python.org/2/library/doctest.html
-[3]: https://github.com/rcook/github-api-haskell/
+[3]: https://github.com/rcook/github-api-haskell/tree/v-blog
 [4]: https://github.com/sol/doctest
 [5]: https://hackage.haskell.org/package/doctest-discover
 [6]: https://github.com/rcook/doctest-discover

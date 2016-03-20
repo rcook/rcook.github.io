@@ -12,6 +12,12 @@ exclude:
   - README.md
   - vendor/
 
+gems:
+  - jekyll-paginate
+
+whitelist:
+  - jekyll-paginate
+
 layouts: ./_noita
 
 noita:

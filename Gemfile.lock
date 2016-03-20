@@ -144,5 +144,6 @@ DEPENDENCIES
   html-proofer
   jekyll
   jekyll-gist
+  jekyll-paginate
   kramdown
   rake

@@ -9,6 +9,10 @@ tags:
 - Keter
 - Apache
 ---
+*Update: this hybrid Yesod-Hakyll web site is now [live][seahug]*
+
+*[Read part 2 of this series][part2]*
+
 I currently use [Yesod][yesod] along with [Keter][keter] for the
 [seattlehaskell.org][seahug] web site and I'm very pleased with it. The site has
 a very small dynamic portion, specifically the bit which queries the [Meetup
@@ -62,6 +66,7 @@ will eventually be replaced with my Hakyll-generated static content.
 [hello-world]: http://seattlehaskell.org/content/
 [keter]: https://github.com/snoyberg/keter
 [meetup-api]: http://www.meetup.com/meetup_api/
+[part2]: {% post_url 2016-03-20-yesod-and-hakyll-together-part-2 %}
 [seahug]: http://seattlehaskell.org/
 [seahug-source]: https://github.com/seahug/seattlehaskell-org
 [yesod]: http://www.yesodweb.com/

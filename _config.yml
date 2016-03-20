@@ -13,9 +13,11 @@ exclude:
   - vendor/
 
 gems:
+  - jekyll-gist
   - jekyll-paginate
 
 whitelist:
+  - jekyll-gist
   - jekyll-paginate
 
 layouts: ./_noita

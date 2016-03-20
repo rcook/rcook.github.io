@@ -4,5 +4,4 @@ SCRIPTDIR=$(dirname $SCRIPTPATH)
 APPDIR=$(dirname $SCRIPTDIR)
 
 cd $APPDIR
-echo bundle exec jekyll serve -w --safe $1
-
+bundle exec jekyll serve -w --safe $1

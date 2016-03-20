@@ -20,7 +20,7 @@ whitelist:
   - jekyll-gist
   - jekyll-paginate
 
-layouts: ./_noita
+layouts_dir: ./_noita
 
 noita:
   name: blog.rcook.org

@@ -1,6 +1,6 @@
 [submodule "noita/foundation"]
 	path = noita/foundation
-	url = https://github.com/components/foundation
+	url = https://github.com/rcook/foundation
 [submodule "_posts/gist-174e1a408654794ce745"]
 	path = _posts/gist-174e1a408654794ce745
 	url = https://gist.github.com/174e1a408654794ce745.git

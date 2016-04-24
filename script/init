@@ -1,9 +1,14 @@
 #!/bin/bash
-SCRIPTPATH=$(readlink -f $0)
+set -e
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+  READLINK=greadlink
+else
+  READLINK=readlink
+fi
+SCRIPTPATH=$($READLINK -f $0)
 SCRIPTDIR=$(dirname $SCRIPTPATH)
-APPDIR=$(dirname $SCRIPTDIR)
+REPODIR=$(dirname $SCRIPTDIR)
 
-cd $APPDIR
+cd $REPODIR
 git submodule init
 git submodule update
-

@@ -38,6 +38,8 @@ default:
   stack exec -- agda -i ~/agda-stdlib/src -i . -c hello.agda
 ```
 
+Running `agda` via `stack` will ensure that GHC can find your Haskell packages.
+
 * Build the code
 
 ```bash

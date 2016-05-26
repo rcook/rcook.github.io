@@ -16,6 +16,12 @@ You'll need the [Xcode developer tools][xcode] as a basic prerequisite.
 $ stack install --resolver nightly-2016-05-08 Agda
 ```
 
+* Install some Haskell libraries required by the "Hello world" program
+
+```bash
+$ stack install text
+```
+
 * Grab the Agda standard library
 
 ```bash

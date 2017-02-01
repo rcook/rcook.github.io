@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Brained Just Exploded
+title: Brain Just Exploded
 created: 2017-01-31 20:35:00 -0800
 tags:
 - Haskell

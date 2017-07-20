@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Update
+title: Elm reading list
 created: 2017-01-20 07:39:00 -0600
 tags:
 - Elm

@@ -11,11 +11,11 @@ As I mentioned [previously]({% post_url 2017-07-19-update %}, I am learning [Elm
 Anyway, my current learning resources are as follows:
 
 * [Elm in Action][elm-in-action] by Richard Feldman
-* [The JSON Survival Guide][json-survival-guide] by Brian Hicks
+* [The JSON Survival Kit][json-survival-guide] by Brian Hicks
 * [Elm Town][elm-town], Murphy Randle's podcast
 
-[elm-in-action]: todo
+[elm-in-action]: https://www.manning.com/books/elm-in-action
 [elm-lang]: http://elm-lang.org/
-[elm-town]: todo
-[json-survival-guide]: todo
+[elm-town]: https://elmtown.github.io/
+[json-survival-kit]: https://www.brianthicks.com/json-survival-kit/
 [haskell]: http://haskell.org/

@@ -11,7 +11,7 @@ As I mentioned [previously]({% post_url 2017-07-19-update %}), I have been desig
 * [Writing Haskell Programs][part2] (published 29 May 2017): A two-hour Haskell programming video course: builds upon "Fundamentals of Practical Haskell Programming"
 * Building an Application with Haskell (to be published some time in August 2017): A two-hour Haskell programming video course: builds upon "Writing Haskell Programs"
 
-I have studiously avoided mentioned of [category theory][bartosz].
+I have studiously avoided mention of [category theory][bartosz].
 
 [bartosz]: https://bartoszmilewski.com/category/category-theory/
 [packt]: https://www.packtpub.com/

@@ -45,7 +45,7 @@ hspec spec
 Since I'm really lazy, I even have a custom `:spec` command defined in my `ghci.conf` file as follows:
 
 ```
-:def spec \_ -> return (":reload\nhspec spec")
+:def spec \_ -> return ":reload\nhspec spec"
 ```
 
 Oskar's setup uses [tmux][tmux] to send keypresses from one pane to another. This is pretty nice. I would guess that it would be possible to set up a keyboard shortcut or macro within Code to achieve similar behaviour. If I ever get round to doing this, I will report back!

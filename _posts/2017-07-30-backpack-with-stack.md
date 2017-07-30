@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Haskell test workflow
+title: Backpack with Stack
 created: 2017-07-30 14:43:00 -0700
 tags:
 - Haskell
@@ -48,6 +48,13 @@ stack setup
 ```
 
 The project also contains basic documentation about how to build on Windows, Linux and macOS.
+
+## Comments
+
+I have a few questions about Backpack which I've not found any answers to yet:
+
+* How do I move my Haskell code out of the `.bkp` file and into separate `.hs` files?
+* How am I _really_ supposed to build this kind of project?
 
 Happy Backpacking!
 

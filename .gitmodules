@@ -64,3 +64,6 @@
 [submodule "_posts/gist-96efba09f8ada983e0f0bfef9fdcdbf9"]
 	path = _posts/gist-96efba09f8ada983e0f0bfef9fdcdbf9
 	url = https://gist.github.com/96efba09f8ada983e0f0bfef9fdcdbf9.git
+[submodule "_posts/gist-553ae2f596bbad3852f5f6d2edd3a257"]
+	path = _posts/gist-553ae2f596bbad3852f5f6d2edd3a257
+	url = https://gist.github.com/rcook/553ae2f596bbad3852f5f6d2edd3a257

@@ -18,8 +18,8 @@ This example uses the following packages:
 * `amazonka`
 * `amazonka-dynamodb`
 * `bytestring`
-* `conduit`
 * `lens`
+* `resourcet`
 * `text`
 * `unordered-containers`
 

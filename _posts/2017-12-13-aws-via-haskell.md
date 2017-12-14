@@ -57,7 +57,7 @@ The things of most note are as follows:
 
 ## A full, working demo project
 
-I've gathered this altogether into this buildable [project][dynamodb-demo].
+I've gathered this all together into this buildable [project][dynamodb-demo].
 
 [amazon]: http://www.amazon.com/
 [amazonka]: https://github.com/brendanhay/amazonka/

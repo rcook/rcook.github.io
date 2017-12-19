@@ -57,14 +57,14 @@ The things of most note are as follows:
 
 ## A full, working demo project
 
-I've gathered this all together into this buildable [project][dynamodb-demo]. As always, I like to build using [Stack][stack].
+I've gathered this all together into this buildable [project][aws-via-haskell-repo]. As always, I like to build using [Stack][stack].
 
 [amazon]: http://www.amazon.com/
 [amazonka]: https://github.com/brendanhay/amazonka/
 [aws]: https://aws.amazon.com/
 [aws-free-tier]: https://aws.amazon.com/free/
+[aws-via-haskell-repo]: https://github.com/rcook/aws-via-haskell/
 [dynamodb]: https://aws.amazon.com/dynamodb/
-[dynamodb-demo]: https://github.com/rcook/aws-via-haskell/tree/master/dynamodb-demo
 [dynamodb-local]: http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
 [haskell]: https://www.haskell.org/
 [stack]: https://haskellstack.org/

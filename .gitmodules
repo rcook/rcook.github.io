@@ -70,3 +70,6 @@
 [submodule "_posts/gist-67c81760dd046d21fd496ab6ae8e404a"]
 	path = _posts/gist-67c81760dd046d21fd496ab6ae8e404a
 	url = https://gist.github.com/67c81760dd046d21fd496ab6ae8e404a.git
+[submodule "_posts/gist-50505fbf45dc006f31215c0e88da8ce8"]
+	path = _posts/gist-50505fbf45dc006f31215c0e88da8ce8
+	url = https://gist.github.com/50505fbf45dc006f31215c0e88da8ce8.git

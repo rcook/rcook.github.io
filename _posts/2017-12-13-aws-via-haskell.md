@@ -60,6 +60,7 @@ I've gathered this all together into this buildable [project][aws-via-haskell-re
 ## Part 5: Related posts
 
 * [Part 2: S3]({% post_url 2017-12-19-aws-via-haskell-s3 %})
+* [Part 3: SQS]({% post_url 2017-12-20-aws-via-haskell-sqs %})
 
 [amazon]: http://www.amazon.com/
 [amazonka]: https://github.com/brendanhay/amazonka/

@@ -9,14 +9,14 @@ tags:
 ---
 Today, in "AWS via Haskell", we'll quickly look at accessing AWS [SQS][sqs] (Simple Queue Service) after looking at [S3]({% post_url 2017-12-19-aws-via-haskell-s3 %}) yesterday.
 
-# Part 1: Prerequisites
+## Part 1: Prerequisites
 
 Firstly, you'll need access to SQS. There are several options:
 
 * Create an [AWS][aws] account and use the real S3 service in the cloud: you can start with the [free tier][aws-free-tier] and go from there
 * Install [localstack][localstack]
 
-# Part 2: `aws-via-haskell.cabal`: the dependencies
+## Part 2: `aws-via-haskell.cabal`: the dependencies
 
 You'll see that our `s3-app` target depends on the following
 
@@ -27,7 +27,7 @@ You'll see that our `s3-app` target depends on the following
 
 We'll also use some of the helper functions in our shared [`AWSInfo.hs`][awsinfo] module.
 
-# Part 3: `Main.hs`: the code
+## Part 3: `Main.hs`: the code
 
 This program demonstrates how to:
 

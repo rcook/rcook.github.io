@@ -48,6 +48,7 @@ I've gathered this all together into this buildable [project][aws-via-haskell-re
 * [Part 1: DynamoDB]({% post_url 2017-12-13-aws-via-haskell %})
 * [Part 2: S3]({% post_url 2017-12-19-aws-via-haskell-s3 %})
 * [Part 4: SimpleDB]({% post_url 2017-12-22-aws-via-haskell-simpledb %})
+* [Part 5: Lambda]({% post_url 2017-12-29-aws-via-haskell-lambda %})
 
 [aws]: https://aws.amazon.com/
 [aws-free-tier]: https://aws.amazon.com/free/

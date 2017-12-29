@@ -190,7 +190,7 @@ I've gathered this all together into this buildable [project][aws-via-haskell-re
 [gist-TH]: https://gist.github.com/rcook/802f0b02591d4fd46e47e8de34b8218d#file-th-hs
 [gist-Types]: https://gist.github.com/rcook/802f0b02591d4fd46e47e8de34b8218d#file-types-hs
 [gist-connect]: https://gist.github.com/rcook/802f0b02591d4fd46e47e8de34b8218d#file-awsservice-hs-L71
-[gist-wrapAWSService] https://gist.github.com/rcook/802f0b02591d4fd46e47e8de34b8218d#file-th-hs-L56
+[gist-wrapAWSService]: https://gist.github.com/rcook/802f0b02591d4fd46e47e8de34b8218d#file-th-hs-L56
 [iam]: https://aws.amazon.com/iam/
 [lambda]: https://aws.amazon.com/lambda/
 [lambda-service]: https://hackage.haskell.org/package/amazonka-lambda-1.5.0/docs/Network-AWS-Lambda.html#v:lambda

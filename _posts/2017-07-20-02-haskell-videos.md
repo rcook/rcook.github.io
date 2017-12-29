@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haskell videos
-created: 2017-01-20 07:43:00 -0600
+created: 2017-07-20 07:43:00 -0600
 tags:
 - Haskell
 ---

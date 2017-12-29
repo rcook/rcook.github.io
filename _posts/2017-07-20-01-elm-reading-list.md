@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Elm reading list
-created: 2017-01-20 07:39:00 -0600
+created: 2017-07-20 07:39:00 -0600
 tags:
 - Elm
 - Haskell

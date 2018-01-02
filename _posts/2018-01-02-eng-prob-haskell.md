@@ -6,7 +6,7 @@ tags:
 - Haskell
 - Engineering
 ---
-As any of you who know me from [Seattle Area Haskell Users' Group][seahug] should know, I pride myself on being on the practical end of the spectrum of users of the Haskell programming language. You may have read some of my postings about how to use [AWS]{% post_url 2017-12-29-aws-via-haskell-lambda %} from Haskell. Well, my next idea, which will hopefully run concurrently with my AWS series, will involve engineering of sorts. I've decided to systematically translate all the code from [Engineering Problem Solving in ANSI C (1st edition)][eng-prob-c] by [Delores Etter] into Haskell.
+As any of you who know me from [Seattle Area Haskell Users' Group][seahug] should know, I pride myself on being on the practical end of the spectrum of users of the Haskell programming language. You may have read some of my postings about how to use [AWS]({% post_url 2017-12-29-aws-via-haskell-lambda %}) from Haskell. Well, my next idea, which will hopefully run concurrently with my AWS series, will involve engineering of sorts. I've decided to systematically translate all the code from [Engineering Problem Solving in ANSI C (1st edition)][eng-prob-c] by [Delores Etter][delores-etter] into Haskell.
 
 I don't know how long this will last, but [here it is][eng-prob] anyway.
 

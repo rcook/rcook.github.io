@@ -178,6 +178,7 @@ I've gathered this all together into this buildable [project][aws-via-haskell-re
 * [Part 3: SQS]({% post_url 2017-12-20-aws-via-haskell-sqs %})
 * [Part 4: SimpleDB]({% post_url 2017-12-22-aws-via-haskell-simpledb %})
 * [Part 6: EC2]({% post_url 2018-01-12-aws-via-haskell-ec2 %})
+* [Part 7: SSM]({% post_url 2018-03-02-aws-via-haskell-ssm %})
 
 [aeson]: https://hackage.haskell.org/package/aeson
 [aws]: https://aws.amazon.com/

@@ -105,6 +105,7 @@ I've gathered this all together into this buildable [project][aws-via-haskell-re
 * [Part 3: SQS]({% post_url 2017-12-20-aws-via-haskell-sqs %})
 * [Part 4: SimpleDB]({% post_url 2017-12-22-aws-via-haskell-simpledb %})
 * [Part 5: Lambda]({% post_url 2017-12-29-aws-via-haskell-lambda %})
+* [Part 7: SSM]({% post_url 2018-03-02-aws-via-haskell-ssm %})
 
 [amazonka]: https://hackage.haskell.org/package/amazonka
 [amazonka-ec2]: https://hackage.haskell.org/package/amazonka-ec2

@@ -8,7 +8,7 @@ tags:
 - Hakyll
 - Keter
 - Apache
-- Rails
+- Ruby on Rails
 ---
 *[Go to part 1 of this series][part1]*
 

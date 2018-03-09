@@ -22,22 +22,13 @@ Next, I tried calling various SSM APIs such as [`GetParameter`][aws-ssm-GetParam
 
 I then thought I'd pare things down to the bare minimum. I was able to write to the [CloudWatch][cloudwatch] log simply by writing to standard output using `putStrLn`. However, presumably due to the way the logs are buffered, not all of my messages would be visible in CloudWatch. I, therefore, created a `logMessage` function to ensure that the message is proactively flushed:
 
-```
-logMessage :: String -> IO ()
-logMesasge s = putStrLn s >> hFlush stdout
-```
+{% gist 4e1e2d624076deb3006c116ea6406ade LogMessage.hs %}
 
 That got things to reliably show up in the log.
 
 I then thought I'd build on that my building a minimal HTTP client using Req [LINK TO REQ]:
 
-```
-v <- runReq def $
-    req GET (https "httpbin.org" /: "get") NoReqBody jsonResponse $
-            "aaa" =: ("bbb" :: Text) <>
-            "ccc" =: ("ddd" :: Text)
-print (responseBody v :: Value)
-```
+{% gist 4e1e2d624076deb3006c116ea6406ade Req.hs %}
 
 This, unfortunately, suffered from the same affliction as my attempts to call into AWS APIs: the call simply doesn't not return. I'm wondering if, somehow, my AWS Lambda environment does not have access to the Internet, though I haven't been able to positively confirm this one way or another.
 
@@ -55,14 +46,7 @@ So, I decided to try to emulate this environment as closely as possible&hellip;
 
 I then proceeded to get a Haskell build environment set up with Stack and other dependencies:
 
-```
-wget https://bootstrap.pypa.io/get-pip.py
-python ./get-pip.py --user
-pip install --user awscli
-sudo yum install gcc gcc-c++ kernel-devel gmp-devel zlib-devel
-curl -sSL https://get.haskellstack.org/ | sh
-stack build --fast
-```
+{% gist 4e1e2d624076deb3006c116ea6406ade build.sh %}
 
 I'll let you know how this goes!
 

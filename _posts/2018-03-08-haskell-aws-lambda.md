@@ -18,7 +18,7 @@ First, I tried to extend my `HLambda` program to call the STS [`GetCallerIdentit
 
 Next, I tried calling various SSM APIs such as [`GetParameter`][aws-ssm-GetParameter] and [`PutParameter`][aws-ssm-PutParameter] after adding the `AmazonSSMFullAccess` policy to my role. At some point this worked. I even had my function successfully reading and writing `SecureString` parameters. And, then, it mysteriously stopped working. Unfortunately, I was not able to roll my program back to a working state. Nothing I was able to do to tweak my security policy etc. seemed to have any effect.
 
-# Unable to call web APIs using [Req][req]
+# Unable to call web APIs
 
 I then thought I'd pare things down to the bare minimum. I was able to write to the [CloudWatch][cloudwatch] log simply by writing to standard output using `putStrLn`. However, presumably due to the way the logs are buffered, not all of my messages would be visible in CloudWatch. I, therefore, created a `logMessage` function to ensure that the message is proactively flushed:
 
@@ -26,7 +26,7 @@ I then thought I'd pare things down to the bare minimum. I was able to write to 
 
 That got things to reliably show up in the log.
 
-I then thought I'd build on that my building a minimal HTTP client using Req [LINK TO REQ]:
+I then thought I'd build on that my building a minimal HTTP client using [Req][req]:
 
 {% gist 4e1e2d624076deb3006c116ea6406ade Req.hs %}
 

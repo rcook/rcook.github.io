@@ -44,6 +44,8 @@ So, I decided to try to emulate this environment as closely as possible&hellip;
 * Following [some instructions I found][superuser-article], I determined that Amazon Linux's root account (`ec2-user`) has no password by default. I, therefore, grabbed this [ISO][init-iso] which sets the password to `password`.
 * I was then able to create a new account for myself, add it to `sudoers`, add my SSH public key and log into over `ssh`.
 
+By the way, I avoided following the [official instructions][amazon-linux-setup], because I'm lazy.
+
 I then proceeded to get a Haskell build environment set up with Stack and other dependencies:
 
 {% gist 4e1e2d624076deb3006c116ea6406ade build.sh %}
@@ -52,6 +54,7 @@ I'll let you know how this goes!
 
 [amazon-linux]: https://aws.amazon.com/amazon-linux-ami/
 [amazon-linux-download]: https://cdn.amazonlinux.com/os-images/2017.12.0.20180222/virtualbox/
+[amazon-linux-setup]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-linux-2-virtual-machine.html
 [aws-lambda-env]: [https://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html]
 [aws-ssm-GetParameter]: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_GetParameter.html
 [aws-ssm-PutParameter]: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PutParameter.html

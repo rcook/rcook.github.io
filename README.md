@@ -8,6 +8,12 @@ bundle install
 bundle exec rake preview
 ```
 
+Run tests:
+
+```
+bundle exec rake test
+```
+
 ## Acknowledgements
 
 * [Noita][1]

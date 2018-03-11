@@ -5,8 +5,8 @@ gem 'jekyll-gist'
 gem 'jekyll-paginate'
 
 group :test do
-  gem 'kramdown'
-  gem 'jekyll'
   gem 'html-proofer'
+  gem 'jekyll'
+  gem 'kramdown'
   gem 'rake'
 end

@@ -7,7 +7,7 @@ end
 
 desc 'Test the site with Proofer'
 task :test do
-  require 'html/proofer'
+  require 'html-proofer'
   sh 'bundle exec jekyll build --trace'
-  HTML::Proofer.new('./_site').run
+  HTMLProofer.check_directory('./_site').run
 end

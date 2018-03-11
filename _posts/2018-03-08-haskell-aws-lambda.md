@@ -52,10 +52,6 @@ I then proceeded to get a Haskell build environment set up with Stack and other 
 
 I'll let you know how this goes!
 
-# Update: 2018/3/9
-
-Couldn't get it to work. Simple web requests still fail. :-(
-
 [amazon-linux]: https://aws.amazon.com/amazon-linux-ami/
 [amazon-linux-download]: https://cdn.amazonlinux.com/os-images/2017.12.0.20180222/virtualbox/
 [amazon-linux-setup]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-linux-2-virtual-machine.html

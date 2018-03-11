@@ -1,5 +1,13 @@
 # Richard's coding blog
 
+## Preview locally
+
+```
+gem install bundler
+bundle install
+bundle exec rake preview
+```
+
 ## Acknowledgements
 
 * [Noita][1]

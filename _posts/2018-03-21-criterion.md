@@ -46,6 +46,8 @@ This depends on the following non-`base` packages:
 * `criterion`
 * `random-strings`
 
+Here's a [full, working project][project] if you like.
+
 I run it using [`stack`][haskell-stack] as follows:
 
 ```
@@ -71,3 +73,4 @@ Use `++`, `concat` or `ShowS`, it really makes no difference. Don't use `Seq`. I
 [criterion]: http://www.serpentine.com/criterion/tutorial.html
 [criterion-chart]: /pages/2018-03-21-criterion.html
 [haskell-stack]: https://haskellstack.org/
+[project]: https://github.com/rcook/concat-vs-append

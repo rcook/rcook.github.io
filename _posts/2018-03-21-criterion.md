@@ -58,13 +58,7 @@ stack exec -- concat-vs-append --output bench.html
 
 ## The results
 
-Here's the Criterion output from the program:
-
-{% raw %}
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="/pages/2018-03-21-criterion.html"></iframe>
-{% endraw %}
-
-You can view this [by itself][criterion-chart], if you prefer.
+You can view the output from the program [here][criterion-chart].
 
 ## The conclusion
 

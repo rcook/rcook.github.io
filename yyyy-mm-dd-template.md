@@ -8,11 +8,10 @@ tags:
 ---
 Some text
 
-![Image caption]({{ site.url }}/assets/path-to-image.png)
+![Image caption]({{ '/assets/path-to-image.png' | absolute_url }})
 
-* [External link][1]
-* [Internal link][2]
+* [External link][my-web-site]
+* [Internal link][some-post]
 
-[1]: https://rcook.org/
-[2]: /blog/some-post/
-
+[my-web-site]: https://rcook.org/
+[some-post]: {% post_url 2010-03-16-blog %}

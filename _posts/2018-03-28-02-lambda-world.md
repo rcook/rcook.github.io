@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lambda World (Seattle)
-created: 2018-03-28 09:32:00 -0800
+created: 2018-03-28 09:32:00 -0700
 tags:
 - Haskell
 - Seattle

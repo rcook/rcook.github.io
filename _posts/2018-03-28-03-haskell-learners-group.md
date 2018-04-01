@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haskell Learners' Group
-created: 2018-03-28 09:34:00 -0800
+created: 2018-03-28 09:34:00 -0700
 tags:
 - Haskell
 - SeaHUG

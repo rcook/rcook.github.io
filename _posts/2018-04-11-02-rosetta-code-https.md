@@ -1,6 +1,6 @@
 ---
 layout: post
-ritle: Rosetta Code (HTTPS)
+title: Rosetta Code (HTTPS)
 created: 2018-04-11 07:31:00 -0700
 tags:
 - Haskell

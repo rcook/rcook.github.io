@@ -1,6 +1,6 @@
 ---
 layout: post
-ritle: Rosetta Code (FTP)
+title: Rosetta Code (FTP)
 created: 2018-04-11 07:14:00 -0700
 tags:
 - Haskell

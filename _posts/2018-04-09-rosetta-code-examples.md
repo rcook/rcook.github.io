@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New Rosetta Code examples
-created: 2018-04-09 16:49:00 -0800
+created: 2018-04-09 16:49:00 -0700
 tags:
 - Haskell
 - Rosetta Code

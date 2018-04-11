@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Engineering Problem Solving in Haskell finished!
-created: 2018-04-09 08:05:00 -0800
+created: 2018-04-09 08:05:00 -0700
 tags:
 - Haskell
 - Engineering

@@ -5,7 +5,7 @@ created: 2010-12-23 16:22:40 -0800
 tags:
 - Windows tools
 ---
-# Background
+## Background
 
 I've been primarily a Linux/Mac OS X-based developer for the last year or so.
 However, I recently moved back to Microsoft and so figured that I should
@@ -21,7 +21,7 @@ includes PuTTY, which is a fairly nice Windows implementation of `ssh`. While
 these steps have been detailed many times before, I will repeat them here for
 anyone who's interested.
 
-# Downloads
+## Downloads
 
 * Download and install `tortoisehg-1.1.7-hg-1.7.2-x64.msi` from
 [here](http://mercurial.selenic.com/)
@@ -32,14 +32,14 @@ anyone who's interested.
 * Download and install `puttygen.exe` from
 [here](http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe)
 
-# Prerequisites
+## Prerequisites
 
 * A Linux server with `sshd` and password-based authentication disabled
 * A Windows client machine
 * Another Windows/Linux/Mac OS X machine that already has public keys exchanged
 with the Linux server and thus has a trust relationship established with it
 
-# Steps
+## Steps
 
 * Run `puttygen.exe`
 * Select `SSH-2 RSA` and enter `2048` in `Number of bits in a generated key`
@@ -64,4 +64,3 @@ ssh = TortoisePlink.exe -i "C:/path/to/ppk-file.ppk"
 `ssh-agent`)
 * Add the private key to Pageant
 * You should now be able to clone/push/pull etc. to/from the server
-

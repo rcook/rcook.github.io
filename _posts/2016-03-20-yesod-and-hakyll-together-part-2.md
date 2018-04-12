@@ -18,7 +18,7 @@ Both [Yesod][yesod] and [Hakyll][hakyll] are well-documented and have
 reasonable tutorials: both [Michael Snoyman's book][yesod-book] and Jasper Van
 der Jeugt's site are great resources.
 
-# Template system mismatches
+## Template system mismatches
 
 What is not documented is how to combine the two. Part 1 of this series
 describes my Apache configuration for serving content from the two parts of the
@@ -42,7 +42,7 @@ emphasis on type safety
   * Fully dynamic much more like the [kinds of templates][rails-layout] that
 non-Haskell developers are typically used to
 
-# Philosophical thoughts
+## Philosophical thoughts
 
 Both systems have their pros and cons. However, on a personal note, I have a
 soft spot for Hamlet's syntax. However, I don't object to using real HTML.
@@ -51,7 +51,7 @@ consume Hakyll templates or do I adapt my Hakyll site generator to handle the
 templates from my Yesod app. Given my unwillingness to compromise the type
 safety of my Yesod app, I decided to do the latter.
 
-# Possible approaches
+## Possible approaches
 
 There were three main approaches I considered:
 

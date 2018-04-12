@@ -15,7 +15,7 @@ revised sample that addresses these two points:
 
 {% gist 9746054 %}
 
-# Traits with enums
+## Traits with enums
 
 Class C++ enums suffer from a name scoping issue which complicates traits a
 little: enum members result in names that are injected into the enclosing
@@ -33,10 +33,9 @@ are scoped within the name of the enum itself. When using this language feature,
 we can remove the static consts altogether and refer to the members via the
 enum's typedef.
 
-# Parameterizing on operand type
+## Parameterizing on operand type
 
 Most real-world examples of traits usage in C++ parameterize the algorithm class
 on the operand type as opposed to the traits type itself. Hence, this updated
 sample declares `template<typename Tree> class Algorithm` as opposed to
 `template<typename Traits> class Algorithm` in my original posting.
-

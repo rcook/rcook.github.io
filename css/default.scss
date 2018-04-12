@@ -64,10 +64,15 @@
 }
 
 // Richard's custom styles
+
 a > code {
   text-decoration: underline;
 }
 
 a:hover > code {
   color: purple;
+}
+
+h2 {
+  font-size: 170%;
 }

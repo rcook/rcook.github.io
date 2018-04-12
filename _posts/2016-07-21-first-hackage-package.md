@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First package on Hackage
-created: 2016-07-21 09:30:00 -0800
+created: 2016-07-21 09:30:00 -0700
 tags:
 - Hackage
 - Haskell

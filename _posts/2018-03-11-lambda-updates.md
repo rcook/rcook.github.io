@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lambda updates
-created: 2018-03-11 11:31:00 -0700
+created: 2018-03-11 11:31:00 -0800
 tags:
 - Haskell
 - AWS

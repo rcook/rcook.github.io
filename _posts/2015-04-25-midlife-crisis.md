@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Midlife crisis
-created: 2015-04-25 10:15:00 -0800
+created: 2015-04-25 10:15:00 -0700
 tags:
 - Acorn Electron
 - 06-ALA01-0003584

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mock web server
-created: 2016-06-08 15:00:00 -0800
+created: 2016-06-08 15:00:00 -0700
 tags:
 - Haskell
 ---

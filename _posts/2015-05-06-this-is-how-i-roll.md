@@ -1,7 +1,7 @@
 ---
 layout: post
 title: This is how I roll
-created: 2015-05-06 21:37:00 -0800
+created: 2015-05-06 21:37:00 -0700
 tags:
 - Software engineering
 ---

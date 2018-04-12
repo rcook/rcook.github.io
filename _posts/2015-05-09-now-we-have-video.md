@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Now we have video
-created: 2015-05-09 09:40:00 -0800
+created: 2015-05-09 09:40:00 -0700
 tags:
 - Acorn Electron
 - 06-ALA01-0003584

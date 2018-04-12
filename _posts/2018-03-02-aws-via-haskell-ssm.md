@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS via Haskell Part 7 (SSM)
-created: 2018-03-02 07:11:00 -0700
+created: 2018-03-02 07:11:00 -0800
 tags:
 - Haskell
 - AWS

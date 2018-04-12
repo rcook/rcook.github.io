@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Elkulator revisited
-created: 2015-06-02 11:11:00 -0800
+created: 2015-06-02 11:11:00 -0700
 tags:
 - Acorn Electron
 - Elkulator

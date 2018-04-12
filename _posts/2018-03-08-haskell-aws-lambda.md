@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haskell in AWS Lambda
-created: 2018-03-08 17:01:00 -0700
+created: 2018-03-08 17:01:00 -0800
 tags:
 - Haskell
 - AWS

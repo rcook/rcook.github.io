@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Eastside Latin Learners
-created: 2016-04-24 14:15:00 -0800
+created: 2016-04-24 14:15:00 -0700
 tags:
 - Latin
 ---

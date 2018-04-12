@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing Agda on Mac OS X
-created: 2016-05-26 09:27:00 -0800
+created: 2016-05-26 09:27:00 -0700
 tags:
 - Agda
 - Stack

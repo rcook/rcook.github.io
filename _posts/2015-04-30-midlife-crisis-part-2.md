@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Midlife crisis (part 2)
-created: 2015-04-30 14:02:00 -0800
+created: 2015-04-30 14:02:00 -0700
 tags:
 - Acorn Electron
 - Assembly language

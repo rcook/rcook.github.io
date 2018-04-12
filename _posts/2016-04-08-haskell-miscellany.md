@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haskell miscellany
-created: 2016-04-08 19:50:00 -0800
+created: 2016-04-08 19:50:00 -0700
 tags:
 - Haskell
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yesod and Hakyll together (part 2)
-created: 2016-03-20 09:26:00 -0800
+created: 2016-03-20 09:26:00 -0700
 tags:
 - Haskell
 - Yesod

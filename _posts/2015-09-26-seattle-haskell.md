@@ -1,7 +1,7 @@
 ---
 layout: post
 title: seattlehaskell.org
-created: 2015-09-26 13:58:00 -0800
+created: 2015-09-26 13:58:00 -0700
 tags:
 - SeaHUG
 - Haskell

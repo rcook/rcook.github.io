@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Electron FPGA
-created: 2015-08-31 11:08:00 -0800
+created: 2015-08-31 11:08:00 -0700
 tags:
 - Acorn Electron
 - FPGA

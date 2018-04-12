@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Electron-related source code
-created: 2015-05-05 10:28:00 -0800
+created: 2015-05-05 10:28:00 -0700
 tags:
 - Acorn Electron
 ---

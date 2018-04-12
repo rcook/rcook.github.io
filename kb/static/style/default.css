@@ -1,0 +1,75 @@
+body {
+  font-family: Segoe UI, Trebuchet, Arial, Sans-Serif;
+  width: 75%;
+  margin: auto;
+}
+h1, h2, h3 {
+  font-family: Segoe UI Light, Trebuchet, Arial, Sans-Serif;
+}
+.banner {
+  font-size: 2.5em;
+  font-family: Segoe UI Light, Trebuchet, Arial, Sans-Serif;
+  font-weight: bold;
+}
+#footer {
+  margin-top: 50px;
+  padding: 5px;
+  border-top: 1px solid Silver;
+  font-size: 95%;
+}
+#parameters {
+  float: right;
+  background-color: Silver;
+  font-size: 0.75em;
+}
+#parameters input {
+  font-size: 0.9em;
+  min-width: 20em;
+}
+.section-index {
+  font-size: smaller;
+  font-style: italic;
+}
+.contents-link {
+  font-size: small;
+}
+.file-path {
+  font-family: Monospace;
+  font-weight: bold;
+  color: Purple;
+}
+.user-input {
+  font-family: Monospace;
+  font-weight: bold;
+  color: Green;
+}
+.command {
+  font-family: Monospace;
+  font-weight: bold;
+  color: Blue;
+}
+.prompt {
+  color: green;
+  font-size: 70%;
+}
+.code-inline {
+  font-family: monospace;
+}
+.code-block {
+  white-space: pre-line;
+  font-family: monospace;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+.content {
+  white-space: pre;
+  font-family: monospace;
+  background-color: #ffeeee;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+.kb-dialog {
+  font-size: 70%;
+}
+

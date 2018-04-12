@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Configuring Ubuntu VM in Windows Hyper-V with wi-fi</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/static/script/kblib.contents.js"></script>
+  <script src="/static/script/kblib.parameters.js"></script>
+  <!-- begin:head -->
+  <script>
+  var Parameters = [
+    {name: "image-file-name", fullName: "Image file name", defaultValue: "ubuntu-12.10-server-amd64.iso"},
+    {name: "root-password", fullName: "Root password", defaultValue: "something-really-complicated"}
+  ];
+  </script>
+  <!-- end:head -->
+</head>
+<body>
+<!-- begin:body -->
+<div id="parameters-container"></div>
+<a name="contents"></a>
+<h1 data-contents-role="skip">Contents</h1>
+<div id="contents"></div>
+<h1>Recommendations</h1>
+<ul>
+  <li>Image: <span class="file-path"><span class="image-file-name">image-file-name</span></span></li>
+  <li>Ubuntu machine configuration:
+    <ul>
+      <li>OpenSSH server</li>
+      <li>LAMP server</li>
+      <li>MySQL root password: <span class="user-input"><span class="root-password">root-password</span></span></li>
+    </ul>
+  </li>
+</ul>
+<h1>Create an internal virtual network switch</h1>
+<ul>
+  <li>Press Windows key and type <span class="user-input">Hyper-V</span>.</li>
+  <li>Click <em>Hyper-V Manager</em> to start <em>Hyper-V Manager</em> application.</li>
+  <li>In <em>Actions</em> pane, click <em>Virtual Switch Manager...</em>.</li>
+  <li>Under <em>Virtual Switches</em>, ensure <em>New virtual network switch</em> is selected.</li>
+  <li>Under <em>Create virtual switch</em>, select <em>Internal</em>.</li>
+  <li>Click <em>Create Virtual Switch</em>.</li>
+  <li>Give the switch a name.</li>
+  <li>Click <em>OK</em>.</li>
+</ul>
+<h1>Share Internet with your wi-fi adapter</h1>
+<ul>
+  <li>Click Windows key.</li>
+  <li>Type <em>View network connections</em>, click <em>Settings</em> and start the <em>View network connections</em> applet.</li>
+  <li>Right-click on your wi-fi adapter and click <em>Properties</em>.</li>
+  <li>Click on <em>Sharing</em> tab.</li>
+  <li>Check <em>Allow other network users to connect through this computer's Internet connection</em>.</li>
+  <li>Under <em>Home networking connection</em>, selectthe virtual network switch created in section A.</li>
+  <li>Click <em>OK</em>.</li>
+</ul>
+<h1>Create virtual machine</h1>
+<ul>
+  <li>Click Windows key and type <em>Hyper-V</em>.</li>
+  <li>Type <em>Hyper-V Manager</em> and start <em>Hyper-V Manager</em> application.</li>
+  <li>In <em>Actions</em> pane, click <em>New</em> and select <em>Virtual Machine...</em>.</li>
+  <li>In <em>Name</em>, enter <span class="user-input">ubuntu-12.10-server-amd64</span> and click <em>Next &gt;</em>.</li>
+  <li>In <em>Startup memory</em>, enter <span class="user-input">2048</span>, check <em>Use Dynamic Memory for this virtual machine.</em> and click <em>Next &gt;</em>.</li>
+  <li>Click <em>Next &gt;</em>.</li>
+  <li>In <em>Size</em>, enter <span class="user-input">30</span> and click <em>Next &gt;</em>.</li>
+  <li>Select <em>Install an operating system from a boot CD/DVD-ROM</em>.</li>
+  <li>Select <em>Image file (.iso)</em> and click <em>Browse...</em> to select the image file <span class="file-path"><span class="image-file-name">image-file-name</span></span>.</li>
+  <li>Click <em>Next &gt;</em>.</li>
+  <li>Click <em>Finish</em>.</li>
+</ul>
+<h1>Configure virtual machine</h1>
+<ul>
+  <li>Right-click newly created virtual machine and select <em>Settings...</em>.</li>
+  <li>Under <em>Hardware</em>, click <em>Network Adapter</em> and click <em>Remove</em>.</li>
+  <li>Under <em>Hardware</em>, click <em>Add Hardware</em>.</li>
+  <li>Select <em>Legacy Network Adapter</em> and click <em>Add</em>.</li>
+  <li>Under <em>Legacy Network Adapter</em>, in <em>Virtual switch</em>, select the virtual network switch created in section A.</li>
+  <li>Click <em>OK</em>.</li>
+</ul>
+<!-- end:body -->
+</body>
+</html>

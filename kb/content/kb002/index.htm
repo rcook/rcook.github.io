@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Configuring Ubuntu VM in Windows Hyper-V with wi-fi</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/static/script/kblib.code.js"></script>
+  <script src="/static/script/kblib.contents.js"></script>
+  <script src="/static/script/kblib.parameters.js"></script>
+  <!-- begin:head -->
+  <script>
+  var Parameters = [
+    {name: "app-name", fullName: "Application name", defaultValue: "myrailsapp"},
+    {name: "user-name", fullName: "User name", defaultValue: "username"},
+    {name: "deployment-user-name", fullName: "Deployment user name", defaultValue: "deployment"},
+    {name: "ruby-version", fullName: "Ruby version", defaultValue: "2.0.0"},
+    {name: "rails-version", fullName: "Rails version", defaultValue: "3.2.13"}
+  ];
+  </script>
+  <!-- end:head -->
+</head>
+<body>
+<!-- begin:body -->
+<div id="parameters-container"></div>
+<a name="contents"></a>
+<h1 data-contents-role="skip">Contents</h1>
+<div id="contents"></div>
+<h1>References</h1>
+<ul>
+  <li><a href="http://www.web-l.nl/posts/5-setting-up-a-rails-production-server-part-1">http://www.web-l.nl/posts/5-setting-up-a-rails-production-server-part-1</a></li>
+</ul>
+<h1>Initial setup</h1>
+<h2>Ensure local package repository and packages are up to date</h2>
+<div class="code-block">
+sudo apt-get update
+sudo apt-get upgrade
+</div>
+<h2>Install Apache and MySQL</h2>
+<div class="code-block">
+sudo apt-get install git build-essential zlibc zlib1g-dev zlib1g
+sudo apt-get install apache2 apache2-prefork-dev libapr1-dev libaprutil1-dev
+sudo apt-get install curl libcurl4-openssl-dev libssl-dev libopenssl-ruby
+sudo apt-get install libreadline6 libreadline6-dev
+sudo apt-get install mysql-server mysql-client
+</div>
+<h1>Setting up RVM/Ruby/Rails</h1>
+<h2>Install prerequisites</h2>
+<div class="code-block">
+sudo apt-get install bash patch bzip2 git-core
+sudo apt-get install openssl
+sudo apt-get install libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev
+sudo apt-get install autoconf libc6-dev libgdbm-dev
+sudo apt-get install ncurses-dev automake libtool bison subversion
+sudo apt-get install pkg-config libffi-dev nodejs
+</div>
+<h2>Install RVM</h2>
+<div class="code-block">
+sudo bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+</div>
+<h2>Set up users and groups</h2>
+<div class="code-block">
+sudo adduser <span class="deployment-user-name">deployment-user-name</span>
+sudo adduser <span class="deployment-user-name">deployment-user-name</span> rvm
+sudo adduser <span class="user-name">user-name</span> <span class="deployment-user-name">deployment-user-name</span>
+sudo adduser <span class="user-name">user-name</span> rvm
+sudo chown -R <span class="deployment-user-name">deployment-user-name</span>:<span class="deployment-user-name">deployment-user-name</span> /var/www
+sudo chmod g+w /var/www
+</div>
+<h2>Log out and in again and then install Ruby and other bits</h2>
+<div class="code-block">
+rvm install <span class="ruby-version">ruby-version</span>
+rvm --default use <span class="ruby-version">ruby-version</span>
+gem install bundler
+</div>
+<h2>Create a new Rails app</h2>
+<div class="code-block">
+rvm use <span class="ruby-version">ruby-version</span>-p0@<span class="app-name">app-name</span> --create
+rvm --default use <span class="ruby-version">ruby-version</span>-p0@<span class="app-name">app-name</span>
+gem install rails --version <span class="rails-version">rails-version</span>
+cd /var/www/
+rails new <span class="app-name">app-name</span> -d mysql
+cd <span class="app-name">app-name</span>/
+</div>
+<h2>Fix up database configuration in <span class="file-path">database.yml</span></h2>
+Add log-in info created for database into configuration file.
+<h1>Setting up Passenger</h1>
+<h2>Install prerequisites</h2>
+<div class="code-block">
+sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install apache2-prefork-dev
+sudo apt-get install libapr1-dev
+sudo apt-get install libaprutil1-dev
+</div>
+<h2>Install Passenger using <a href="https://github.com/FooBarWidget/passenger/pull/71">these</a> instructions</h2>
+<div class="code-block">
+git clone https://github.com/FooBarWidget/passenger.git
+cd passenger/
+gem build passenger.gemspec
+gem install passenger-4.0.0.rc5.gem
+cd ..
+rm -rf passenger/
+rvmsudo passenger-install-apache2-module
+</div>
+<h2>Create file <span class="file-path">/etc/apache2/mods-available/passenger.load</span> with following content:</h2>
+<div class="content">
+LoadModule passenger_module /usr/local/rvm/gems/ruby-<span class="ruby-version">ruby-version</span>-p0/gems/passenger-4.0.0.rc5/libout/apache2/mod_passenger.so
+</div>
+<h2>Create file <span class="file-path">/etc/apache2/mods-available/passenger.conf</span> with following content:</h2>
+<div class="content">
+PassengerRoot /usr/local/rvm/gems/ruby-<span class="ruby-version">ruby-version</span>-p0/gems/passenger-4.0.0.rc5
+PassengerRuby /usr/local/rvm/wrappers/ruby-<span class="ruby-version">ruby-version</span>-p0/ruby
+</div>
+<h2>Modify <span class="file-path">/etc/apache2/apache2.conf</span> by adding following to end</h2>
+<div class="content">
+ServerName localhost
+</div>
+<h2>Activate Passenger and restart Apache</h2>
+<div class="code-block">
+sudo a2enmod passenger
+sudo service apache2 restart
+</div>
+<h2>Move the default page and update <span class="file-path">/etc/apache2/sites-available/default</span> using <a href="http://www.web-l.nl/posts/5-setting-up-a-rails-production-server-part-1">these</a> instructions</h2>
+<div class="code-block">
+mkdir /var/www/default
+mv /var/www/index.html /var/www/default/index.html
+</div>
+<h1>Fix <span class="code-inline"><span class="deployment-user-name">deployment-user-name</span></span>'s access to web</h1>
+<div class="code-block">
+sudo chown -R <span class="deployment-user-name">deployment-user-name</span>:<span class="deployment-user-name">deployment-user-name</span> /var/www
+</div>
+<h1>Deployment of app</h1>
+<h2>Log in as <span class="code-inline"><span class="deployment-user-name">deployment-user-name</span></span> and simulate deployment/migration</h2>
+<div class="code-block">
+cd /var/www/<span class="app-name">app-name</span>/
+rvm use <span class="ruby-version">ruby-version</span>-p0 --default
+bundle install --deployment --without development test
+bundle exec rake db:migrate RAILS_ENV=production
+bundle exec rake assets:precompile
+touch /var/www/<span class="app-name">app-name</span>/tmp/restart.txt
+</div>
+<h2>Log back in as regular user and configure virtual host <span class="file-path">/etc/apache2/sites-available/<span class="app-name">app-name</span></span></h2>
+<div class="content">
+&lt;VirtualHost _default_:80&gt;
+  # ServerName www.example.com # Commented out for default
+  DocumentRoot /var/www/<span class="app-name">app-name</span>/public/
+  &lt;Directory /var/www/<span class="app-name">app-name</span>/public/&gt;
+    AllowOverride all
+    Options -MultiViews
+  &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</div>
+<h2>Enable Rails app</h2>
+<div class="code-block">
+sudo a2ensite <span class="app-name">app-name</span>
+sudo service apache2 reload
+sudo a2dissite default
+</div>
+<!-- end:body -->
+</body>
+</html>

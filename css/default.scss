@@ -67,3 +67,7 @@
 a > code {
   text-decoration: underline;
 }
+
+a:hover > code {
+  color: purple;
+}

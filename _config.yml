@@ -2,6 +2,8 @@ markdown: kramdown
 permalink: /blog/:year/:title/
 relative_permalinks: false
 exclude:
+- .jekyll-metadata
+- _gists/
 - CNAME
 - Gemfile
 - Gruntfile.js
@@ -10,7 +12,9 @@ exclude:
 - Rakefile
 - node_modules/
 - package.json
+- script/
 - vendor/
+- yyyy-mm-dd-template.md
 
 gems:
 - jekyll-gist

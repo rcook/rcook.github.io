@@ -2,23 +2,23 @@ markdown: kramdown
 permalink: /blog/:year/:title/
 relative_permalinks: false
 exclude:
-  - CNAME
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - node_modules/
-  - package.json
-  - Rakefile
-  - README.md
-  - vendor/
+- CNAME
+- Gemfile
+- Gruntfile.js
+- LICENSE
+- README.md
+- Rakefile
+- node_modules/
+- package.json
+- vendor/
 
 gems:
-  - jekyll-gist
-  - jekyll-paginate
+- jekyll-gist
+- jekyll-paginate
 
 whitelist:
-  - jekyll-gist
-  - jekyll-paginate
+- jekyll-gist
+- jekyll-paginate
 
 layouts_dir: ./_noita
 
@@ -29,32 +29,31 @@ noita:
     name: Richard Cook
   lang: en
   favicons:
-    - /assets/favicon-256.png
+  - /assets/favicon-256.png
   topbar:
     toggle: Menu
     middle:
-      - name: LinkedIn
-        url: http://www.linkedin.com/in/richardthepeace
-      - name: Twitter
-        url: https://twitter.com/richardthepeace
-      - name: Stack Overflow
-        url: http://stackoverflow.com/users/394167/richard-cook
-      - name: Atom
-        url: /atom.xml
-      - name: RSS
-        url: /rss.xml
+    - name: LinkedIn
+      url: http://www.linkedin.com/in/richardthepeace
+    - name: Twitter
+      url: https://twitter.com/richardthepeace
+    - name: Stack Overflow
+      url: http://stackoverflow.com/users/394167/richard-cook
+    - name: Atom
+      url: /atom.xml
+    - name: RSS
+      url: /rss.xml
     right:
-      - name: Tags
-        url: /tags/
-      - name: About
-        url: /about/
-        class: small button
+    - name: Tags
+      url: /tags/
+    - name: About
+      url: /about/
+      class: small button
   stylesheets:
-    - /css/default.css
+  - /css/default.css
 
 compress_html:
   clippings: [html, head, title, base, link, meta, style, body, article, section, nav, aside, h1, h2, h3, h4, h5, h6, hgroup, header, footer, address, p, hr, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, main, div, table, caption, colgroup, col, tbody, thead, tfoot, tr, td, th]
   endings: [html, head, body, li, dt, dd, p, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
 
 paginate: 10
-

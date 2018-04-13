@@ -27,6 +27,6 @@ regular blog yet:
 [2]: https://github.com/penibelst/jekyll-noita
 [3]: http://blog.lanyonm.org/
 [4]: https://github.com/snaptortoise/jekyll-rss-feeds/
-[article-0]: /kb/content/kb000/
-[article-1]: /kb/content/kb001/
-[article-2]: /kb/content/kb002/
+[article-0]: /pages/kb000.html
+[article-1]: /pages/kb001.html
+[article-2]: /pages/kb002.html

@@ -1,11 +1,15 @@
+---
+layout: kb
+title: Setting up remote access
+---
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>Setting up passwordless PuTTY access to server</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="/static/script/kblib.contents.js"></script>
-  <script src="/static/script/kblib.parameters.js"></script>
+  <script src="/assets/scripts/kblib.contents.js"></script>
+  <script src="/assets/scripts/kblib.parameters.js"></script>
   <!-- begin:head -->
   <script>
   var Parameters = [
@@ -88,7 +92,7 @@
 <p>
   Now, whenever you log into Windows you'll be presented with the following prompt:
 </p>
-<img src="enter-passphrase.png" width="216" height="126">
+<img src="/assets/kb000-enter-passphrase.png" width="216" height="126">
 <p>
   You should enter the passphrase you chose when you created the private key earlier on.
   This unlocks the local private key file and decrypts it into memory so that you can use
@@ -150,7 +154,7 @@
   Note that the very first time you attempt to connect to the server from your machine
   you'll get the following security alert:
 <p>
-<img src="security-alert.png" width="435" height="294">
+<img src="/assets/kb000-security-alert.png" width="435" height="294">
 <p>
   This is expected. Please verify that the displayed fingerprint is exactly as given in
   the example above&mdash;this identifies my server to your machine. Click <em>Yes</em>
@@ -162,7 +166,7 @@
 <p>
   Once you have successfully logged in, you'll see a shell window looking something like the following:
 </p>
-<img src="shell.png" width="675" height="424">
+<img src="/assets/kb000-shell.png" width="675" height="424">
 <p>
   <em><span class="host-name">host-name</span></em> is the host name of my server. As you can see, this server is running Ubuntu 11.04.
   The default shell is bash, so all the usual Linux commands will work. If you type <tt>ls</tt>,

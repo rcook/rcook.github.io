@@ -106,12 +106,12 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     mercenary (0.3.5)
-    mini_portile2 (2.0.0)
+    mini_portile2 (2.3.0)
     minitest (5.8.4)
     multipart-post (2.0.0)
     net-dns (0.8.0)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     parallel (1.6.2)
@@ -146,4 +146,8 @@ DEPENDENCIES
   jekyll-gist
   jekyll-paginate
   kramdown
+  nokogiri (>= 1.8)
   rake
+
+BUNDLED WITH
+   1.16.1

@@ -65,6 +65,6 @@ You can view the output from the program [here][criterion-chart].
 Use `++`, `concat` or `ShowS`, it really makes no difference. Don't use `Seq`. I will need to analyse further to make sure that this is a meaningful test. See you later!
 
 [criterion]: http://www.serpentine.com/criterion/tutorial.html
-[criterion-chart]: /pages/2018-03-21-criterion.html
+[criterion-chart]: /pages/2018-03-21-criterion
 [haskell-stack]: https://haskellstack.org/
 [project]: https://github.com/rcook/concat-vs-append

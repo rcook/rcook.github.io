@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rosetta Code (UTF8)
+title: Rosetta Code (UTF-8)
 created: 2018-04-13 15:00:00 -0700
 tags:
 - Haskell

@@ -9,7 +9,7 @@ tags:
 I just noticed that I almost managed to go through the whole of May 2018 without posting a single article
 to my blog. Fortunately, there's still time.
 
-As readers of this blog might know, I typically use [Github Gists][gist] to share code samples. I've been playing around with the free online IDE [repl.it][repl-it] and thought I'd give that a try. So, I will present my code samples a different way today.
+As readers of this blog might know, I typically use [GitHub Gists][gist] to share code samples. I've been playing around with the free online IDE [repl.it][repl-it] and thought I'd give that a try. So, I will present my code samples a different way today.
 
 [Bartosz][bartosz] gave a [presentation][seahug] on the [ST monad][st-monad] on Saturday, so here I present an [example][repl-it-example] using [`STUArray`][stuarray].
 

@@ -10,9 +10,60 @@ Here's my first real use of [ports][ports] in an [Elm][elm] application. It'll b
 
 ### `.gitignore`
 
-Ignore some generated files and assets:
+* Ignore some generated files
+* Ignore assets such as the Google API client ID and [jQuery][jquery]
 
-{% gist 47e67e065a85b4542601565c1f6bbbe2 .gitignore %}
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 .gitignore %}
+
+### `elm-package.json`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 elm-package.json %}
+
+### `index.html`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 index.html %}
+
+### `index.js`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 index.js %}
+
+### `Interop.elm`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 Interop.elm %}
+
+### `Main.elm`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 Main.elm %}
+
+### `Makefile`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 Makefile %}
+
+### `Model.elm`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 Model.elm %}
+
+### `Msg.elm`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 Msg.elm %}
+
+### `Subscriptions.elm`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 Subscriptions.elm %}
+
+### `Update.elm`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 Update.elm %}
+
+### `View.elm`
+
+{% gist f10afe19d18b67ba1abbaaa1763ad1e3 View.elm %}
+
+### Repository
+
+Check out the [full repository][repo].
 
 [elm]: https://elm-lang.org/
+[jquery]: https://jquery.com/
 [ports]: https://guide.elm-lang.org/interop/javascript.html
+[repo]: https://gist.github.com/rcook/f10afe19d18b67ba1abbaaa1763ad1e3/

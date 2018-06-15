@@ -57,7 +57,7 @@ This file is typically updated using the [`elm-package`][elm-package] command.
 
 #### `index.html`
 
-* Includes scripts including jQuery, Elm compiler output and application JavaScript
+* Brings in scripts including jQuery, Elm compiler output and application JavaScript
 * Contains empty `<body>` element where Elm application is rendered
 
 {% gist f10afe19d18b67ba1abbaaa1763ad1e3 index.html %}

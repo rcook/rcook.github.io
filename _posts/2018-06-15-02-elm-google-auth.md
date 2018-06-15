@@ -28,7 +28,7 @@ On the Elm side of things, the application will provide the bare minimum compone
 Note that I use the following packages/tools in this project:
 
 * [NoRedInk/elm-decode-pipeline][elm-decode-pipeline]: This simplifies decoding of JSON data structures from ports
-* [elm-live][elm-live]: This application combines HTML, JavaScript and Elm components which the standard Elm development server, [elm-reactor][elm-reactor], only barely copes with after some cajoling
+* [elm-live][elm-live]: This application combines HTML, JavaScript and Elm components which the standard Elm development server, [elm-reactor][elm-reactor], only barely copes with after some cajoling: elm-live does a good job of handling something closer to real apps and has live reloading too!
 
 The application can be run by typing `make` at the command line:
 

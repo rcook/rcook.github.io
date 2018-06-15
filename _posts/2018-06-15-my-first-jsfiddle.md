@@ -8,6 +8,6 @@ tags:
 ---
 Here it is:
 
-<script async src="https://jsfiddle.net/rcook/kyut6hzv/8/embed/"></script>
+<script async src="https://jsfiddle.net/rcook/kyut6hzv/10/embed/"></script>
 
 Don't worry: I'm still writing Haskell (and Elm)!

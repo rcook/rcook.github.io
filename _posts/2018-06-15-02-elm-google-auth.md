@@ -29,6 +29,9 @@ Note that I use the following packages/tools in this project:
 
 * Ignore some generated files
 * Ignore assets such as the Google API client ID and [jQuery][jquery]
+* You'll need to create your `google-api-client-id.txt` file by grabbing your Google API client ID after consulting the following resources:
+    * [Creating and managing projects][create-google-api-project]
+    * [Setting up OAuth 2.0][set-up-oauth2]
 
 {% gist f10afe19d18b67ba1abbaaa1763ad1e3 .gitignore %}
 
@@ -80,6 +83,7 @@ Note that I use the following packages/tools in this project:
 
 Check out the [full repository][repo].
 
+[create-google-api-project]: https://cloud.google.com/resource-manager/docs/creating-managing-projects
 [elm]: https://elm-lang.org/
 [elm-decode-pipeline]: http://package.elm-lang.org/packages/NoRedInk/elm-decode-pipeline/3.0.0
 [elm-live]: https://github.com/architectcodes/elm-live
@@ -90,3 +94,4 @@ Check out the [full repository][repo].
 [jquery]: https://jquery.com/
 [ports]: https://guide.elm-lang.org/interop/javascript.html
 [repo]: https://gist.github.com/rcook/f10afe19d18b67ba1abbaaa1763ad1e3/
+[set-up-oauth2]: https://support.google.com/cloud/answer/6158849?hl=en

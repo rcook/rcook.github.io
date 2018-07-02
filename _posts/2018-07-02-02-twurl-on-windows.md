@@ -26,79 +26,25 @@ tags:
 
 Next, we can run some Twitter search queries. Here's the [search example][search-example] tweaked a little so it actually works:
 
-```bash
-twurl "/1.1/search/tweets.json?q=nasa&result_type=popular"
-```
+{% gist dfb7cbe66db11f66425250f9b6c451fd 0.sh %}
 
 Notice how I've surrounded the URL with double quotes: this is necessary since the `&` character has special meaning on most operating systems including Windows.
 
 This command will generate a blob of JSON. You can save this to a file as follows:
 
-```bash
-twurl "/1.1/search/tweets.json?q=nasa&result_type=popular" > nasa.json
-```
+{% gist dfb7cbe66db11f66425250f9b6c451fd 1.sh %}
 
 This will create a file named `nasa.json`. You can pretty-print this JSON to the command prompt using a little Ruby script as follows:
 
-```ruby
-require 'json'
+{% gist dfb7cbe66db11f66425250f9b6c451fd read_json.rb %}
 
-obj = JSON.parse(File.read('nasa.json'))
-puts JSON.pretty_generate(obj)
-```
+A roughly equivalent Python script might be:
 
-A roughly equivalent Python script would be:
-
-```python
-import json
-
-with open("nasa.json", "rt") as f:
-    obj = json.loads(f.read())
-
-print(json.dumps(obj, indent=2))
-```
+{% gist dfb7cbe66db11f66425250f9b6c451fd read_json.py %}
 
 Note that this only returns the first 15 tweets. Here's a bigger Python script that will handle the pagination for you:
 
-```python
-#!/usr/bin/env python2
-import subprocess
-import json
-import urllib
-import urlparse
-
-# twurl must have already been authorized using the "authorize" subcommand
-TWURL_COMMAND = ["twurl"]
-
-def make_url(url, qs):
-  qs_str = urllib.urlencode(qs)
-  return url if len(qs_str) == 0 else "{}?{}".format(url, qs_str)
-
-def search(url, qs):
-  statuses = []
-
-  while True:
-    full_url = make_url(url, qs)
-    command = TWURL_COMMAND + [full_url]
-    obj = json.loads(subprocess.check_output(command))
-
-    statuses.extend(obj["statuses"])
-    search_metadata = obj["search_metadata"]
-    next_results = search_metadata.get("next_results")
-    if next_results is None:
-      break
-
-    qs = urlparse.parse_qsl(next_results[1:])
-
-  return statuses
-
-statuses = search("/1.1/search/tweets.json", [
-  ("q", "nasa"),
-  ("result_type", "popular")
-])
-
-print(json.dumps(statuses, indent=2))
-```
+{% gist dfb7cbe66db11f66425250f9b6c451fd fetch_all.py %}
 
 Done for now.
 

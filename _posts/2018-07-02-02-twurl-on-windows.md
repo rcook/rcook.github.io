@@ -26,7 +26,7 @@ tags:
 
 Next, we can run some Twitter search queries. Here's the [search example][search-example] tweaked a little so it actually works:
 
-```
+```bash
 twurl "/1.1/search/tweets.json?q=nasa&result_type=popular"
 ```
 
@@ -34,13 +34,13 @@ Notice how I've surrounded the URL with double quotes: this is necessary since t
 
 This command will generate a blob of JSON. You can save this to a file as follows:
 
-```
+```bash
 twurl "/1.1/search/tweets.json?q=nasa&result_type=popular" > nasa.json
 ```
 
 This will create a file named `nasa.json`. You can pretty-print this JSON to the command prompt using a little Ruby script as follows:
 
-```
+```ruby
 require 'json'
 
 obj = JSON.parse(File.read('nasa.json'))
@@ -49,7 +49,7 @@ puts JSON.pretty_generate(obj)
 
 A roughly equivalent Python script would be:
 
-```
+```python
 import json
 
 with open("nasa.json", "rt") as f:
@@ -60,7 +60,7 @@ print(json.dumps(obj, indent=2))
 
 Note that this only returns the first 15 tweets. Here's a bigger Python script that will handle the pagination for you:
 
-```
+```python
 #!/usr/bin/env python2
 import subprocess
 import json

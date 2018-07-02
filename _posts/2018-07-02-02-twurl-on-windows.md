@@ -1,57 +1,109 @@
 ---
 layout: post
-title: Page display mode in hello.js and YNAB
-created: 2018-07-02 09:15:00 -0700
+title: Twurl on Windows
+created: 2018-07-02 09:35:00 -0700
 tags:
-- HTML
-- JavaScript
-- hello.js
-- OAuth
-- YNAB
+- Twurl
+- Twitter
+- Windows
 ---
-My wife, [Katy][bigredabacus], is a big fan of [YNAB][ynab] and consequently we've started writing an app for it. I get to do all the fun parts like figuring out the authentication/authorization.
+[Katy][bigredabacus] likes to get her hands on interesting data. Recently, it's been Twitter data among other things. Here are the steps I recently followed to get [Twurl][twurl] working on her Windows laptop.
 
-Plumbing in OAuth2 support has always been tricky and adding support for multiple OAuth providers has, at least in my case, always led to a bunch of ugly code. Fortunately, I recently discovered [hello.js][hello-js] which takes away much of the pain.
+* Download and install Ruby using [Ruby Installer][ruby-installer]
+* Open a Windows command prompt
+* Check that Ruby is installed: `ruby --version`
+* Check that RubyGems is installed: `gem --version`
+* Install [Twurl][twurl]: `gem install twurl`
+* Grab your consumer key and consumer secret from [here][twitter-api-keys]
+* Authorize Twurl
+  * Use your consumer key/secret: `twurl authorize --consumer-key CONSUMER_KEY --consumer-secret CONSUMER_SECRET`
+  * Copy and paste the link output by the command into your browser
+  * Follow the prompts
+  * Click _Authorize app_
+  * Copy the 7-digit PIN displayed on the final page
+  * Paste the PIN into the command prompt
+* Test Twurl: `twurl /1.1/statuses/home_timeline.json`
 
-In the specific case of my application, I want to require the user to sign in on initial page load. I wanted to do this using the standard popup. However, this, of course, proves to be impossible in the presence of popup blockers (see [my bug report][bug-report] and various [StackOverflow discussions][stackoverflow]. Fortunately, there is the "page" display mode provided by the [`hello.login`][hello-login] method which works pretty well. I'd like to share my simple demo app with you today.
+Next, we can run some Twitter search queries. Here's the [search example][search-example] tweaked a little so it actually works:
 
-My application consists of a landing page `index.html`:
+```
+twurl "/1.1/search/tweets.json?q=nasa&result_type=popular"
+```
 
-{% gist 360f788a00f66194269d1efb42de3f80 index.html %}
+Notice how I've surrounded the URL with double quotes: this is necessary since the `&` character has special meaning on most operating systems including Windows.
 
-All this does is provide a link to the "dashboard" which is defined in `dashboard.html` which is where the meat of the application lives:
+This command will generate a blob of JSON. You can save this to a file as follows:
 
-{% gist 360f788a00f66194269d1efb42de3f80 dashboard.html %}
+```
+twurl "/1.1/search/tweets.json?q=nasa&result_type=popular" > nasa.json
+```
 
-The dashboard has the following things of note:
+This will create a file named `nasa.json`. You can pretty-print this JSON to the command prompt using a little Ruby script as follows:
 
-* Includes `<script>` tags to load [jQuery][jquery], hello.js and my own `hello-ynab.js` script (described below)
-* Defines a simple module `Auth` which encapsulates a handful of hello.js methods
-* A "sign-out" button which is enabled when the user is signed in and which simply signs the user out and redirects back to `index.html`
+```
+require 'json'
 
-Finally, I provide my own custom hello.js module to provide basic support for YNAB:
+obj = JSON.parse(File.read('nasa.json'))
+puts JSON.pretty_generate(obj)
+```
 
-{% gist 360f788a00f66194269d1efb42de3f80 hello-ynab.js %}
+A roughly equivalent Python script would be:
 
-Once this module is fleshed out a little more, I hope to contribute it back to the hello.js project.
+```
+import json
 
-The code repository also includes copies of `jquery.min.js` and `hello.js` and so should be a fully working demo app. To run it locally, you'll need to do the following:
+with open("nasa.json", "rt") as f:
+    obj = json.loads(f.read())
 
-* Clone the repository from `https://gist.github.com/360f788a00f66194269d1efb42de3f80.git`
-* [Obtain a YNAB client ID][ynab]
-* Replace `REDACTED` in `dashboard.html` with this client ID
-* Run a simple web server in the repository's directory, e.g. `python -m SimpleHTTPServer 3000`
+print(json.dumps(obj, indent=2))
+```
 
-Note that YNAB requires an HTTPS redirect URI, so you'll probably end up having to set up an Nginx reverse proxy to slap some TLS on top of your simple web server. Here's a simple Nginx configuration file demonstrating roughly how you might do this:
+Note that this only returns the first 15 tweets. Here's a bigger Python script that will handle the pagination for you:
 
-{% gist 360f788a00f66194269d1efb42de3f80 nginx.conf %}
+```
+#!/usr/bin/env python2
+import subprocess
+import json
+import urllib
+import urlparse
 
-Enjoy!
+# twurl must have already been authorized using the "authorize" subcommand
+TWURL_COMMAND = ["twurl"]
+
+def make_url(url, qs):
+  qs_str = urllib.urlencode(qs)
+  return url if len(qs_str) == 0 else "{}?{}".format(url, qs_str)
+
+def search(url, qs):
+  statuses = []
+
+  while True:
+    full_url = make_url(url, qs)
+    command = TWURL_COMMAND + [full_url]
+    obj = json.loads(subprocess.check_output(command))
+
+    statuses.extend(obj["statuses"])
+    search_metadata = obj["search_metadata"]
+    next_results = search_metadata.get("next_results")
+    if next_results is None:
+      break
+
+    qs = urlparse.parse_qsl(next_results[1:])
+
+  return statuses
+
+statuses = search("/1.1/search/tweets.json", [
+  ("q", "nasa"),
+  ("result_type", "popular")
+])
+
+print(json.dumps(statuses, indent=2))
+```
+
+Done for now.
 
 [bigredabacus]: https://bigredabacus.com/
-[bug-report]: https://github.com/MrSwitch/hello.js/issues/564
-[hello-login]: https://adodson.com/hello.js/#hellologin
-[hello-js]: https://adodson.com/hello.js/
-[jquery]: https://jquery.com/
-[stackoverflow]: https://stackoverflow.com/questions/2587677/avoid-browser-popup-blockers
-[ynab]: https://ynab.com/
+[ruby-installer]: https://github.com/oneclick/rubyinstaller2/releases/download/rubyinstaller-2.4.4-2/rubyinstaller-devkit-2.4.4-2-x64.exe
+[search-example]: https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets.html
+[twitter-api-keys]: https://apps.twitter.com/app/15428470/keys
+[twurl]: https://github.com/twitter/twurl

@@ -11,7 +11,7 @@ tags:
 ---
 My wife, [Katy][bigredabacus], is a big fan of [YNAB][ynab] and consequently we've started writing an app for it. I get to do all the fun parts like figuring out the authentication/authorization.
 
-Plumbing in OAuth2 support has always been tricky (at least for little old me) and adding support for multiple OAuth providers has, in my experience, always led to a big splat of hideous glue code. Fortunately, I recently discovered [hello.js][hello-js] which takes away much of the pain.
+Plumbing in OAuth2 support has always been tricky and adding support for multiple OAuth providers has, at least in my case, always led to a bunch of ugly code. Fortunately, I recently discovered [hello.js][hello-js] which takes away much of the pain.
 
 In the specific case of my application, I want to require the user to sign in on initial page load. I wanted to do this using the standard popup. However, this, of course, proves to be impossible in the presence of popup blockers (see [my bug report][bug-report] and various [StackOverflow discussions][stackoverflow]. Fortunately, there is the "page" display mode provided by the [`hello.login`][hello-login] method which works pretty well. I'd like to share my simple demo app with you today.
 

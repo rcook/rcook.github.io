@@ -145,5 +145,36 @@ gnome-tweaks &
 * Click on _Appearance_
 * Select _Large Mouse Cursors_ next to _Cursor_
 
+## Install and configure key-mon
+
+From a terminal:
+
+```
+sudo apt-get -y install key-mon
+key-mon &
+```
+
+Configure it as follows:
+
+* Drag to bottom right-hand corner of screen
+* Right-click the window and click _Settings&hellip;_
+* Click _Misc_ tab
+* Next to _Themes_ select _big-letters_
+* Next to _Keymap_ select _us.kbd_
+* Click _Close_
+
+Configure it to run at startup:
+
+```
+gnome-session-properties &
+```
+
+* Under _Additional startup programs_, click _Add_
+* Next to _Name_ enter _key-mon_
+* Next to _Command_ enter _/usr/bin/key-mon_
+* Click _Add_
+* Click _Close_
+* Log out and log back in
+
 [ubuntu]: http://releases.ubuntu.com/18.04/ubuntu-18.04-desktop-amd64.iso
 [virtualbox]: https://www.virtualbox.org/

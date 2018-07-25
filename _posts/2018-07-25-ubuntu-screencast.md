@@ -119,7 +119,7 @@ sudo apt-get -y install build-essential module-assistant
 * Click _Extension Settings_
 * Under _Intellihide_, toggle both _Only hide panel when a window takes the space_ and _Only when the active window takes the space_ into the "off" position
 * Open terminal and run `sudo apt-get -y install gnome-tweak-tool`
-* Click _Show Applications_, type _tweaks_ and launch _Tweaks_
+* Launch Tweaks using `gnome-tweaks &`
 * Click _Desktop_ and set _Show Icons_ to "off"
 * Close Tweaks
 
@@ -129,6 +129,21 @@ sudo apt-get -y install build-essential module-assistant
 * Go to `https://chrome.google.com/` and follow instructions to install Chrome
 * Once installed, launch Chrome and add it to the dock by right-clicking and selecting _Add to Favorites_
 * Remove Firefox from dock
+
+## Install large-icon theme
+
+* Go `https://www.gnome-look.org/content/show.php/Large+Mouse+Cursors?content=140787`
+* Download `140787-LargeCursors.tar.bz`
+
+```
+mkdir $HOME/.icons
+cd $HOME/.icons
+tar xvjf $HOME/Downloads/140787-LargeCursors.tar.bz2
+gnome-tweaks &
+```
+
+* Click on _Appearance_
+* Select _Large Mouse Cursors_ next to _Cursor_
 
 [ubuntu]: http://releases.ubuntu.com/18.04/ubuntu-18.04-desktop-amd64.iso
 [virtualbox]: https://www.virtualbox.org/

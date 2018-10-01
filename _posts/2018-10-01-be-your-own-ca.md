@@ -6,11 +6,9 @@ tags:
 - OpenSSL
 - Certificates
 ---
-# Be Your Own Certificate Authority (CA)
+Apparently I work in [network security][aws]. This means it's high time I figure out all this certificate malarky. I've maintained SSL-protected web sites before and, thus, had some contact with the [`openssl`][openssl] command. However, all these `.key`, `.pem` and `.csr` files have confused me. So, I thought I'd sit down and document all the bits and pieces required to stand up your own root certificate authority (CA) certificate and document what all the commands mean along the way.
 
-This how-to documents the commands used to generate certificates and other artifacts as well as appropriate secret-handling instructions.
-
-These steps assume that you have a secured computer _A_ as well as one or more web servers, _B_ etc.
+These steps assume that you have a secured CA computer _A_ as well as one or more web servers, _B_ etc.
 
 Values:
 
@@ -20,9 +18,9 @@ Values:
 
 ## Root CA
 
-The root CA key and certificate constitute the root of your trust hierarchy. You will only generate these materials once. From these materials, you can then generate an arbitrary number of _derived_ certificates for individual web sites:
+The root CA key and certificate constitute the root of your trust hierarchy. You will only generate these materials once. From these materials, you can then generate an arbitrary number of _derived_ certificates for individual web sites.
 
-### Private key
+### Root CA private key
 
 You _must_ provide a secure, secret passphrase for this private key. Run the following command on _A_:
 
@@ -37,8 +35,9 @@ Notes:
 * Output file is a secret
 * Output file must be stored in a secure location
 * All subsequent usage of `rootca.key` to perform certificate signing will require the secret passphrase
+* Output file contains the private key and, by extension, the public key
 
-### Certificate
+### Root CA certificate
 
 Run the following command on _A_:
 
@@ -65,7 +64,7 @@ Notes:
 
 These steps generate a certificate that allows one or more derived, or subsidiary, web servers to securely identify themselves to clients by deriving trust from the root CA we set up previously. The following steps will refer to a given web server as _B_.
 
-### Private key
+### Server private key
 
 Run the following command on _B_:
 
@@ -79,8 +78,9 @@ Notes:
 * Output file: `myserver.key` (server private key)
 * Output file is a secret
 * Output file should not leave _B_
+* Output file contains the private key and, by extension, the public key
 
-### Certificate-signing request
+### Server [certificate-signing request][csr] (CSR)
 
 Run the following command on _B_:
 
@@ -98,8 +98,9 @@ Notes:
 * Output: `myserver.csr` (server certificate-signing request)
 * Output file is not a secret
 * Output file can be transferred to _A_ and deleted from _B_ after that
+* CSR contains the server public key
 
-### Configuration file
+### Signing configuration file
 
 Run the following command on _A_:
 
@@ -121,7 +122,7 @@ Notes:
 * Output file: `myserver.cnf` (server certificate configuration)
 * Output file describes the certificate and defines the DNS name that will be covered by the resulting certificate
 
-### Certificate
+### Server certificate
 
 Run the following command on _A_:
 
@@ -143,7 +144,8 @@ Notes:
 * Input files: `rootca.key`, `rootca.pem`, `myserver.cnf`, `myserver.csr`
 * Output: `rootca.srl` (root CA serial number), `myserver.crt` (server certificate)
 * This will require the root CA secret passphrase
-* Copy the server certificate back to _B_
+* Output file is not a secret
+* Copy the output file back to _B_
 
 ## Install root CA certificate in Chrome
 
@@ -156,3 +158,7 @@ Notes:
 * Locate `rootca.pem` and click _Open_
 * Check _Trust this certificate for identifying websites_
 * Click _OK_
+
+[aws]: https://aws.amazon.com/
+[csr]: https://en.wikipedia.org/wiki/Certificate_signing_request
+[openssl]: https://www.openssl.org/

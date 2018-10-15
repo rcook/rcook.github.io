@@ -105,8 +105,8 @@ sudo apt-get -y install build-essential module-assistant
 ## Set resolution and remove window chrome
 
 * From _View_, click _Virtual Screen 1_ and click _Resize to 1280x720_
-* From _View_, click _Menu Bar_ and uncheck _Show Menu Bar_
 * From _View_, click _Status Bar_ and uncheck _Show Status Bar_
+* From _View_, click _Menu Bar_ and uncheck _Show Menu Bar_
 
 ## Tidy up desktop
 

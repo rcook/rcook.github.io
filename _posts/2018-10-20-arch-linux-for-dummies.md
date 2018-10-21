@@ -177,7 +177,7 @@ locale-gen
 Configure your time zone:
 
 ```bash
-ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
 ```
 
 Set your host name:
@@ -192,17 +192,17 @@ Create an "init" file:
 mkinitcpio -p linux
 ```
 
-Update your GRUB configuration to scan for this new OS:
-
-```bash
-update-grub
-```
-
 Install useful starter packages and settings to get wi-fi working on reboot and to enable basic browsing of the Internet:
 
 ```bash
-pacman -Sy dhclient dialog iw lynx tmux wpa_actiond wpa_supplicant
+pacman -Sy dhclient dialog grub iw lynx tmux wpa_actiond wpa_supplicant
 systemctl enable netctl-auto@wlp2s0.service
+```
+
+Update your GRUB configuration to scan for this new OS:
+
+```bash
+grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 Once that's done, exit out of the chroot sandbox and reboot your system:

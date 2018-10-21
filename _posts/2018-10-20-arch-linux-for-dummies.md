@@ -215,3 +215,31 @@ reboot
 ## Boot new Arch Linux installation
 
 At this point, your GRUB menu should include an option to start up your fresh new Arch Linux installation. Do it!
+
+## Connect to wi-fi
+
+Log in to your `root` account with the password you configured earlier.
+
+```bash
+wifi-menu wlp2s0
+```
+
+# Create a non-root user
+
+```bash
+useradd --create-home myuser
+```
+
+# Add new user to `sudoers` file
+
+```bash
+visudo
+```
+
+Add an entry like the following:
+
+```
+myuser ALL=(ALL) ALL
+```
+
+You can then run as your unprivileged user and use `sudo` when you wish to run with root privileges

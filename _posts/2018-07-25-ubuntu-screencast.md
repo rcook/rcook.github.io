@@ -182,6 +182,7 @@ gnome-session-properties &
 * Click on _Privacy_
 * Click on _Screen Lock_
 * Toggle _Automatic Screen Lock_ to _Off_
+* Toggle _Show Notifications_ to _Off_
 
 [ubuntu]: http://releases.ubuntu.com/18.04/ubuntu-18.04-desktop-amd64.iso
 [virtualbox]: https://www.virtualbox.org/

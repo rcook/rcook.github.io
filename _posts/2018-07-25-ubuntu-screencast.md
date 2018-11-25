@@ -176,5 +176,12 @@ gnome-session-properties &
 * Click _Close_
 * Log out and log back in
 
+## Disable screen lock
+
+* Click on _Applications_ and click _Settings_
+* Click on _Privacy_
+* Click on _Screen Lock_
+* Toggle _Automatic Screen Lock_ to _Off_
+
 [ubuntu]: http://releases.ubuntu.com/18.04/ubuntu-18.04-desktop-amd64.iso
 [virtualbox]: https://www.virtualbox.org/

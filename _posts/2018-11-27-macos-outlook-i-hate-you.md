@@ -26,6 +26,6 @@ From the _System Preferences&hellip;_ system menu:
 * Enter a keyboard shortcut under _Keyboard Shortcut_
 * Click _Add_
 
-Voil&agrave!
+Voil&agrave;!
 
 Note that Outlook might periodically remove the command from the _Message_/_Move_ menu. In this case your keyboard shortcut will stop working. To fix this issue, reinstate the command by moving another message to the archive folder.

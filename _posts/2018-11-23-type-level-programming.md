@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resources for type-level programming in Haskell
-created: 2018-11-01 08:15:00 -0800
+created: 2018-11-23 08:15:00 -0800
 tags:
 - Haskell
 ---

@@ -12,7 +12,7 @@ In Outlook:
 
 * Create a folder for storing your archived messages
 * Select a message and move it to the newly created folder
-* Ensure that an appropriate command is added to the _Message_ | _Move_ menu
+* Ensure that an appropriate command is added to the _Message_ \| _Move_ menu
 * Make a note of the exact command name
 
 From the _System Preferences&hellip;_ system menu:
@@ -28,4 +28,4 @@ From the _System Preferences&hellip;_ system menu:
 
 Voil&agrave;!
 
-Note that Outlook might periodically remove the command from the _Message_ | _Move_ menu. In this case your keyboard shortcut will stop working. To fix this issue, reinstate the command by moving another message to the archive folder.
+Note that Outlook might periodically remove the command from the _Message_ \| _Move_ menu. In this case your keyboard shortcut will stop working. To fix this issue, reinstate the command by moving another message to the archive folder.

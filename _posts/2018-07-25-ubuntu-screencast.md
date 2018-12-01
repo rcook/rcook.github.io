@@ -184,5 +184,12 @@ gnome-session-properties &
 * Toggle _Automatic Screen Lock_ to _Off_
 * Toggle _Show Notifications_ to _Off_
 
+## Disable screen blanking
+
+* Click on _Applications_ and click _Settings_
+* Click on _Power_
+* Click on _Blank screen_
+* Select _Never_
+
 [ubuntu]: http://releases.ubuntu.com/18.04/ubuntu-18.04-desktop-amd64.iso
 [virtualbox]: https://www.virtualbox.org/

@@ -16,6 +16,11 @@ Here is my first stab at this problem in all its glory:
 
 The next part of my journey will be to grok how `exactLength` works. I think it's something to do with [this][stackoverflow].
 
+## Update
+
+In case you were wondering about the use of the `the` function in `the (IO (Either FileError (List Int, List Int)))`: this is used to fix the type of the return from `withFile`. Without this, Idris cannot infer the type of the expression. This seems like a [compiler bug][bug] to me.
+
+[bug]: https://github.com/idris-lang/Idris-dev/issues/4605
 [exactLength]: https://www.idris-lang.org/docs/current/base_doc/docs/Data.Vect.html#Data.Vect.exactLength
 [fromList]: https://www.idris-lang.org/docs/current/base_doc/docs/Data.Vect.html#Data.Vect.fromList
 [idris-book]: https://www.manning.com/books/type-driven-development-with-idris

@@ -41,8 +41,9 @@ The application can be run by typing `make` at the command line:
 * Ignores assets such as the Google API client ID and [jQuery][jquery]
 
 You'll need to create your `google-api-client-id.txt` file by grabbing your Google API client ID after consulting the following resources:
-    * [Creating and managing projects][create-google-api-project]
-    * [Setting up OAuth 2.0][set-up-oauth2]
+
+* [Creating and managing projects][create-google-api-project]
+* [Setting up OAuth 2.0][set-up-oauth2]
 
 {% gist f10afe19d18b67ba1abbaaa1763ad1e3 .gitignore %}
 

@@ -6,7 +6,7 @@ tags:
 - Haskell
 - Stack
 ---
-In my [usethetypes][usethetypes] videos, I demonstrate how to use [Intero][usethetypes-intero] and [ghcid][usethetypes-ghcid] with VSCode. However, I always forget the magical commands to run. I summarize them here:
+In my [usethetypes][usethetypes] videos, I demonstrate how to use [Intero][usethetypes-intero] and [ghcid][usethetypes-ghcid] with VSCode. However, I always forget the magical commands to run. I summarize them below. These commands should be run from within your project directory, alongside your `stack.yaml` and `.cabal` files:
 
 ```bash
 stack build intero

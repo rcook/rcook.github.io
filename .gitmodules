@@ -112,3 +112,6 @@
 [submodule "_gists/gist-8f44a4957d7adcc397a1dbe9b50730bc"]
 	path = _gists/gist-8f44a4957d7adcc397a1dbe9b50730bc
 	url = https://gist.github.com/rcook/8f44a4957d7adcc397a1dbe9b50730bc
+[submodule "_gists/gist-51734d45b13a2b76e74bb8aa53b520bc"]
+	path = _gists/gist-51734d45b13a2b76e74bb8aa53b520bc
+	url = https://gist.github.com/51734d45b13a2b76e74bb8aa53b520bc.git

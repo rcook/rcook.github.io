@@ -7,13 +7,13 @@ tags:
 - Graphics
 - Geometry
 ---
-Building on my [previous post]({% post_url 2018-12-17-rasterize-triangle %}), I translate my triangle fill method and other basic 2D primitives into Haskell. I present to you [juicy-draw][juicy-draw-hackage] (also on [GitHub][juicy-draw-github]).
+Building on my [previous post]({% post_url 2018-12-17-rasterize-triangle %}), I have translated my triangle fill method and some other basic 2D primitives into Haskell. I present to you: [juicy-draw][juicy-draw-hackage] (also on [GitHub][juicy-draw-github]).
 
 Here's an example program:
 
 {% gist 0009a3e02cb3ef5429546ea6a00d7e76 JuicyDrawMain.hs %}
 
-This project is inspired by [JuicyPixels-canvas][juicypixels-canvas] and similarly builds on top of [JuicyPixels][juicypixels] (hence the name). It provides an improper superset of the functions in JuicyPixels-canvas but with one big different: they operate directly on [`MutableImage`][mutable-image] instead of employing an intermediate [`Canvas`][canvas] type.
+This project is inspired by [JuicyPixels-canvas][juicypixels-canvas] and similarly builds on top of [JuicyPixels][juicypixels] (hence the name). It provides an improper superset of the functions in JuicyPixels-canvas but with one main difference: they operate directly on [`MutableImage`][mutable-image] instead of employing an intermediate [`Canvas`][canvas] type.
 
 [canvas]: http://hackage.haskell.org/package/JuicyPixels-canvas-0.1.0.0/docs/Codec-Picture-Canvas.html#t:Canvas
 [juicy-draw-github]: https://github.com/rcook/juicy-draw

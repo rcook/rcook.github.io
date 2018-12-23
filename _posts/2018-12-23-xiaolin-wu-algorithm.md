@@ -19,6 +19,9 @@ I have a couple of remaining issues that I may or may not get to at some point i
 
 * Should it use `Double` instead of `Int` for coordinates?
 * Attempting to draw a line covering the full extent of the image will crash the program due to out-of-range indices: the current code fudges the issue by deliberately drawing the line with two pixels of padding from the edges
+* Sometimes coordinates will wrap around
+
+An industrial-strength implementation would need to address these questions.
 
 [github]: https://github.com/rcook/xiaolin-wu-algorithm
 [rosetta-code]: https://rosettacode.org/wiki/Xiaolin_Wu%27s_line_algorithm#Haskell

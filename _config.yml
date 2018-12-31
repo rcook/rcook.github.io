@@ -37,6 +37,8 @@ noita:
   topbar:
     toggle: Menu
     middle:
+    - name: Use the Types
+      url: https://usethetypes.com/
     - name: LinkedIn
       url: http://www.linkedin.com/in/richardthepeace
     - name: Twitter

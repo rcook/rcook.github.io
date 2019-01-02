@@ -6,6 +6,6 @@ tags:
 - Haskell
 - usethetypes.com
 ---
-Now I've recorded nine videos, it's not a complete embarrassment. Therefore, you consider this to be the soft launch of [usethetypes.com][usethetypes]! Enjoy!
+Now I've recorded nine videos, so it's no longer a complete embarrassment. Therefore, you should consider this to be the soft launch of [usethetypes.com][usethetypes]! Enjoy!
 
 [usethetypes]: https://usethetypes.com/

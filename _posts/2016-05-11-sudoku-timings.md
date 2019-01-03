@@ -5,6 +5,7 @@ created: 2016-05-11 09:27:00 -0700
 tags:
 - Tableau
 - Haskell
+- Concurrency
 ---
 Get the [code][github] and check out the [viz][viz]:
 

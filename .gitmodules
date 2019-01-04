@@ -124,3 +124,6 @@
 [submodule "_gists/gist-db989fd140eb5c776b8f877fcb9f817e"]
 	path = _gists/gist-db989fd140eb5c776b8f877fcb9f817e
 	url = https://gist.github.com/db989fd140eb5c776b8f877fcb9f817e.git
+[submodule "_gists/gist-7284d36be3deb22bc3cf8ebdf8e8d4fe"]
+	path = _gists/gist-7284d36be3deb22bc3cf8ebdf8e8d4fe
+	url = https://gist.github.com/7284d36be3deb22bc3cf8ebdf8e8d4fe.git

@@ -6,8 +6,9 @@ tags:
 - Java
 - Concurrency
 ---
-This is a follow-up to 
-{% post_url 2019-01-02-retry-futures %}. In this previous post I presented a snippet of code I've been working on which demonstrates how to compose futures in Java, specifically [`java.util.concurrent.CompletableFuture`][completable-future]. In turns out that I need to interoperate with Guava futures too, specifically [`com.google.common.util.concurrent.ListenableFuture`][listenable-future]. In some ways this can be considered a short translation guide for switching back and forth between `CompletableFuture` and `ListenableFuture`.
+This is a follow-up to [_Retry in Java futures_]({% post_url 2019-01-02-retry-futures %}). This post presented a snippet of code demonstrating how to compose futures in Java, specifically [`java.util.concurrent.CompletableFuture`][completable-future]. It demonstrated how to swallow exceptions and compose futures including branching etc.
+
+It turns out that I need to interoperate with [Guava][guava] futures too, specifically [`com.google.common.util.concurrent.ListenableFuture`][listenable-future]. In some ways this post can be considered to be a short translation guide for switching back and forth between `CompletableFuture` and `ListenableFuture`.
 
 On first encountering `ListenableFuture` I was dismayed that, unlike `CompletableFuture`, this interface does not expose any methods for composing futures. `CompletableFuture`, for example, provides the following and many more:
 
@@ -21,20 +22,20 @@ On deeper inspection, however, we find that Guava eschews interface methods for 
 * `transformAsync` corresponding to `thenCompose`
 * `transform` corresponding to `thenApply`
 
-The "add with retry" example using `CompletableFuture` looks like:
+My "add-with-retry" example using `CompletableFuture` looks like:
 
 {% gist 7284d36be3deb22bc3cf8ebdf8e8d4fe JavaFutures.java %}
 
 These are my observations about this:
 
-* It has a reasonably fluent API which should be familiar to anybody who uses Java streams, for example
-* Swallowing exceptions seems like a hack
+* It has a reasonable "fluent" API which should be familiar to anybody who uses Java streams, for example
+* Swallowing exceptions seems like a hack:
     * See `.exceptionally(e -> null)`
     * This leads to a loss of information: it is impossible to distinguish between a `null` returned from the `App.add` future and a swallowed exception
     * This can be worked around by introducing an intermediate "union" type (see below)
 * In order to respond with another future to exceptions, we have to do the `exceptionally`-followed-by-`thenCompose` hack
 
-I can think of at least one way of taking a more principled approach we can take to swallow exceptions without losing information. One example would be to introduce a tagged union type. Here's an example with such an intermediate type:
+Regarding the "union" type comment above, I can think of at least one more principled approach we might take to handling exceptions that does not lose information. We could, for example, introduce a tagged union type as follows:
 
 {% gist 7284d36be3deb22bc3cf8ebdf8e8d4fe JavaFuturesWithIntermediateUnionType.java %}
 
@@ -65,5 +66,6 @@ Here's a buildable [GitHub project][github-project].
 [extension-methods]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
 [fluent-future]: https://google.github.io/guava/releases/23.0/api/docs/com/google/common/util/concurrent/FluentFuture.html
 [futures]: https://google.github.io/guava/releases/21.0/api/docs/com/google/common/util/concurrent/Futures.html
+[guava]: https://google.github.io/guava/releases/21.0/api/docs/
 [listenable-future]: https://google.github.io/guava/releases/21.0/api/docs/com/google/common/util/concurrent/ListenableFuture.html
 [github-project]: https://github.com/rcook/RetryFuturesJava

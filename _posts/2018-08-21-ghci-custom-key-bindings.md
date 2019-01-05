@@ -33,7 +33,7 @@ Let's fire up GHCi and see what happens when you press `F7`:
 stack ghci
 ```
 
-If you're on Windows, you're probably done at this point: this _should just work_. On Linux or macOs, `F7` will probably do nothing at this point. To work on Posix platforms, you'll need to add `keyseq` entry:
+If you're on Windows, you're probably done at this point: this _should just work_. On Linux or macOS, `F7` will probably do nothing at this point. To work on Posix platforms, you'll need to add `keyseq` entry:
 
 ```text
 keyseq: <term> <string> <key>

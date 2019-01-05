@@ -59,7 +59,13 @@ Here are my thoughts:
 
 In order to address the syntactic issues with `ListenableFuture`, Guava now has [`com.google.common.util.concurrent.FluentFuture`][fluent-future] in recent versions of the library. I haven't had a chance to play with this yet. If I do, I'll get back to you!
 
-Here's a buildable [GitHub project][github-project].
+The latest and greatest version of this code can be found in the [GitHub project][github-project].
+
+**Update: Here's the `FluentFuture` version**
+
+{% gist 7284d36be3deb22bc3cf8ebdf8e8d4fe GuavaFluentFutures.java %}
+
+That's better!
 
 [completable-future]: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html
 [either]: https://www.stackage.org/haddock/lts-13.1/base-4.12.0.0/Prelude.html#t:Either

@@ -129,4 +129,4 @@
 	url = https://gist.github.com/7284d36be3deb22bc3cf8ebdf8e8d4fe.git
 [submodule "_gists/gist-3147f518869c5bd2b1f917b9e88f8830"]
 	path = _gists/gist-3147f518869c5bd2b1f917b9e88f8830
-	url = git@gist.github.com:3147f518869c5bd2b1f917b9e88f8830.git
+	url = https://gist.github.com/3147f518869c5bd2b1f917b9e88f8830.git

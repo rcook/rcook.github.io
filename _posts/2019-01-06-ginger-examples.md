@@ -46,7 +46,7 @@ Attempts to use `easyRender` on `ctx` without providing an explicit type signatu
    |                     ^^^^^^^^^^^^^^^^^^^^^^^
 ```
 
-I spent quite a bit of time staring at this wondering what to do next. It then dawned on me that a reasonable value for `m0` might be `Run SourcePos (Writer Text) Text`. I'm not sure why GHC couldn't infer this automatically but&mdash;whatever&mdash;let's just move on:
+I spent quite a bit of time staring at this wondering what to do next. It then dawned on me that a reasonable value for `m0` might be `Run SourcePos (Writer Text) Text` (see documentation for the various type at: [`Run`][run-doc], [`SourcePos`][source-pos-doc], [`Writer`][writer-doc], [`Text`][text-doc]). I'm not sure why GHC couldn't infer this automatically but&mdash;whatever&mdash;let's just move on:
 
 {% gist 3147f518869c5bd2b1f917b9e88f8830 EasyRenderGVal.hs %}
 
@@ -67,4 +67,8 @@ Now I think I know enough to be dangerous with Ginger!
 [gval-doc]: http://hackage.haskell.org/package/ginger-0.8.4.0/docs/Text-Ginger-GVal.html#t:GVal
 [hashmap-doc]: https://www.stackage.org/haddock/lts-13.1/unordered-containers-0.2.9.0/Data-HashMap-Lazy.html#t:HashMap
 [jinja2]: http://jinja.pocoo.org/
+[run-doc]: http://hackage.haskell.org/package/ginger-0.8.4.0/docs/Text-Ginger-Run.html#g:4
+[source-pos-doc]: http://hackage.haskell.org/package/ginger-0.8.4.0/docs/Text-Ginger-Parse.html#t:SourcePos
+[text-doc]: http://hackage.haskell.org/package/text-1.2.3.1/docs/Data-Text.html#t:Text
 [togval-doc]: http://hackage.haskell.org/package/ginger-0.8.4.0/docs/Text-Ginger-GVal.html#t:ToGVal
+[writer-doc]: http://hackage.haskell.org/package/mtl-2.2.2/docs/Control-Monad-Writer-Lazy.html#t:Writer

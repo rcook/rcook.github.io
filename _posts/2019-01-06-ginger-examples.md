@@ -46,7 +46,7 @@ Attempts to use `easyRender` on `ctx` without providing an explicit type signatu
    |                     ^^^^^^^^^^^^^^^^^^^^^^^
 ```
 
-I spent quite a bit of time staring at this wondering what to do next. It then dawned on me that a reasonable value for `m0` might be `Run SourcePos (Writer Text) Text` (see documentation for the various type at: [`Run`][run-doc], [`SourcePos`][source-pos-doc], [`Writer`][writer-doc], [`Text`][text-doc]). I'm not sure why GHC couldn't infer this automatically but&mdash;whatever&mdash;let's just move on:
+I spent quite a bit of time staring at this wondering what to do next. It then dawned on me that a reasonable value for `m0` might be `Run SourcePos (Writer Text) Text` (see documentation for the various types at [`Run`][run-doc], [`SourcePos`][source-pos-doc], [`Writer`][writer-doc] and [`Text`][text-doc]). I'm not sure why GHC couldn't infer this automatically but&mdash;whatever&mdash;let's just move on:
 
 {% gist 3147f518869c5bd2b1f917b9e88f8830 EasyRenderGVal.hs %}
 

@@ -35,7 +35,7 @@ These are my observations about this:
     * This can be worked around by introducing an intermediate "union" type (see below)
 * In order to respond with another future to exceptions, we have to do the `exceptionally`-followed-by-`thenCompose` hack
 
-Regarding the "union" type comment above, I can think of at least one more principled approach we might take to handling exceptions that does not lose information. We could, for example, introduce a tagged union type as follows:
+Regarding the union type comment above, I can think of at least one more principled approach we might take to handling exceptions that does not lose information. We could, for example, introduce a tagged union type as follows:
 
 {% gist 7284d36be3deb22bc3cf8ebdf8e8d4fe JavaFuturesWithIntermediateUnionType.java %}
 

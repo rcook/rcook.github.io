@@ -6,4 +6,4 @@ this_dir=$(cd $(dirname $0); pwd -P)
 repo_dir=$(dirname $this_dir)
 
 cd $repo_dir
-bundle exec jekyll serve -w --safe $1
+bundle exec jekyll serve -w --safe $*

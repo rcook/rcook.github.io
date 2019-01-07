@@ -67,6 +67,10 @@ The latest and greatest version of this code can be found in the [GitHub project
 
 That's better!
 
+**Update 2: Cancellation**
+
+You'll notice that I sneakily introduced early cancellation into the `FluentFuture` example. If you want to see how I added support for proper cancellation using all three future implements, please consult the [GitHub project][github-project].
+
 [completable-future]: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html
 [either]: https://www.stackage.org/haddock/lts-13.1/base-4.12.0.0/Prelude.html#t:Either
 [extension-methods]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods

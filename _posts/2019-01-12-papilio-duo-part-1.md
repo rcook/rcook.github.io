@@ -19,6 +19,14 @@ That's the Papilio DUO with 2 MB of SRAM and the Papilio Classic Computing Shiel
 
 An important difference from when I originally purchased the Papilio DUO and started playing with it the first time is that I rarely use Windows these days. In fact, I don't have Windows as the primary operating system on any of my computers. Most of my machines are currently running Ubuntu 18.04. Therefore, the first thing I intend to document is how I get set up on Linux. We'll start with that today.
 
+### Setting the stage
+
+In case it becomes relevant in the future, here are the approximate specs of the machine I will be installing the Papilio development tools on:
+
+* [Lenovo ThinkPad T520][t520]
+* Intel i7-2760QM CPU
+* 16 GB RAM
+
 ### Downloads
 
 All the tutorials for the Papilio DUO that I've found online use the following two pieces of software:
@@ -137,6 +145,7 @@ I hope to have a chance to play with these bits and pieces over the next couple 
 [ise-webpack-linux]: https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar
 [papilio]: http://papilio.cc/
 [papilio-duo-hardware]: http://papilio.cc/index.php?n=Papilio.PapilioDUOHardwareGuide
+[t520]: https://www.lenovo.com/us/en/laptops/thinkpad/t-series/t520/
 [vivado]: https://www.xilinx.com/products/design-tools/vivado.html
 [xilinx]: https://www.xilinx.com/
 [xilinx-forum-post]: https://forums.xilinx.com/t5/Installation-and-Licensing/Finding-ISE-webpack-license/td-p/758406

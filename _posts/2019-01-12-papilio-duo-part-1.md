@@ -28,7 +28,7 @@ All the tutorials for the Papilio DUO that I've found online use the following t
 
 Now, until I've had more chance to play with these, I can't be sure exactly how they interact and what each one does. This is something I will write down as I find out.
 
-### Instalingl DesignLab IDE 1.0.8
+### Installing DesignLab IDE 1.0.8
 
 It looks like this piece of software has received updates within the last three years, so that's reassuring.
 

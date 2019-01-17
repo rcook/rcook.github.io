@@ -1,8 +1,25 @@
 require 'rake'
+require 'shellwords'
 
 desc 'Preview the site with Jekyll'
 task :preview do
-  sh 'bundle exec jekyll serve --limit_posts 5 --incremental --watch --drafts --host=0.0.0.0'
+  if ENV['JEKYLL_ALL_POSTS'] == '1'
+    limit = []
+  else
+    limit = ['--limit_posts', '5']
+  end
+
+  sh [
+    'bundle',
+    'exec',
+    'jekyll',
+    'serve',
+    limit,
+    '--incremental',
+    '--watch',
+    '--drafts',
+    '--host', '0.0.0.0'
+  ].flatten.shelljoin
 end
 
 desc 'Test the site with Proofer'

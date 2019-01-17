@@ -2,15 +2,21 @@
 
 ## Preview locally
 
-```
+```bash
 gem install bundler
 bundle install
 bundle exec rake preview
 ```
 
+In order to rebuild the site quickly, this will only render the five most recent posts. To render all posts, set the `JEKYLL_ALL_POSTS` environment variable to `1`:
+
+```bash
+JEKYLL_ALL_POSTS=1 bundle exec rake preview
+```
+
 Run tests:
 
-```
+```bash
 bundle exec rake test
 ```
 

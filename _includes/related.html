@@ -1,0 +1,31 @@
+<!-- Inspired by https://blog.webjeda.com/jekyll-related-posts/ -->
+{% assign maxRelated = 10 %}
+{% assign minCommonTags = 2 %}
+{% assign maxRelatedCounter = 0 %}
+{% assign postCount = 0 %}
+
+{% for post in site.posts %}
+  {% assign sameTagCount = 0 %}
+
+  {% for tag in post.tags %}
+    {% if post.url != page.url %}
+      {% if page.tags contains tag %}
+        {% assign sameTagCount = sameTagCount | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% if sameTagCount >= minCommonTags %}
+    {% if postCount == 0 %}
+      <h4>Related posts</h4>
+    {% endif %}
+    {% assign postCount = postCount | plus: 1 %}
+    <div>
+      <h6><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h6>
+    </div>
+    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+    {% if maxRelatedCounter >= maxRelated %}
+      {% break %}
+    {% endif %}
+  {% endif %}
+{% endfor %}

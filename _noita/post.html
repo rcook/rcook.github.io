@@ -9,6 +9,9 @@ layout: default
     {% endif %}
     {{ content }}
   </div>
+  <div class="medium-4 columns">
+    {% include related.html %}
+  </div>
 </div>
 
 {% if page.tags.size > 0 %}

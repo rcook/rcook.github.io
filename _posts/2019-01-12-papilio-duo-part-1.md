@@ -140,6 +140,13 @@ At this point I have what looks like a functional and properly-licensed ISE WebP
 
 I hope to have a chance to play with these bits and pieces over the next couple of days!
 
+[Go to part 2]({% post_url 2019-01-16-papilio-duo-part-2 %})
+
+### This series
+
+* [Part 1]({% post_url 2019-01-12-papilio-duo-part-1 %})
+* [Part 2]({% post_url 2019-01-16-papilio-duo-part-2 %})
+
 [designlab-ide]: http://forum.gadgetfactory.net/files/file/236-papilio-designlab-ide/
 [ise-webpack]: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html
 [ise-webpack-linux]: https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar

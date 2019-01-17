@@ -16,7 +16,7 @@ exclude:
 - vendor/
 - yyyy-mm-dd-template.md
 
-gems:
+plugins:
 - jekyll-gist
 - jekyll-paginate
 

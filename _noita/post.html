@@ -13,15 +13,3 @@ layout: default
     {% include related.html %}
   </div>
 </div>
-
-{% if page.tags.size > 0 %}
-<div class="row">
-  <div class="medium-8 columns tags">
-    Tags:
-    {% for tag in page.tags %}
-      <a href="/tags#{{ tag | downcase | cgi_escape }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-  </div>
-{% endif %}
-</div>
-

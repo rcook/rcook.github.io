@@ -29,3 +29,13 @@
     {% endif %}
   {% endif %}
 {% endfor %}
+
+{% if page.tags.size > 0 %}
+  <h4>Tags</h4>
+  {% for tag in page.tags %}
+    <div>
+      <h6><a href="/tags#{{ tag | downcase | cgi_escape }}">{{ tag }}</a></h6>
+    </div>
+  {% endfor %}
+  </div>
+{% endif %}

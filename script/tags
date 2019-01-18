@@ -7,5 +7,4 @@ Dir.chdir(APP_DIR)
 
 site = Jekyll::Site.new(Jekyll::Configuration::DEFAULTS)
 site.read
-puts site.tags.collect(&:first).sort_by { |tag| tag.downcase }
-
+puts site.tags.collect(&:first).sort_by { |tag| tag.to_s.downcase }

@@ -1,0 +1,30 @@
+#!/bin/bash
+set -euo pipefail
+
+this_dir=$(cd $(dirname $0); pwd -P)
+repo_dir=$(dirname $this_dir)
+dir_name=rcook.github.io
+
+if [ "$(basename $repo_dir)" != "$dir_name" ]; then
+  echo "Parent directory must be $dir_name"
+  exit 1
+fi
+
+while read id; do
+  git_url=git@gist.github.com:$id.git
+  gist_dir=$repo_dir/_gists/gist-$id
+
+  if [ -d "$gist_dir" ]; then
+    if [ -d "$gist_dir/.git" ]; then
+      output=$(cd "$gist_dir" && git status --porcelain)
+      if [ "${#output}" -gt 0 ]; then
+        echo -e "\n\e[44m$gist_dir\e[49m\n"
+        (cd "$gist_dir" && git status)
+      fi
+    else
+      echo "Invalid Gist directory $gist_dir"
+    fi
+  else
+    git clone $git_url $gist_dir
+  fi
+done < $repo_dir/gists.txt

@@ -1,6 +1,7 @@
 .env
 .jekyll-metadata
 .sass-cache
+_gists/
 _site/
 Gemfile.lock
 *.swp

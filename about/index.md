@@ -2,11 +2,19 @@
 layout: page
 title: About
 ---
-This is Richard's blog.
+I am Richard Cook. I'll to write code and write about code. Here are other resources related to this web site:
 
-* Source code for this blog can be found [here][github]
-* My videos can be found at [usethetypes.com][usethetypes]
-* I'm also organizer of [Seattle Area Haskell Users' Group][seattlehaskell]
+* [Source code for this blog][github]
+* [My Haskell tutorial videos at usethetypes.com][usethetypes]
+* [Seattle Area Haskell Users' Group][seattlehaskell]
+
+## My Knowledge Base
+
+Here are some (ancient) articles that I wrote as _aide memoires_ before I had really started blogging regularly:
+
+* [Setting up PuTTY for passwordless authentication][article-0]
+* [Configuring Hyper-V networking][article-1]
+* [Deploying Ruby on Rails][article-2]
 
 ## Acknowledgements
 
@@ -15,15 +23,6 @@ Parts of this blog and/or its layout were inspired by:
 * [Noita][noita]
 * [Michael Lanyon's blog][lanyonm]
 * [jekyll-rss-feeds][jekyll-rss-feeds]
-
-## My Knowledge Base
-
-This is a couple of random articles that I haven't incorporated into the
-regular blog yet:
-
-* [Article 0][article-0]
-* [Article 1][article-1]
-* [Article 2][article-2]
 
 [article-0]: /pages/kb000
 [article-1]: /pages/kb001

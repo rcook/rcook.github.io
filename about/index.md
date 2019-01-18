@@ -7,6 +7,7 @@ I am Richard Cook. I'll to write code and write about code. Here are other resou
 * [Source code for this blog][github]
 * [My Haskell tutorial videos at usethetypes.com][usethetypes]
 * [Seattle Area Haskell Users' Group][seattlehaskell]
+* [I don't tweet very often][twitter]
 
 ## My Knowledge Base
 
@@ -32,4 +33,5 @@ Parts of this blog and/or its layout were inspired by:
 [lanyonm]: http://blog.lanyonm.org/
 [noita]: https://github.com/penibelst/jekyll-noita
 [seattlehaskell]: https://seattlehaskell.org/
+[twitter]: https://twitter.com/richardthepeace
 [usethetypes]: https://usethetypes.com/

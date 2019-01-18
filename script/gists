@@ -31,8 +31,9 @@ for id in $ids; do
 
   if [ -d "$gist_dir" ]; then
     if [ -d "$gist_dir/.git" ]; then
-      output=$(cd "$gist_dir" && git status --porcelain)
-      if [ "${#output}" -gt 0 ]; then
+      output0=$(cd "$gist_dir" && git status --porcelain)
+      output1=$(cd "$gist_dir" && git status --porcelain --branch)
+      if [[ "${#output0}" -gt 0 || "$output1" == *"["* ]]; then
         echo -e "\n\e[44m$gist_dir\e[49m\n"
         (cd "$gist_dir" && git status)
       fi

@@ -2,9 +2,11 @@
 layout: page
 title: About
 ---
-This is Richard's coding blog.
+This is Richard's blog.
 
-* Source code can be found [here][github]
+* Source code for this blog can be found [here][github]
+* My videos can be found at [usethetypes.com][usethetypes]
+* I'm also organizer of [Seattle Area Haskell Users' Group][seattlehaskell]
 
 ## Acknowledgements
 
@@ -30,3 +32,5 @@ regular blog yet:
 [jekyll-rss-feeds]: https://github.com/snaptortoise/jekyll-rss-feeds/
 [lanyonm]: http://blog.lanyonm.org/
 [noita]: https://github.com/penibelst/jekyll-noita
+[seattlehaskell]: https://seattlehaskell.org/
+[usethetypes]: https://usethetypes.com/

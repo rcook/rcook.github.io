@@ -1,9 +1,0 @@
-#!/bin/bash
-set -euo pipefail
-IFS=$'\n\t'
-
-this_dir=$(cd $(dirname $0); pwd -P)
-repo_dir=$(dirname $this_dir)
-
-cd $repo_dir
-git submodule update --init

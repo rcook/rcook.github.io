@@ -10,7 +10,16 @@ if [ "$(basename $repo_dir)" != "$dir_name" ]; then
   exit 1
 fi
 
-while read id; do
+# Extract Gist IDs from post text
+ids=$(
+  cd $repo_dir && \
+  git grep '{% '$(echo 'g')'ist ' |
+    sed -e 's/^.*{% '$(echo 'g')'ist \([0-9a-fA-F][0-9a-fA-F]*\) .*$/\1/' |
+    sort |
+    uniq
+)
+
+for id in $ids; do
   git_url=git@gist.github.com:$id.git
   gist_dir=$repo_dir/_gists/gist-$id
 
@@ -27,4 +36,4 @@ while read id; do
   else
     git clone $git_url $gist_dir
   fi
-done < $repo_dir/gists.txt
+done

@@ -12,7 +12,7 @@ fi
 
 # Extract Gist IDs from post text
 ids=$(
-  cd $repo_dir && \
+  cd $repo_dir &&
   git grep '{% '$(echo 'g')'ist ' |
     sed -e 's/^.*{% '$(echo 'g')'ist \([0-9a-fA-F][0-9a-fA-F]*\) .*$/\1/' |
     sort |
@@ -20,8 +20,14 @@ ids=$(
 )
 
 for id in $ids; do
+  date=$(
+    git grep $id 2>&1 |
+      head -n 1 |
+      sed -e 's/^_posts\/\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)-.*$/\1/'
+  )
+
   git_url=git@gist.github.com:$id.git
-  gist_dir=$repo_dir/_gists/gist-$id
+  gist_dir=$repo_dir/_gists/gist-$date-$id
 
   if [ -d "$gist_dir" ]; then
     if [ -d "$gist_dir/.git" ]; then

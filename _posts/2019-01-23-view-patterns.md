@@ -28,7 +28,7 @@ I'm going to see if there are known GHC bugs related to this issue.
 
 **Update: 2019-01-25**
 
-It turns out that the [`PatternSynonyms`][pattern-synonyms] language extension can go more or less the same thing but with nicer syntax:
+It turns out that the [`PatternSynonyms`][pattern-synonyms] language extension can do more or less the same thing but with nicer syntax:
 
 {% gist a2927d5045b646da9a59c588b0f98b07 PatternSynonyms.hs %}
 

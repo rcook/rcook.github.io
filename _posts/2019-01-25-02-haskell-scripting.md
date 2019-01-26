@@ -14,5 +14,6 @@ Fortunately, [Michael Sloan][michael-sloan] at FPComplete is very responsive. He
 
 [haskell-scripting-demo]: https://github.com/rcook/haskell-scripting-demo
 [issue]: https://github.com/commercialhaskell/stack/issues/3377
+[michael-sloan]: https://mgsloan.com/
 [pull-request]: https://github.com/commercialhaskell/stack/pull/4538
 [script-interpreter]: https://docs.haskellstack.org/en/stable/GUIDE/#script-interpreter

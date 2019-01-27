@@ -15,7 +15,7 @@ There are no cash prizes.
 
 My friend [Dave Compton][dave-compton] suggested the following simplification:
 
-{% gist 63d0ca4e3ab94f11b5eab544cc2943dd MysteryProgram.hs %}
+{% gist 63d0ca4e3ab94f11b5eab544cc2943dd MysteryProgram2.hs %}
 
 Thanks!
 

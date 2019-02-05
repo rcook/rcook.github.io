@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Alternative `newtype` wrappers
+title: Alternative `newtype` wrappers for `oset`
 created: 2019-02-05 15:30:00 -0800
 tags:
 - Haskell
 - Hackage
+- oset
 ---
 I recently published [`oset-0.1.1.0`][oset-0.1.1.0] in order to get around some (perceived, by me) shortcomings of [`ordered-containers`][ordered-containers]. Mainly I was frustrated by the lack of [`Semigroup`][semigroup] and [`Monoid`][monoid] instances.
 

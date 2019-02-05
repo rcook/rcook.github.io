@@ -7,6 +7,7 @@ tags:
 - GHC
 - View patterns
 - Pattern synonyms
+- oset
 ---
 I'm learning about the [GHC][ghc] [ViewPatterns][view-patterns-ghc] language extension at the same time as learning about [`Data.Sequence`][data-sequence]. I like the the ability to pattern-match on sequences a lot. Unfortunately, it looks like the exhaustiveness checker cannot detect when all possible patterns are covered. Here's an example:
 

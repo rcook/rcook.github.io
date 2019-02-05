@@ -5,6 +5,7 @@ created: 2019-02-05 15:09:00 -0800
 tags:
 - Haskell
 - Hackage
+- oset
 ---
 I just published the following two new packages:
 

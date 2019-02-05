@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alternative `newtype` wrappers
-created: 2019-02-05 15:09:00 -0800
+created: 2019-02-05 15:30:00 -0800
 tags:
 - Haskell
 - Hackage

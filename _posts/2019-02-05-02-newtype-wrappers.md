@@ -13,7 +13,7 @@ In retrospect, I think I should have thought some more before ploughing ahead an
 * Left-preserving, or left-biased, append: in which duplicate elements on the _right-hand_ side of the append are discarded
 * Right-preserving, or right-biased, append: in which duplicates elements on the _left-hand_ side of the append are discarded
 
-Therefore, I'm [planning][issue] to remove the existing `Semigroup` and `Monoid` instance and replace them with `newtype` wrappers providing the desired behaviours. Here's a sketch of what I intend to do:
+Therefore, I'm [planning][issue] to remove the existing `Semigroup` and `Monoid` instances and replace them with `newtype` wrappers providing the desired behaviours. Here's a sketch of what I intend to do:
 
 {% gist b341e0a5c31d2def4d338a8b9eb96cf9 OSetDemo.hs %}
 

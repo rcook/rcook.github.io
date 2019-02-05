@@ -17,6 +17,8 @@ Therefore, I'm [planning][issue] to remove the existing `Semigroup` and `Monoid`
 
 {% gist b341e0a5c31d2def4d338a8b9eb96cf9 OSetDemo.hs %}
 
+`leftPreservingAppend` and `rightPreservingAppend` are not the real implementations but are provided for illustrative purposes only.
+
 [issue]: https://github.com/rcook/oset/issues/2
 [monoid]: https://www.stackage.org/haddock/lts-13.6/base-4.12.0.0/Prelude.html#t:Monoid
 [ordered-containers]: https://hackage.haskell.org/package/ordered-containers

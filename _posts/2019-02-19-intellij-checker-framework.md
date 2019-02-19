@@ -9,7 +9,7 @@ tags:
 ---
 ## Set up Checker Framework in IntelliJ
 
-These are step-by-step instructions for setting up [Checker Framework (CF)][checker-framework] for a basic Java project in [IntelliJ][intellij]. This is based on my configuration:
+These are step-by-step instructions for setting up [Checker Framework][checker-framework] (CF) for a basic Java project in [IntelliJ][intellij]. This is based on my configuration:
 
 * IntelliJ IDEA Ultimate 2018.1.5
 * macOS Sierra 10.12.6
@@ -46,14 +46,14 @@ From _File_ menu:
 1. Click _Project Structure&hellip;_
 2. Click _Libraries_
 3. Click _+_ and select _From Maven&hellip;_
-4. Enter _org.checkerframework_ and click the search button
-5. Select _org.checkerframework:checker:1.9.10_ and click _OK_ twice to add this to the project
+4. Enter `org.checkerframework` and click the search button
+5. Select `org.checkerframework:checker:1.9.10` and click _OK_ twice to add this to the project
 6. Click _+_ and select _From Maven&hellip;_
-7. Enter _org.checkerframework_ and click the search button
-8. Select _org.checkerframework:jdk8:1.9.10_ and click _OK_ twice to add this to the project
+7. Enter `org.checkerframework` and click the search button
+8. Select `org.checkerframework:jdk8:1.9.10` and click _OK_ twice to add this to the project
 9. Click _+_ and select _From Maven&hellip;_
-10. Enter _org.checkerframework_ and click the search button
-11. Select _org.checkerframework:checker-qual:1.9.10_ and click _OK_ twice to add this to the project
+10. Enter `org.checkerframework` and click the search button
+11. Select `org.checkerframework:checker-qual:1.9.10` and click _OK_ twice to add this to the project
 12. Click _OK_ to dismiss the project structure window
 
 ### Enable Checker Framework as an annotation processor
@@ -72,7 +72,7 @@ From the _IntelliJ IDEA_ application menu:
 10. Enter _org.checkerframework.checker.nullness.NullnessChecker_ under _Processor FQ Name_
 11. Click _Apply_
 12. From the navigation pane, click _Java Compiler_
-13. Under _Additional command line parameters_ enter _-Xbootclasspath/p:$USER_HOME$/.m2/repository/org/checkerframework/jdk8/1.9.10/jdk8-1.9.10.jar_
+13. Under _Additional command line parameters_ enter `-Xbootclasspath/p:$USER_HOME$/.m2/repository/org/checkerframework/jdk8/1.9.10/jdk8-1.9.10.jar`
 14. Click _OK_
 
 ### Rebuild your project

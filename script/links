@@ -1,0 +1,11 @@
+#!/bin/bash
+set -euo pipefail
+
+this_dir=$(cd $(dirname $0); pwd -P)
+repo_dir=$(dirname $this_dir)
+
+for f in $repo_dir/_posts/*.md; do
+  file_name=$(basename $f)
+  no_extension=${file_name%.*}
+  echo "[post]({% post_url $no_extension %})"
+done

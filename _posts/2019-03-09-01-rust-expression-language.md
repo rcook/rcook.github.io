@@ -15,10 +15,11 @@ Some thoughts:
 * I love Rust's automatic deriving of [`Debug`][rust-debug]
 * I love Rust's [lifetime and borrowing][rust-borrowing] mechanisms
 
-It would be nice if the `Box` builder functions could be automatically generated. Otherwise, Rust has impressed me very much so far.
+It would be nice if the [`Box`][rust-box] builder functions could be automatically generated. Otherwise, Rust has impressed me very much so far.
 
 [haskell]: https://www.haskell.org/
 [rust-borrowing]: https://doc.rust-lang.org/beta/rust-by-example/scope/borrow.html
+[rust-box]: https://doc.rust-lang.org/std/boxed/struct.Box.html
 [rust-debug]: https://doc.rust-lang.org/std/fmt/trait.Debug.html
 [rust-lang]: https://www.rust-lang.org/
 [rust-patterns]: https://doc.rust-lang.org/1.15.1/book/patterns.html

@@ -5,7 +5,7 @@ created: 2019-03-09 12:02:00 -0800
 tags:
 - Rust
 ---
-In my first post of the month, this is a short follow-up to [previous post]({% post_url 2019-02-19-02-scala-adt %}) in which I presented a simple arithmetic expression language embedded in Scala as well as Haskell, Java and OCaml. Today I present a version implemented in my new second-favourite programming language ([favourite][haskell]) [Rust][rust-lang]:
+In my first post of the month, this is a short follow-up to my [previous post]({% post_url 2019-02-19-02-scala-adt %}) in which I presented a simple arithmetic expression language embedded in Scala as well as Haskell, Java and OCaml. Today I present a version implemented in my new second-favourite programming language ([favourite][haskell]) [Rust][rust-lang]:
 
 {% gist dd4db779353cde36646c3a78736ebb2d expr.rs %}
 

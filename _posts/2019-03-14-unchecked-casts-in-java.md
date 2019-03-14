@@ -5,7 +5,7 @@ created: 2019-03-14 08:51:00 -0800
 tags:
 - Java
 ---
-How should we handle unchecked casts in Java (see for "unchecked" in the [javac][javac] documentation)? Here is a brief summary of the kinds of behaviours that this interesting type system "feature" introduces as a consequence of Java's [type-erasure][type-erasure]:
+How should we handle unchecked casts in Java (search for "unchecked" in the [javac][javac] documentation)? Here is a brief summary of the kinds of behaviours that this interesting type system "feature" introduces as a consequence of Java's [type-erasure][type-erasure]:
 
 {% gist 492a773c698d7a47da090087e328f6ef Main.java %}
 

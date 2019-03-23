@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+
+convert $1 -auto-orient -resize '640x480' $1

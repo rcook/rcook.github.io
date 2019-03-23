@@ -32,25 +32,25 @@ forwarded: `me@gmail.com`
 * Log in to your Dreamhost account [control
 panel](https://panel.dreamhost.com/).
 * From the navigation panel click on the big `Email` button
-[[screenshot]](/assets/post-20100810-screenshot1.jpg).
+[[screenshot]]({{ site.url }}/assets/2010-08-10-setting-up-e-mail-forwarding-for-your-entire-domain-in-dreamhost/1.jpg).
 * Create the single e-mail address to forward to your real e-mail address:
   * Click on `Create New Email Address` link
-[[screenshot]](/assets/post-20100810-screenshot2.jpg).
+[[screenshot]]({{ site.url }}/assets/2010-08-10-setting-up-e-mail-forwarding-for-your-entire-domain-in-dreamhost/2.jpg).
   * Scroll down until the `Forward-Only Email` section is visible
-[[screenshot]](/assets/post-20100810-screenshot3.jpg).
+[[screenshot]]({{ site.url }}/assets/2010-08-10-setting-up-e-mail-forwarding-for-your-entire-domain-in-dreamhost/3.jpg).
   * Enter an e-mail address field by selecting the domain name and entering a
 value in the `Email Address` field, e.g. `info`.
-[[screenshot]](/assets/post-20100810-screenshot3.jpg).
+[[screenshot]]({{ site.url }}/assets/2010-08-10-setting-up-e-mail-forwarding-for-your-entire-domain-in-dreamhost/3.jpg).
   * In the `List all email addresses to forward to, one per line` field enter
 your _real_ e-mail address, e.g. `me@gmail.com` etc.
   * Click the `Forward to These Addresses!` button to create the forwarding.
 * Create the catch-all e-mail address to catch all other e-mail for your domain:
   * Click on `Create New Email Address` link
-[[screenshot]](/assets/post-20100810-screenshot2.jpg).
+[[screenshot]]({{ site.url }}/assets/2010-08-10-setting-up-e-mail-forwarding-for-your-entire-domain-in-dreamhost/2.jpg).
   * Scroll down until the `Forward-Only Email` section is visible
-[[screenshot]](/assets/post-20100810-screenshot3.jpg).
+[[screenshot]]({{ site.url }}/assets/2010-08-10-setting-up-e-mail-forwarding-for-your-entire-domain-in-dreamhost/3.jpg).
   * Enter `catch-all` in the `Email Address` field.
-[[screenshot]](/assets/post-20100810-screenshot3.jpg).
+[[screenshot]]({{ site.url }}/assets/2010-08-10-setting-up-e-mail-forwarding-for-your-entire-domain-in-dreamhost/3.jpg).
   * In the `List all email addresses to forward to, one per line` field enter
 the `info@yourdomain.com` address created previously.
   * Click the `Forward to These Addresses!` button to create the forwarding.
@@ -59,4 +59,3 @@ the `info@yourdomain.com` address created previously.
 It will take some time for the changes to take effect, but once the changes are
 in place all e-mail sent to any address in your domain will forward to the
 e-mail address `me@gmail.com`.
-

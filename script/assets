@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+
+this_dir=$(cd $(dirname $0); pwd -P)
+repo_dir=$(dirname $this_dir)
+
+for f in $(find $repo_dir/assets -type f | sort); do
+  rel_path=$(realpath --relative-to=$repo_dir $f)
+  echo "![CAPTION]({{ site.url }}/$rel_path)"
+done

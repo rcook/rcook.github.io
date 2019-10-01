@@ -17,14 +17,27 @@ My little solo album, [Psychosomatic][psychosomatic-album], is released onto an 
 7. [Catch You Unawares][catch-you-unawares]
 8. [Psychosomatic][psychosomatic]
 
-All words and music are by me. I recorded all the instruments, arranged the drums and sang really badly!
+All words and music are by me. I recorded all the instruments, arranged the drums and sang really badly! In case anybody's interested, this stuff was all recorded with the following gear:
+
+* [Fender Telecaster][telecaster]
+* [Squier Precision bass][precision]
+* [Martin DM acoustic guitar][martin-guitars]
+* [BOSS GT-1][boss-gt-1]
+* [Reaper][reaper]
+* [EZdrummer 2][ezdrummer-2]
 
 [a-world-for-me]: https://soundcloud.com/richardthepeace/a-world-for-me
+[boss-gt-1]: https://www.boss.info/us/products/gt-1/
 [catch-you-unawares]: https://soundcloud.com/richardthepeace/catch-you-unawares
 [dont-feel-the-rain]: https://soundcloud.com/richardthepeace/dont-feel-the-rain
+[ezdrummer-2]: https://www.toontrack.com/product/ezdrummer-2
 [light-the-way]: https://soundcloud.com/richardthepeace/light-the-way
 [lou]: https://soundcloud.com/richardthepeace/lou
+[martin-guitars]: https://www.martinguitar.com/guitars/
+[precision]: https://shop.fender.com/en-US/squier-electric-basses/precision-bass/affinity-series-precision-bass-pj/0370500505.html
 [psychosomatic]: https://soundcloud.com/richardthepeace/psychosomatic
 [psychosomatic-album]: https://soundcloud.com/richardthepeace/sets/psychosomatic
+[reaper]: http://reaper.fm/
 [solitude]: https://soundcloud.com/richardthepeace/solitude
+[telecaster]: https://shop.fender.com/en-US/electric-guitars/telecaster/
 [wheres-the-sun]: https://soundcloud.com/richardthepeace/wheres-the-sun

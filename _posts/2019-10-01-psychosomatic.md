@@ -20,6 +20,7 @@ tags:
 All words and music are by me. I recorded all the instruments, arranged the drums and sang really badly!
 
 [a-world-for-me]: https://soundcloud.com/richardthepeace/a-world-for-me
+[catch-you-unawares]: https://soundcloud.com/richardthepeace/catch-you-unawares
 [dont-feel-the-rain]: https://soundcloud.com/richardthepeace/dont-feel-the-rain
 [light-the-way]: https://soundcloud.com/richardthepeace/light-the-way
 [lou]: https://soundcloud.com/richardthepeace/lou

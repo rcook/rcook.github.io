@@ -6,7 +6,7 @@ tags:
 - Music
 ---
 
-[Psychosomatic][psychosomatic-album] is released onto an unsuspecting world. Here's the final track listing:
+My little solo album, [Psychosomatic][psychosomatic-album], is released onto an unsuspecting world. Here's the final track listing:
 
 1. [Don't Feel the Rain][dont-feel-the-rain]
 2. [Light the Way][light-the-way]

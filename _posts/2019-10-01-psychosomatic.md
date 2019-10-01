@@ -25,6 +25,7 @@ All words and music are by me. I recorded all the instruments, arranged the drum
 * [BOSS GT-1][boss-gt-1]
 * [Reaper][reaper]
 * [EZdrummer 2][ezdrummer-2]
+* [Blue Snowball iCE microphone][snowball-ice]
 
 [a-world-for-me]: https://soundcloud.com/richardthepeace/a-world-for-me
 [boss-gt-1]: https://www.boss.info/us/products/gt-1/
@@ -38,6 +39,7 @@ All words and music are by me. I recorded all the instruments, arranged the drum
 [psychosomatic]: https://soundcloud.com/richardthepeace/psychosomatic
 [psychosomatic-album]: https://soundcloud.com/richardthepeace/sets/psychosomatic
 [reaper]: http://reaper.fm/
+[snowball-ice]: https://www.bluedesigns.com/products/snowball-ice/
 [solitude]: https://soundcloud.com/richardthepeace/solitude
 [telecaster]: https://shop.fender.com/en-US/electric-guitars/telecaster/
 [wheres-the-sun]: https://soundcloud.com/richardthepeace/wheres-the-sun

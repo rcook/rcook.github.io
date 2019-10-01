@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Songs released!
+title: Album released!
 created: 2019-10-01 16:19:00 -0700
 tags:
 - Music

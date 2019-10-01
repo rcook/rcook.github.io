@@ -10,7 +10,7 @@ tags:
 Recording is going well. Lyric writing and recording vocals is still a struggle. However, here's a provisional track listing for my upcoming EP:
 
 1. Light the Way
-2. Where's the Sun
+2. Where's the Sun?
 3. Don't Feel the Rain
 4. A World for Me
 5. Lou

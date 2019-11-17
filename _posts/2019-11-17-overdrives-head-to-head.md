@@ -8,17 +8,16 @@ tags:
 ---
 I've developed a bit of a cheapo overdrive pedal problem. I am now the proud owner of five of them. In this post, I will compare and contrast them, draw a few conclusions and, most importantly, decide which one is going to go on my pedalboard for the time being.
 
-Here's my test bed: overdrives running into my [Blackstar HT-20R MkII][ht-20r-mkii]. Not pictured is my Telecaster. All hail the single-coil pickup!
+Here's my test bed: overdrives running into my [Blackstar HT-20R MkII][ht-20r-mkii] combo. Not pictured is my Telecaster. All hail the single-coil pickup!
 
 ![Cheapo overdrive pedals and my Blackstar HT-20R MkII amp]({{ site.url }}/assets/2019-11-17-overdrives-head-to-head/setup.jpg)
 
-I'll describe each pedal from left to right with my thoughts and opinions. These are entirely subjective and your tastes will likely vary radically from mine.
+I'll describe each pedal from left to right with my thoughts and opinions. These will be entirely subjective and your tastes will likely vary radically from mine.
 
-## Kokko FOD3
+## [Kokko FOD3 Mini Overdrive][kokko-fod3]
 
 ![Kokko FOD3]({{ site.url }}/assets/2019-11-17-overdrives-head-to-head/kokko-fod3.jpg)
 
-* [Kokko FOD3 Mini Overdrive][kokko-fod3]
 * $19.93 new from eBay
 * Ibanez Tube Screamer clone
 * Nice overdriven tone
@@ -26,11 +25,10 @@ I'll describe each pedal from left to right with my thoughts and opinions. These
 * Goes almost completely clean at low-gain settings
 * It's green!
 
-## Donner Blues Drive
+## [Donner Blues Drive][donner-blues-drive]
 
 ![Donner Blues Drive]({{ site.url }}/assets/2019-11-17-overdrives-head-to-head/donner-blues-drive.jpg)
 
-* [Donner Blues Drive][donner-blues-drive]
 * $22.99 new from eBay
 * BOSS BD-2 clone
 * Nice overdriven tone
@@ -39,11 +37,10 @@ I'll describe each pedal from left to right with my thoughts and opinions. These
 * "Hot" setting is way too bassy
 * "Warm" setting is pretty nice
 
-## Mosky Golden Horse
+## [Mosky Golden Horse][mosky-golden-horse]
 
 ![Mosky Golden Horse]({{ site.url }}/assets/2019-11-17-overdrives-head-to-head/mosky-golden-horse.jpg)
 
-* [Mosky Golden Horse][mosky-golden-horse]
 * $19.04 new from eBay
 * Supposedly a Klon clone&mdash;I'm way too cheap to know what one of those sounds like
 * Reasonable overdriven tone
@@ -51,22 +48,20 @@ I'll describe each pedal from left to right with my thoughts and opinions. These
 * Does not fully clean up at low-gain settings
 * Level goes much higher than other mini pedals: might be useful for pushing amp harder
 
-## BOSS SD-1
+## [BOSS SD-1][boss-sd-1]
 
 ![BOSS SD-1]({{ site.url }}/assets/2019-11-17-overdrives-head-to-head/boss-sd-1.jpg)
 
-* [BOSS SD-1][boss-sd-1]
 * Bought this one fifteen years ago: they run for about $50 these days
 * This one's an original
 * Nice overdriven tone
 * Same amount of overdrive as Donner Blues Drive
 * Does not fully clean up at low-gain settings
 
-## Behringer VT999
+## [Behringer VT999][behringer-vt999]
 
 ![Behringer VT999]({{ site.url }}/assets/2019-11-17-overdrives-head-to-head/behringer-vt999.jpg)
 
-* [Behringer VT999][behringer-vt999]
 * Bought used from Reverb.com at $50
 * Modded with [Bitmo][bitmo] mod
 * Replaced valve with JJ 12AU7/ECC82 as supplied valve sounded nasty

@@ -5,6 +5,8 @@ desc 'Preview the site with Jekyll'
 task :preview do
   if ENV['JEKYLL_ALL_POSTS'] == '1'
     limit = []
+  elsif ENV.include?('JEKYLL_LIMIT_POSTS')
+    limit = ['--limit_posts', ENV['JEKYLL_LIMIT_POSTS']]
   else
     limit = ['--limit_posts', '5']
   end

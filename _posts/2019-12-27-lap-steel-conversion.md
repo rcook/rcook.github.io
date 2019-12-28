@@ -80,7 +80,7 @@ Here she is in all her glory:
 
 I first tuned the guitar up to [DADGAD][wikipedia-dadgad]&mdash;I've been using the tuning a lot recently and have written a number of new songs in it too. This tuning is pretty nice and has the property that it is neither major nor minor and has an interesting "suspended" flavour to it. I like it for its droning qualities.
 
-I've also played with the DGDGBD open-G tuning which has proven very nice for jamming _In My Time of Dying_&mdash;[my recording][in-my-time-of-dying-soundcloud] and [tab][in-my-time-of-dying-tab] and other songs. I'm too scared about mangling my guitar's neck to risk the "Dobro open-G" tuning of GBDGBD. I will do some research on what gauge strings would work for this tuning without damaging the neck etc.
+I've also played with the DGDGBD open-G tuning which has proven very nice for jamming _In My Time of Dying_&mdash;[my recording][in-my-time-of-dying-soundcloud] and [tab][in-my-time-of-dying-tab]&mdash;and other songs. I'm too scared about mangling my guitar's neck to risk the "Dobro open-G" tuning of GBDGBD. I will do some research on what gauge strings would work for this tuning without damaging the neck etc.
 
 Finally, I should add that currently I did all of this using Ernie Ball Super Slinky strings (0.009&Prime;&ndash;0.042&Prime;); nothing fancy yet.
 

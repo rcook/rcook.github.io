@@ -80,13 +80,14 @@ Here she is in all her glory:
 
 I first tuned the guitar up to [DADGAD][wikipedia-dadgad]&mdash;I've been using the tuning a lot recently and have written a number of new songs in it too. This tuning is pretty nice and has the property that it is neither major nor minor and has an interesting "suspended" flavour to it. I like it for its droning qualities.
 
-I've also played with the DGDGBD open-G tuning which has proven very nice for jamming [_In My Time of Dying_][in-my-time-of-dying] and other songs. I'm too scared about mangling my guitar's neck to risk the "Dobro open-G" tuning of GBDGBD. I will do some research on what gauge strings would work for this tuning without damaging the neck etc.
+I've also played with the DGDGBD open-G tuning which has proven very nice for jamming _In My Time of Dying_&mdash;[my recording][in-my-time-of-dying-soundcloud] and [tab][in-my-time-of-dying-tab] and other songs. I'm too scared about mangling my guitar's neck to risk the "Dobro open-G" tuning of GBDGBD. I will do some research on what gauge strings would work for this tuning without damaging the neck etc.
 
 Finally, I should add that currently I did all of this using Ernie Ball Super Slinky strings (0.009&Prime;&ndash;0.042&Prime;); nothing fancy yet.
 
 [amazon-extension-nut]: https://www.amazon.com/gp/product/B0002Z3N8O/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1
 [amazon-tone-bar]: https://www.amazon.com/gp/product/B07GXDVX8G/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1
-[in-my-time-of-dying]: https://tabs.ultimate-guitar.com/tab/led-zeppelin/in-my-time-of-dying-tabs-1184138
+[in-my-time-of-dying-soundcloud]: https://soundcloud.com/richardthepeace/in-my-time-of-dying/s-EyGcX
+[in-my-time-of-dying-tab]: https://tabs.ultimate-guitar.com/tab/led-zeppelin/in-my-time-of-dying-tabs-1184138
 [kingbolt-ra]: https://www.reverendguitars.com/guitars/kingbolt-ra
 [rogue-rls-1]: https://www.musiciansfriend.com/folk-traditional-instruments/rogue-rls-1-lap-steel-guitar-with-stand-and-gig-bag
 [squier-ebay]: https://www.ebay.com/itm/Squier-By-Fender-Sst-33-Silver-Series-Made-In-Japan-Returns-Ok-Uf726/143474931903?hash=item2167c5b8bf:g:3b8AAOSwzO9d-T~c

@@ -6,19 +6,19 @@ tags:
 - Music
 - Stratocaster
 ---
-Not only is my [Squier Strat]({% post_url 2019-03-23-my-squier %}) the first guitar I ever bought myself, it has been ripped apart, hacked and customized heavily over the years. Therefore, I can't ever see myself getting rid of this guitar (in spite of my current obsession with decluttering). Aside: Squier Silver Series Strats in good&mdash;stock&mdash;condition can fetch up to [$700 on eBay][squier-ebay] which is nuts!
+Not only is my [Squier Strat]({% post_url 2019-03-23-my-squier %}) the first guitar I ever bought myself, it has been ripped apart, hacked and customized heavily over the years. Therefore, I can't ever see myself getting rid of it (in spite of my current obsession with decluttering). Aside: Squier Silver Series Strats in good&mdash;stock&mdash;condition can fetch up to [$700 on eBay][squier-ebay] which is nuts!
 
-However, I don't use this guitar much at the moment. Therefore, I decided to convert it into a lap steel. I've documented the steps below&hellip;
+However, I don't use it much these days. Therefore, I decided to convert it into a lap steel to put it to good use. I've documented the steps below&hellip;
 
 ## Introduction
 
-I want to get down and dirty with slide guitar. I've struggled for years to get better at slide guitar. Using a regular guitar with action set the way I like it for regular play doesn't work: the slide "grounds out" on the frets and sounds terrible. I've tried raising the action and this doesn't quite cut it. I then thought about buying myself a lap steel guitar. There are cheap ones available such as the [Rogue RLS-1][rogue-rls-1] from Musician's Friend. However, as I hinted earlier on, I am trying hard to eliminate clutter from my life and buying another guitar is not compatible with this. Another aside: given unlimited space, I would love to "round out" my guitar collection with a lap steel, an SG and an ES-335 or ES-339 and one of [these][kingbolt-ra] sexy beasts, but that's not going to happen any time soon.
+I want to get down and dirty with slide. I've struggled for years to get better at slide guitar. Using a regular guitar with action set the way I like it for non-slide play doesn't work: the slide "grounds out" on the frets and fingerboard and sounds terrible. I've tried raising the action and this doesn't quite cut it. I then thought about buying myself a lap steel guitar. There are cheap ones available such as the [Rogue RLS-1][rogue-rls-1] from Musician's Friend which can be had for about $80. However, I am trying really hard to reduce the amount of clutter in my life. Buying another guitar, when I've only recently managed to get things down to a sensible number, is certainly not compatible with this. Another aside: given unlimited space, I would love to "round out" my guitar collection with a lap steel, an SG and an ES-335 or ES-339 and one of [these][kingbolt-ra] beasts, but that's not going to happen any time soon.
 
-Anyway, I happened upon an article describing how to convert a regular acoustic or electric guitar using a fairly inexpensive _extension nut_. So, this article shows how I got my Squier up and running for slide for the princely sum of $16.
+Anyway, I happened upon an article describing how to convert a regular acoustic or electric guitar using a fairly inexpensive _extension nut_. Here I'll describe how I got my Squier up and running for slide for the princely sum of $16.
 
 ## Parts
 
-This is what I bought:
+This is what I used:
 
 ![Golden Gate F-3303 extension nut]({{ site.url }}/assets/2019-12-27-lap-steel-conversion/extension-nut.jpg)
 ![An unbranded tone bar]({{ site.url }}/assets/2019-12-27-lap-steel-conversion/tone-bar.jpg)
@@ -26,36 +26,37 @@ This is what I bought:
 * Golden Gate F-3303 extension nut&mdash;[$7.95 from Amazon][amazon-extension-nut]
 * A generic tone bar&mdash;[$7.99 from Amazon][amazon-tone-bar]
 
-"Tone bar", it turns out, is bluegrass-speak for "slide", so I learnt something new in the process.
+"Tone bar", it turns out, is bluegrass-speak for "slide", so I learnt even more in the process.
 
 ## Block off the bridge
 
 We're not going to be using the whammy bar any more. I don't have any photos of this process, but I used the following fairly standard approach (which I've used with success to block off Strat-style bridges in the past):
 
-* Remove the rear cover
+* Remove the rear cover to gain access to the tremolo block, string claw and springs
+* Slacken off the strings
 * Remove the springs from the string claw and tremolo block
-* Insert stacks of coins (pennies) of the appropriate thickness into the cavity to prevent the tremolo block from moving
+* Insert stacks of coins (pennies) of the appropriate thickness into the cavity to immobilize the tremolo block
 * Done!
 
 ## Set the bridge action
 
-First of all, I set the action at the bridge as high as possible. See below:
+Next I set the action at the bridge as high as possible. See below:
 
 ![Action at bridge]({{ site.url }}/assets/2019-12-27-lap-steel-conversion/bridge-raised-action.jpg)
 
-I was sceptical that this would be high enough to prevent the tone bar from grounding out on the fingerboard. I did wonder if I would need to invest in some new saddles or a new bridge or shim the existing bridge somehow. This would, of course, have made my cheap-and-cheerful conversion considerably more expensive and less cheery that originally planned. I decided to push on and see what would happen without spending any extra money.
+I was sceptical that this would be high enough to prevent the tone bar from grounding out on the fingerboard. I did wonder if I would need to invest in some new saddles or a new bridge or if I would need to shim the existing bridge somehow. This would, of course, have made my cheap-and-cheerful conversion considerably more expensive and less cheery that originally planned. I decided to push on and see what would happen without spending any extra money. Spoiler: the action was just fine without any further adjustment or investment.
 
-You may notice that the third string is not properly seated in the saddle in the previous photo. I slackened the string off and reseated it to fix this before I moved on to the next step.
+You may notice that the third string is not properly seated in the saddle in the photo above. I slackened the string off and reseated it to fix this before I moved on to the next step.
 
 ## Install the extension nut
 
-This is the hardest part and is very straightforward:
+This is the hardest part but is very straightforward:
 
-* Slacken off the strings
+* Slacken off the strings (if they're not still slack after the last step)
 * Slide the extension nut over the regular nut
 * Tighten the strings up and bring them up to pitch
 
-Here's the extension nut from the side:
+Here's a view of the extension nut from the side:
 
 ![Extension nut&mdash;side view]({{ site.url }}/assets/2019-12-27-lap-steel-conversion/head-stock-with-extension-nut-side.jpg)
 
@@ -63,9 +64,9 @@ You can see that I have the long edge of the extension nut facing the tuners and
 
 ![Extension nut&mdash;front view]({{ site.url }}/assets/2019-12-27-lap-steel-conversion/head-stock-with-extension-nut.jpg)
 
-The only complication was that the string tension from the low E string was preventing the string from sitting in the string slot in the nut. Despite all my efforts to position the extension nut to compensate for the tension, I could not get the low E string to stay in the slot. And then a thought came to me: if I fed the low E string into tuner the opposite way round from normal, this would cause the string to apply tension in the right direction. You may be able to see that I've wound this string in the opposite direction from normal in the photo above. If not, here's a close-up:
+The only complication was that the string tension from the sixth (low E) string was preventing the string from sitting in the string slot in the nut. Despite all my efforts to position the extension nut to compensate for this, I could not get the sixth string to stay in the slot. And then a thought came to me: if I fed the string into tuner the opposite way round from normal, this might cause the string to apply tension in the right direction. This worked well. You may be able to see that I've wound this string in the opposite direction from normal in the photo above. If not, here's a close-up:
 
-![Low E string wound in opposite direction from normal]({{ site.url }}/assets/2019-12-27-lap-steel-conversion/low-e-reverse.jpg)
+![Sixth string wound in opposite direction from normal]({{ site.url }}/assets/2019-12-27-lap-steel-conversion/low-e-reverse.jpg)
 
 As long as I remember to turn the tuner in the right direction, this is quite a nice, elegant solution to this problem.
 

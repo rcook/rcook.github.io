@@ -1,4 +1,4 @@
-# Richard's coding blog
+# Richard's blog
 
 ## Preview locally
 

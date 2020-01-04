@@ -28,7 +28,7 @@ layouts_dir: ./_noita
 
 noita:
   name: blog.rcook.org
-  description: Richard's coding blog
+  description: Richard's blog
   author:
     name: Richard Cook
   lang: en

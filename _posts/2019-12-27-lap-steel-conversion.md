@@ -5,7 +5,11 @@ created: 2019-12-27 15:15:00 -0800
 tags:
 - Music
 - Stratocaster
+- Guitar
+- Slide guitar
 ---
+**Update: [I've written another post about some enhancements I made recently]({% post_url 2020-01-15-squier-slideocaster %})**
+
 Not only is my [Squier Strat]({% post_url 2019-03-23-my-squier %}) the first guitar I ever bought myself, it has been ripped apart, hacked and customized heavily over the years. Therefore, I can't ever see myself getting rid of it (in spite of my current obsession with decluttering). Aside: Squier Silver Series Strats in good&mdash;stock&mdash;condition can fetch up to [$700 on eBay][squier-ebay] which is nuts!
 
 However, I don't use it much these days. Therefore, I decided to convert it into a lap steel to put it to good use. I've documented the steps below&hellip;

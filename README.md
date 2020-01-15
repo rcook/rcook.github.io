@@ -14,6 +14,12 @@ In order to rebuild the site quickly, this will only render the five most recent
 JEKYLL_ALL_POSTS=1 bundle exec rake preview
 ```
 
+You can also set the number of posts to render by setting the `JEKYLL_LIMIT_POSTS` environment variable:
+
+```bash
+JEKYLL_LIMIT_POSTS=20 bundle exec rake preview
+```
+
 Run tests:
 
 ```bash

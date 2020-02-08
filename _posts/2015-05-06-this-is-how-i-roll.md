@@ -7,5 +7,5 @@ tags:
 ---
 Yes, indeed:
 
-![Writing Shitty Code Fast]({{ site.url }}/assets/this-is-how-i-roll.png)
+![Writing Shitty Code Fast]({{ site.url }}/assets/2015-05-06-this-is-how-i-roll/this-is-how-i-roll.png)
 

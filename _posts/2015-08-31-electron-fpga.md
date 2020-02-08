@@ -9,7 +9,7 @@ tags:
 ---
 Got myself a [Papilio Duo][1] and turned it into an [Electron][2]!
 
-![Electron FPGA project]({{ site.url }}/assets/electron-fpga.jpg)
+![Electron FPGA project]({{ site.url }}/assets/2015-08-31-electron-fpga/electron-fpga.jpg)
 
 [1]: http://papilio.cc/
 [2]: https://github.com/hoglet67/ElectronFpga

@@ -7,5 +7,5 @@ tags:
 - 06-ALA01-0003584
 ---
 The pieces are coming together:
-![Slogger ROMbox Plus]({{ site.url }}/assets/this-is-an-expensive-habit.jpg)
+![Slogger ROMbox Plus]({{ site.url }}/assets/2015-05-09-this-is-an-expensive-habit/this-is-an-expensive-habit.jpg)
 

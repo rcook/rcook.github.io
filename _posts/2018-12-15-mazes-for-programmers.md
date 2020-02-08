@@ -9,7 +9,7 @@ I decided to code my own twisty little passages by translating the code in Jamis
 
 Before I able to get further into the book, I got sidetracked by how to producing visually appealing PNG output. Here's what I have so far:
 
-[![A binary-tree maze]({{ site.url }}/assets/mazes-for-programmers.png)][mazes-for-programmers]
+[![A binary-tree maze]({{ site.url }}/assets/2018-12-15-mazes-for-programmers/mazes-for-programmers.png)
 
 The project can be found [here][mazes-for-programmers].
 

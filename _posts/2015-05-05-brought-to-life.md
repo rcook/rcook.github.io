@@ -28,9 +28,9 @@ It's getting late and I don't have time to get my tools out and open up the case
 yet.
 
 * In between the flickering the video output is OK:
-![Video output OK]({{ site.url }}/assets/brought-to-life-ok.jpg)
+![Video output OK]({{ site.url }}/assets/2015-05-05-brought-to-life/brought-to-life-ok.jpg)
 * And then the rest of the time there's this:
-![And then there's this]({{ site.url }}/assets/brought-to-life-strange-colour-bands.jpg)
+![And then there's this]({{ site.url }}/assets/2015-05-05-brought-to-life/brought-to-life-strange-colour-bands.jpg)
 
 [1]: /blog/2015/06-ala01-0003584-says-hi/
 [2]: https://m.youtube.com/watch?v=oCUzgJPbUBI

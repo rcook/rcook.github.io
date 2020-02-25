@@ -1,5 +1,11 @@
 # Richard's blog
 
+## Set up Bundler environment (Windows only)
+
+```powershell
+. env.ps1
+```
+
 ## Preview locally
 
 ```bash

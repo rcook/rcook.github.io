@@ -20,6 +20,10 @@ Comparisons are often best left to the various mechanisms offered elsewhere in t
 * `IStructuralComparable`
 * `IStructuralEquatable`
 
+A quick note before you proceed: make sure you understand why the following program behaves the way it does:
+
+{% gist c64ee0d59400c1ac643f0e19c77933b0 QuickQuiz.cs %}
+
 Caveat: My code probably has subtle bugs in it. This is kind of the point.
 
 Here's our base class, imaginatively named `BaseClass`:

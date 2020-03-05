@@ -13,7 +13,7 @@ In this article I'm going to discuss the notion of _equality_ in the C# programm
 * [`System.IComparable<T>.CompareTo(T)`][system-icomparablet-compareto]
 * [`System.IEquatable<T>.Equals(T)`][system-iequatablet-equals]
 
-Comparison are often best left to the various comparison mechanisms offered elsewhere in the .NET Framework such as:
+Comparisons are often best left to the various mechanisms offered elsewhere in the .NET Framework such as:
 
 * `IComparer`
 * `IEqualityComparer`

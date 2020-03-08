@@ -8,4 +8,8 @@ tags:
 ---
 Time to learn another programming language! Time to double-down and really learn Rust. Here's my [workspace management tool][rws].
 
-[rws]: https://github.com/rcook/rws
+**Update**
+
+Source code moved to GitLab!
+
+[rws]: https://gitlab.com/rcook/rws

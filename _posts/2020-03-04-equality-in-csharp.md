@@ -88,9 +88,15 @@ This is a lot of work and any given implementation is likely to contain subtle b
 
 I'll probably talk more on this subject in the future. Bye for now!
 
+**Update 2020-03-12**
+
+Here's an interesting, related project from my co-worker [Jay Bazuzi][jay-bazuzi]: [`ValueTypeAssertions`][value-type-assertions].
+
+[jay-bazuzi]: https://github.com/JayBazuzi
 [lombok]: https://projectlombok.org/
 [lombok-equals-and-hash-code]: https://projectlombok.org/features/EqualsAndHashCode
 [system-object-equals]: https://docs.microsoft.com/en-us/dotnet/api/system.object.equals
 [system-icomparable-compareto]: https://docs.microsoft.com/en-us/dotnet/api/system.icomparable.compareto
 [system-icomparablet-compareto]: https://docs.microsoft.com/en-us/dotnet/api/system.icomparable-1.compareto
 [system-iequatablet-equals]: https://docs.microsoft.com/en-us/dotnet/api/system.iequatable-1.equals
+[value-type-assertions]: https://github.com/JayBazuzi/ValueTypeAssertions

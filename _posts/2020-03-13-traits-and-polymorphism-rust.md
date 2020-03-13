@@ -24,13 +24,13 @@ Under this model, functions with type arguments are effectively template functio
 
 The second set of examples illustrate how we can use traits to perform dynamic dispatch:
 
-{% gist 4b71acef90a501678db30244b00d79d4 example0.rs %}
+{% gist 4b71acef90a501678db30244b00d79d4 example1.rs %}
 
 Under this model, we do not use type arguments and instead make use of _references to objects implementing a given trait_ (and Rust's [`dyn`][dyn-rust] keyword)) to perform dynamic (runtime) dispatch. This will be very familiar to anybody who has used interfaces or method overriding and virtual methods when using the inheritance-based subsets of languages such as C++, Java, C# and the like. Here we're effectively passing pointers to [virtual method tables][virtual-method-table] and dispatching method calls based on the runtime type of an object.
 
 Finally, the third set of examples illustrates the implications of this on _homogeneous_ and _heterogeneous_ collections of objects implementing traits. They also touch on the ownership semantics:
 
-{% gist 4b71acef90a501678db30244b00d79d4 example1.rs %}
+{% gist 4b71acef90a501678db30244b00d79d4 example2.rs %}
 
 That's enough for now. I've only scratched the surface, but maybe this will be useful to someone!
 

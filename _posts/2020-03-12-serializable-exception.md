@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example of a serializable exception in C#
-created: 2020-03-12 09:56:00 -0800
+created: 2020-03-12 09:56:00 -0700
 tags:
 - C#
 - Programming

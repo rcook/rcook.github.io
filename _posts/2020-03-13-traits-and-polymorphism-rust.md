@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Traits and polymorphism in Rust
-created: 2020-03-13 11:08:00 -0800
+created: 2020-03-13 11:08:00 -0700
 tags:
 - Rust
 - Programming

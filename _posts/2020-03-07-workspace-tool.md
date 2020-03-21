@@ -12,4 +12,8 @@ Time to learn another programming language! Time to double-down and really learn
 
 Source code moved to GitLab!
 
-[rws]: https://gitlab.com/rcook/rws
+**Update 2**
+
+Source code moved back to GitHub!
+
+[rws]: https://github.com/rcook/rws

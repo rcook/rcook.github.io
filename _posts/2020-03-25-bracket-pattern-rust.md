@@ -24,7 +24,11 @@ We can address this by introducing a wrapper (named `ResourceHolder` in this exa
 
 {% gist 15c68ff557789265cfde5adae59e5fef main-demo-drop.rs %}
 
-This is perfectly acceptable. Personally, I don't like having to introduce the `ResourceHolder` type for this. The reason why I don't like this is philosophical I suppose and, perhaps, the subject of a separate conversation. Instead, I introduce the `bracket` function (heavily inspired by [Haskell][bracket-pattern-haskell]):
+This is perfectly acceptable. Note that you have to assign the resource holder to a name (`_holder` in this case) in order for its lifetime to extend to the end of the enclosing lexical scope&mdash;note that the "throwaway" name `_` is _not sufficient_ since the compiler will this kind of value _immediately_ and release the resource prematurely.
+
+As well as having to introduce unused variables into the code, I personally don't like having to introduce the `ResourceHolder` type for this. The reason why I don't like this is philosophical I suppose and, perhaps, the subject of a separate conversation.
+
+To address these concerns, I introduce the `bracket` function (heavily inspired by [Haskell][bracket-pattern-haskell]):
 
 {% gist 15c68ff557789265cfde5adae59e5fef main-bracket.rs %}
 

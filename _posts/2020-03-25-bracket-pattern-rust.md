@@ -8,7 +8,7 @@ tags:
 ---
 Another Rust-related quickie today!
 
-Much like C++, Rust encourages the [Resource Acquisition is Initialization][raii] pattern: whenever an object goes out of scope, its destructor is called and its owned resources are freed. This is probably the design choice which explains why the Rust programming language does not include the equivalent of a [`finally`][try-finally] construct. In most situations, Rust's standard RAII is perfectly adequate. The only downsides I've found is that some resources that we have to introduce resource management `struct`s with implementations for the [`Drop`][drop] trait to manage them. I'll work through an example in this post.
+Much like C++, Rust encourages the [Resource Acquisition is Initialization][raii] pattern: whenever an object goes out of scope, its destructor ([`drop`][drop-method] in Rust) is called and its owned resources are freed. Possibly as a consequence of this, the Rust programming language (like C++) does not include the equivalent of a [`finally`][try-finally] construct as found in languages like Java and C#. In most situations, Rust's standard RAII is perfectly adequate. A downside I've encountered is that some resources or resource-like things do not implement the [`Drop`][drop-trait] trait. To work around this, we have to introduce additional `struct`s which do have implementations for `Drop` to manage these resources. I'll work through an example below.
 
 Here's a simple resource:
 
@@ -36,6 +36,7 @@ This [GitHub project][bracket-pattern] is a full working example project demonst
 
 [bracket-pattern]: https://github.com/rcook/bracket-pattern
 [bracket-pattern-haskell]: https://wiki.haskell.org/Bracket_pattern
-[drop]: https://doc.rust-lang.org/std/ops/trait.Drop.html
+[drop-trait]: https://doc.rust-lang.org/std/ops/trait.Drop.html
+[drop-method]: https://doc.rust-lang.org/std/ops/trait.Drop.html#tymethod.drop
 [raii]: https://doc.rust-lang.org/rust-by-example/scope/raii.html
 [try-finally]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-finally

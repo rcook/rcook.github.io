@@ -18,7 +18,7 @@ Here's an example illustrating how one might (naively) attempt to manage the res
 
 {% gist 15c68ff557789265cfde5adae59e5fef main-demo-resource-leak.rs %}
 
-In the presence of errors, this code will leak the resource since an early return will prevent the clean-up code from running. The resource leak is obvious in this example (and obvious to the compiler&mdash;hence the `#[allow(unreachable_code)]` annotation), but this is not always the case. Use of the [`?`][try-operator] will obscure early returns in ways that are not obvious to the developer _or_ the compiler.
+In the presence of errors, this code will leak the resource since an early return will prevent the clean-up code from running. The resource leak is obvious in this example (and obvious to the compiler&mdash;hence the `#[allow(unreachable_code)]` annotation), but this is not always the case. Use of the [`?`][try-operator] operator will obscure early returns in ways that are not obvious to the developer _or_ the compiler.
 
 We can address this by introducing a wrapper (named `ResourceHolder`) in this example with an implementation for `Drop` which will release the resource even in the presence of errors:
 

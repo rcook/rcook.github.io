@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bracket pattern in Rust
-created: 2020-25-16 08:44:00 -0800
+created: 2020-03-25 08:44:00 -0800
 tags:
 - Rust
 - Programming

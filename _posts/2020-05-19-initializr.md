@@ -296,5 +296,37 @@ public class WidgetController {
 }
 ```
 
+# Enable more warnings and Checker Framework
+
+* Open `build.gradle`
+* Add `id 'org.checkerframework' version '0.5.0'` to the `plugins` section
+* Add `targetCompatibility = '11'` underneath `sourceCompatibility = '11'`
+
+Add the following to the end:
+
+```groovy
+checkerFramework {
+    checkers = [
+            'org.checkerframework.checker.nullness.NullnessChecker'
+    ]
+}
+
+javadoc {
+    options.addStringOption('Xdoclint:all', '-Xwerror')
+}
+
+compileJava {
+    //options.compilerArgs << "-Astubs=${project.file('stubs')}"
+    options.compilerArgs << '-Xlint:unchecked'
+    options.compilerArgs << '-Werror'
+}
+
+compileTestJava {
+    //options.compilerArgs << "-Astubs=${project.file('stubs')}"
+    options.compilerArgs << '-Xlint:unchecked'
+    options.compilerArgs << '-Werror'
+}
+```
+
 [initializr]: https://start.spring.io/
 [intellij]: https://www.jetbrains.com/idea/

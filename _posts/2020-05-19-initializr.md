@@ -192,5 +192,109 @@ public class WidgetController {
 
 Note that the random security password will change on each launch of the app.
 
+# Use YAML application properties
+
+* Right-click on _application.properties_ under _resources_
+* Enter _application.yml_
+
+Enter some configuration like the following:
+
+```yaml
+db0db:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driverclassname: org.postgresql.Driver
+    jdbcurl: jdbc:postgresql://localhost:5432/db0
+    username: postgres
+    password: mysecretpassword
+    leakdetectionthreshold: 10000
+```
+
+# Update controller
+
+Replace `AppConfig.java` with:
+
+```java
+package org.rcook.myapp;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import javax.sql.DataSource;
+
+@Configuration
+public class AppConfig {
+    @Bean(name = "db0DataSource")
+    @ConfigurationProperties(prefix = "db0db.datasource")
+    public DataSource dataSource() {
+        return DataSourceBuilder.create().build();
+    }
+}
+```
+
+Replace `WidgetController.java` with:
+
+```java
+package org.rcook.myapp;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.sql.DataSource;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+@RestController
+@RequestMapping("/widgets")
+public class WidgetController {
+    @Autowired
+    @Qualifier("db0DataSource")
+    @SuppressWarnings("initialization.fields.uninitialized")
+    private DataSource db0DataSource;
+
+    @RequestMapping("")
+    public List<Object> getWidgets() {
+        try (final var connection = db0DataSource.getConnection();
+             final var stmt = connection.createStatement();
+             final var resultSet = stmt.executeQuery("SELECT id, name FROM widgets")) {
+            final var widgets = new ArrayList<>();
+            while (resultSet.next()) {
+                widgets.add(new HashMap<String, Object>() {{
+                    put("id", resultSet.getInt("id"));
+                    put("name", resultSet.getString("name"));
+                }});
+            }
+            return widgets;
+        } catch (final SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @RequestMapping("/{id}")
+    public HashMap<String, Object> getWidget(@PathVariable int id) {
+        try (final var connection = db0DataSource.getConnection();
+             final var stmt = connection.prepareStatement("SELECT id, name FROM widgets WHERE id = ?")) {
+            stmt.setInt(1, id);
+            try (final var resultSet = stmt.executeQuery()) {
+                resultSet.next();
+                return new HashMap<String, Object>() {{
+                    put("id", resultSet.getInt("id"));
+                    put("name", resultSet.getString("name"));
+                }};
+            }
+        } catch (final SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
+```
+
 [initializr]: https://start.spring.io/
 [intellij]: https://www.jetbrains.com/idea/

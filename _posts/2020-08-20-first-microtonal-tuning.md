@@ -41,8 +41,13 @@ E |--10----------------
 
 This might be an improvement depending on the specifics of your situation. I will post more when I've experimented with other fingerings and tunings.
 
+**Update**
+
+I'm using [Guitar Tab Creator][guitar-tab-creator] to create the tabs.
+
 [bayati]: https://www.maqamworld.com/en/maqam/bayati.php
 [fretlet]: https://fretlet.com/
+[guitar-tab-creator]: https://www.guitartabcreator.com/
 [marrakesh]: https://www.revelationguitars.co.uk/guitar/marrakesh-quarter-tone/
 [rohab]: http://www.soutazin.ir/Products/Rohab.aspx
 [tabmaker]: https://www.acousterr.com/tabmaker

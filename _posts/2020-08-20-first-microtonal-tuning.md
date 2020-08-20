@@ -17,26 +17,26 @@ I do not yet own a fretless guitar or a [guitar fretted with quarter tones][marr
 
 Where _d_ means "half-flat".
 
-Here's one rendering of the [Bayati maqam][bayati] in this tuning:
+Here's one rendering of the [Bayati maqam][bayati] starting on D in this tuning:
 
 ```
-Ed|--------------------
-B |--------------------
-Gd|--------------------
-D |--------------------
-Ad|-----7--------------
-E |--10----13-15-17-18-
+Ed|-------------------------
+B |-------------------------
+Gd|-------------------------
+D |-------------------------
+Ad|------7------------------
+E |--10-----13--15--17--18--
 ```
 
 This is not great for speed or ease of playing. Here's another:
 
 ```
-Ed|--------------------
-B |--------------------
-Gd|--------------------
-D |--------3-5-7-8-----
-Ad|-----7--------------
-E |--10----------------
+Ed|---------------------
+B |---------------------
+Gd|---------------------
+D |---------3--5--7--8--
+Ad|------7--------------
+E |--10-----------------
 ```
 
 This might be an improvement depending on the specifics of your situation. I will post more when I've experimented with other fingerings and tunings.

@@ -43,10 +43,11 @@ This might be an improvement depending on the specifics of your situation. I wil
 
 **Update**
 
-I'm using [Guitar Tab Creator][guitar-tab-creator] to create the tabs.
+I'm using [Guitar Tab Creator][guitar-tab-creator] to create the tabs. Fingerings calculated using [my program][guitar-positions].
 
 [bayati]: https://www.maqamworld.com/en/maqam/bayati.php
 [fretlet]: https://fretlet.com/
+[guitar-positions]: https://github.com/rcook/guitar-positions
 [guitar-tab-creator]: https://www.guitartabcreator.com/
 [marrakesh]: https://www.revelationguitars.co.uk/guitar/marrakesh-quarter-tone/
 [rohab]: http://www.soutazin.ir/Products/Rohab.aspx

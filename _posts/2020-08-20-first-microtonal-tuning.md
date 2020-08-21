@@ -17,7 +17,7 @@ I do not yet own a fretless guitar or a [guitar fretted with quarter tones][marr
 
 Where _d_ means "half-flat".
 
-Here's one rendering of the [Bayati maqam][bayati] starting on D in this tuning:
+Here's one rendering of the [Bayati maqam][bayati] starting on D (D, Ed, F, G, A, Bb, C, D) in this tuning:
 
 ```
 Ed|-------------------------

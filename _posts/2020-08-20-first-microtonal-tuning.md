@@ -4,6 +4,7 @@ title: First microtonal guitar tuning
 created: 2020-08-20 09:40:00 -0800
 tags:
 - Music
+- Guitar
 - Microtonal
 ---
 I do not yet own a fretless guitar or a [guitar fretted with quarter tones][marrakesh]. I do have some [fretlets][fretlet] but do not (yet) have a classical guitar to put them on. However, I do own a [quarter-tone tuner][rohab]. In this short post, I'm going to put it to use by experimenting with the most simple quarter-tone tuning I can think of: tune to standard tuning and drop every other string by a quarter tone. Here are the pitches of the six strings:

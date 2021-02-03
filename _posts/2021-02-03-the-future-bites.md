@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Album of the Month Feburary 2021: The Future Bites by Steven Wilson"
+title: "Album of the Month February 2021: The Future Bites by Steven Wilson"
 created: 2021-02-03 15:25:00 -0800
 tags:
 - Music

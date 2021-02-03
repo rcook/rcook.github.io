@@ -4,6 +4,7 @@ title: "Album of the Month: The Future Bites by Steven Wilson"
 created: 2021-02-03 15:25:00 -0800
 tags:
 - Music
+- Album of the Month
 - Versions of the Truth
 - Steven Wilson
 ---

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Album of the Month: Versions of the Truth"
+title: "Album of the Month: Versions of the Truth by The Pineapple Thief"
 created: 2021-01-05 15:25:00 -0800
 tags:
 - Music
 - Versions of the Truth
+- The Pineapple Thief
 ---
 
 First post since September! I'm still around. The 'Rona hasn't got me yet.
